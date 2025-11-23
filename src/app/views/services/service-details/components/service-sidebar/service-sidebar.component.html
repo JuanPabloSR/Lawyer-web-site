@@ -1,0 +1,46 @@
+<div class="sidebar-area">
+    <div class="_sidebar-widget _search">
+        <h3>Search</h3>
+        <form action="#" class="_relative">
+            <input type="search" placeholder="Search...">
+            <button><i class="fa-solid fa-magnifying-glass"></i></button>
+        </form>
+    </div>
+    <div class="_sidebar-widget _list mt-40">
+        <h3>Our Service</h3>
+        <div class="sidebar-list">
+            <ul>
+                <li *ngFor="let service of services">
+                  <a routerLink="/service-details">
+                    {{ service }}
+                    <span><i class="fa-solid fa-angle-right"></i></span>
+                  </a>
+                </li>
+              </ul>
+              
+        </div>
+    </div>
+    <div class="_sidebar-widget _tags mt-40">
+        <h3>Popular Tags</h3>
+        <div class="tags-list">
+            <ul>
+                <li *ngFor="let tag of tags">
+                  <a href="javascript:void(0)">{{ tag }}</a>
+                </li>
+              </ul>
+              
+        </div>
+    </div>
+    <div class="_sidebar-contact_widget _tags mt-40">
+        <h3>Get A Free Quote</h3>
+        <div class="_contact-form">
+            <input type="text" placeholder="Your Name">
+            <input type="email" placeholder="Email Address">
+            <input type="number" placeholder="Phone Number">
+            <textarea rows="4" placeholder="Your Message"></textarea>
+            <div class="buttons">
+                <button class="theme-btn1"><span class="text">Submit Now</span><span class="arrow-all"><span class="arrow1"><i class="fas fa-arrow-right"></i></span><span class="arrow2"><i class="fas fa-arrow-right"></i></span></span></button>
+            </div>
+        </div>
+    </div>
+</div>

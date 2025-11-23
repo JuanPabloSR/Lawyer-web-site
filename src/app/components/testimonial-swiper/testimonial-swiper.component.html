@@ -1,0 +1,51 @@
+<div class="row">
+    <div class="col-lg-7 col-md-12 left _relative m-auto">
+        <div class="swiper-testimonial-2">
+            <swiper-container thumbs-swiper=".my-thumbs" class="swiper-wrapper" init="false" [config]="swiperConfig"
+                style="display: contents;">
+                <swiper-slide *ngFor="let testimonial of testimonials" class="swiper-slide">
+                    <div class="testimonial-boxarea">
+                        <img class="qute" src="assets/img/icons/qute1.svg" alt="">
+                        <ul class="d-flex align-items-center gap-1 flex-wrap">
+                            <li *ngFor="let item of [1,2,3,4,5]"><i class="fa-solid fa-star"></i></li>
+                        </ul>
+                        <div class="space16"></div>
+                        <p>{{testimonial.message}}</p>
+                        <div class="space32"></div>
+                        <div class="names-area">
+                            <div class="man-textarea">
+                                <div class="man">
+                                    <img [src]="testimonial.image" alt="">
+                                </div>
+                                <div class="text">
+                                    <a href="javascript:void(0)">{{testimonial.name}}</a>
+                                    <div class="space12"></div>
+                                    <p>{{testimonial.role}}</p>
+                                </div>
+                            </div>
+                            <img class="black-logo elements20" src="assets/img/logo/tes3-logo.png" alt="">
+                            <img class="white-logo elements20" src="assets/img/logo/brand-white.png" alt="">
+                        </div>
+                    </div>
+                </swiper-slide>
+            </swiper-container>
+        </div>
+        <div class="{{buttonClass ?? 'tes1-arrows'}}">
+            <div class="swiper-button-next">
+                <button><i class="fa-solid fa-angle-left"></i></button>
+            </div>
+            <div class="swiper-button-prev">
+                <button><i class="fa-solid fa-angle-right"></i></button>
+            </div>
+        </div>
+    </div>
+    <div class="map-testimonial">
+        <swiper-container init="false" class="my-thumbs" [config]="swiperThumbConfig" style="display: contents;">
+            <swiper-slide *ngFor="let image of thumbImages" class="swiper-slide">
+                <div>
+                    <img [src]="image" alt="">
+                </div>
+            </swiper-slide>
+        </swiper-container>
+    </div>
+</div>

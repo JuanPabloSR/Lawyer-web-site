@@ -1,0 +1,41 @@
+<div class="case4 sp shape-bg4 _relative">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="heading4">
+                    <span class="sub-title4">OUr Case studies</span>
+                    <h2
+                        class="black3 text-44 sm:text-30 md:text-30 leading-52 md:leading-36 sm:leading-36 font-semibold text-anime-style-3">
+                        Explore Client Case Studies</h2>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div data-aos-duration="800" data-aos="fade-up"
+                    class="case4-arrow-buttons text-end _relative z-3 sm:text-start md:text-start">
+                    <button class="case2-prev-arrow"><i class="fa-solid fa-angle-left"></i></button>
+                    <button class="case2-next-arrow"><i class="fa-solid fa-angle-right"></i></button>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
+                <ngx-slick-carousel [config]="sliderConfig" class="case2-slider mt-60 z-3 _relative" data-aos-duration="900" data-aos="fade-up">
+                    <div ngxSlickItem *ngFor="let case of caseStudies" class="case4-single-slider">
+                        <div class="image-area">
+                            <div class="image">
+                                <img [src]="case.image" alt="">
+                            </div>
+                            <div class="hover-area">
+                                <a routerLink="/case-details" class="arrow"><i class="fas fa-arrow-right"></i></a>
+                                <p>{{case.category}}</p>
+                                <h4><a routerLink="/case-details" class="_hover3 text">{{case.title}}</a></h4>
+                            </div>
+                        </div>
+                    </div>
+                </ngx-slick-carousel>
+            </div>
+        </div>
+    </div>
+    <img src="assets/img/shapes/team4-shape1.png" alt="" class="shape1">
+    <img src="assets/img/shapes/team4-shape2.png" alt="" class="shape2">
+</div>

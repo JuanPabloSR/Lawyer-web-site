@@ -1,0 +1,299 @@
+@use '../../utils/' as * ;
+
+  /*
+ ::::::::::::::::::::::::::
+  CHOOSE AREA CSS
+ ::::::::::::::::::::::::::
+ */
+
+//====  choose 2 sytle ====
+
+.choose2 {
+  .choose-text-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 60px;
+    padding-left: 40px;
+    position: relative;
+
+    @media #{$md} {
+      margin-top: 40px;
+    }
+    @media #{$xs} {
+      margin-top: 40px;
+    }
+    h3 {
+      color: var(--vtc-text-title-3);
+      font-size: var(--f-fs-font-56);
+      font-style: italic;
+      font-weight: var(--f-fw-medium);
+      line-height: var(--f-fs-font-56); /* 100% */
+    }
+    p {
+      color: var(--vtc-text-pera-4);
+      font-size: var(--f-fs-font-20);
+      font-style: italic;
+      font-weight: var(--f-fw-medium);
+      line-height: var(--f-fs-font-26); /* 130% */
+      padding-left: 20px;
+    }
+
+    &.add-after {
+      &::after {
+        content: "";
+        position: absolute;
+        right: 0;
+        top: 10px;
+        height: 40px;
+        width: 1px;
+        background-color: var(--vtc-text-pera-4);
+        opacity: 0.5;
+      }
+    }
+
+    &.add-after2 {
+      &::after {
+        content: "";
+        position: absolute;
+        right: -30px;
+        top: 10px;
+        height: 40px;
+        width: 1px;
+        background-color: var(--vtc-text-pera-4);
+        opacity: 0.5;
+      }
+    }
+  }
+
+  .bottom-icon-box {
+    background-color: var(--vtc-bg-white1);
+    padding: 16px 20px;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    margin: -60px 30px 0px 30px;
+    position: relative;
+    z-index: 4;
+
+    .icon {
+      background-color: var(--vtc-bg-main4);
+      height: 80px;
+      width: 80px;
+      line-height: 80px;
+      text-align: center;
+      border-radius: 50%;
+      transition: all .4s;
+    }
+
+    .heading2 {
+      padding-left: 16px;
+      h3 {
+        color: var(--vtc-text-title-4);
+        font-size: var(--f-fs-font-22);
+        font-style: normal;
+        font-weight: var(--f-fw-medium);
+        line-height: var(--f-fs-font-22); /* 100% */
+      }
+      p {
+        color: var(--Home-Page-2-Color-Paragraph-Color, #4E4D59);
+        font-size: var(--f-fs-font-16);
+        font-style: normal;
+        font-weight: var(--f-fw-semibold);
+        line-height: var(--f-fs-font-16); /* 100% */
+        padding-top: 12px;
+      }
+    }
+  }
+}
+
+.choose2-items-area {
+  .check-items {
+    display: inline-flex;
+    background-color: var(--vtc-bg-white6);
+    padding: 12px;
+    border-radius: 111px;
+    align-items: center;
+    min-width: 280px;
+    transition: all .4s;
+    p {
+      color: var(--vtc-text-title-3);
+      font-size: var(--f-fs-font-20);
+      font-style: normal;
+      font-weight: var(--f-fw-medium);
+      line-height: var(--f-fs-font-20); /* 100% */
+      padding-left: 16px;
+      transition: all .4s;
+    }
+    &.left-side {
+      position: relative;
+
+      &::after {
+        content: "";
+        position: absolute;
+        top: 34px;
+        right: -200px;
+        height: 1px;
+        width: 280px;
+        background-color: var(--vtc-text-pera-4);
+        opacity: 0.3;
+        z-index: -1;
+
+        @media #{$md} {
+          display: none;
+        }
+
+        @media #{$xs} {
+          display: none;
+        }
+      }
+    }
+
+    &.right-side {
+      position: relative;
+
+      &::after {
+        content: "";
+        position: absolute;
+        top: 34px;
+        left: -200px;
+        height: 1px;
+        width: 280px;
+        background-color: var(--vtc-text-pera-4);
+        opacity: 0.3;
+        z-index: -1;
+
+        @media #{$md} {
+          display: none;
+        }
+        @media #{$xs} {
+          display: none;
+        }
+      }
+    }
+
+    &:hover {
+      transition: all .4s;
+      background-color: var(--vtc-bg-main5);
+
+      .check {
+        background-color: var(--vtc-bg-main4);
+        transition: all .4s;
+      }
+      p {
+        color: var(--vtc-bg-white1);
+        transition: all .4s;
+      }
+    }
+  }
+
+  .check {
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    background-color: var(--vtc-bg-main5);
+    color: var(--vtc-bg-white1);
+    font-size: var(--f-fs-font-18);
+    transition: all .4s;
+  }
+}
+
+//====  choose 2 sytle ====
+
+//====  choose 5 sytle ====
+
+.choose5 {
+  .shape1 {
+    right: -57px;
+    width: 200px;
+    position: absolute;
+    top: -50px;
+    z-index: -1;
+  }
+  .shape2 {
+    right: -57px;
+    width: 200px;
+    position: absolute;
+    bottom: -50px;
+    z-index: -1;
+  }
+}
+
+.choose-boxs {
+  margin-right: -120px;
+
+  @media #{$md} {
+    margin-right: 0;
+  }
+  @media #{$xs} {
+    margin-right: 0;
+  }
+}
+
+.choose5-box {
+  border-radius: 8px;
+  background-color: var(--vtc-bg-white8);
+  padding: 24px 26px;
+  text-align: center;
+  transition: all .4s;
+  .icon {
+    height: 60px;
+    width: 60px;
+    text-align: center;
+    line-height: 60px;
+    border-radius: 50%;
+    background: var(--vtc-bg-main10);
+    margin: auto;
+
+    img {
+      transition: all .4s;
+    }
+  }
+  .content {
+    padding-top: 16px;
+    h4 {
+      a {
+        display: inline-block;
+        color: var(--vtc-text-title-7);
+        font-size: var(--f-fs-font-20);
+        font-style: normal;
+        font-weight: var(--f-fw-semibold);
+        line-height: 20px; /* 100% */
+        transition: all .4s;
+
+        &:hover {
+          transition: all .4s;
+          color: var(--vtc-bg-main12);
+        }
+      }
+    }
+    p {
+      color: var(--vtc-text-pera-7);
+      font-size: var(--f-fs-font-16);
+      font-style: normal;
+      font-weight: var(--f-fw-medium);
+      line-height: var(--f-fs-font-24); /* 150% */
+      padding-top: 12px;
+    }
+  }
+  &:hover {
+    transition: all .4s;
+    transform: translateY(-8px);
+    .icon {
+      img {
+        transition: all .4s;
+        transform: rotateY(180deg);
+      }
+    }
+  }
+}
+
+//====  choose 5 sytle ====
+
+/*
+ ::::::::::::::::::::::::::
+  CHOOSE AREA CSS
+ ::::::::::::::::::::::::::
+ */

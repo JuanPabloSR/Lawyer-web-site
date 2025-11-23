@@ -1,0 +1,166 @@
+@use '../utils' as *;
+
+/*
+ ::::::::::::::::::::::::::
+  BACKGROUNDS AREA CSS
+ ::::::::::::::::::::::::::
+ */
+
+ .sec-bg1 {
+    background-color: var(--vtc-bg-common-2);
+ }
+
+ .sec-bg2 {
+   background-color: var(--vtc-bg-common-3);
+ }
+
+ .sec-bg3 {
+  background-color: var(--vtc-bg-common-4);
+}
+
+.sec-bg4 {
+  background-color: var(--vtc-bg-common-5);
+}
+
+
+ .white-bg1 {
+   background-color: var(--vtc-bg-white1);
+ }
+
+ .white-bg2 {
+  background-color: var(--vtc-bg-white2);
+}
+
+.white-bg3 {
+  background-color: var(--vtc-bg-white3);
+}
+
+.white-bg4 {
+  background-color: var(--vtc-bg-white4);
+}
+
+.white-bg5 {
+  background-color: var(--vtc-bg-white7);
+}
+
+.shape-bg1 {
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-image: url(../../img/bg/element-bg1.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
+.shape-bg2 {
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-image: url(../../img/bg/service2-bg1.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -2;
+  }
+}
+
+.shape-bg3 {
+  position: relative;
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-image: url(../../img/bg/case3-bg1.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -2;
+  }
+}
+
+.shape-bg4 {
+  background-color: var(--vtc-bg-common-14);
+}
+
+.shape-bg5 {
+  background-color: var(--vtc-bg-common-17);
+}
+
+.dark-mode {
+  .shape-bg1 {
+    position: relative;
+    
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      height: 100%;
+      width: 100%;
+      background-image: url(../../img/bg/element-bg1.png);
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      filter: brightness(0) invert(1);
+    }
+  }
+  .shape-bg2 {
+    position: relative;
+  
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      height: 100%;
+      width: 100%;
+      background-image: url(../../img/bg/service2-bg2.png);
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      z-index: -2;
+    }
+  }
+
+  .shape-bg3 {
+    position: relative;
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      height: 100%;
+      width: 100%;
+      background-image: url(../../img/bg/case3-bg2.png);
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      z-index: -2;
+    }
+  }
+}
+
+
+
+ /*
+ ::::::::::::::::::::::::::
+  BACKGROUNDS AREA CSS
+ ::::::::::::::::::::::::::
+ */

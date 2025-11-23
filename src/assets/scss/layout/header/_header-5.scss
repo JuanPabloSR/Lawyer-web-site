@@ -1,0 +1,98 @@
+@use '../../utils/' as * ;
+
+/*
+::::::::::::::::::::::::::
+ HEADER AREA 5 CSS
+::::::::::::::::::::::::::
+*/
+
+@media screen and (min-width: 769px) {
+    .header5-bg {
+        padding: 20px 38px;
+        border-radius: 8px 8px 8px 8px;
+        position: relative;
+        z-index: 999;
+        margin-top: 20px;
+
+        &::after {
+            content: "";
+            position: absolute;
+            left: 11px;
+            top: 0;
+            height: 100%;
+            width: 98.3%;
+            border-radius: 8px 8px 8px 8px;
+            background: rgba(255, 255, 255, 0.10);
+            backdrop-filter: blur(5px);
+            z-index: -1;
+        }
+
+        &::before {
+            content: "";
+            position: absolute;
+            left: 11px;
+            top: 0;
+            height: 100%;
+            width: 6px;
+            background-color: var(--vtc-bg-white1);
+            z-index: 0;
+            border-radius: 8px 0px 0px 8px
+        }
+    }
+
+    .vl-header5-right {
+        text-align: end;
+        display: flex;
+        align-items: center;
+        justify-content: end;
+
+        .search-open-btn {
+            background: none;
+            border: none;
+            font-size: var(--f-fs-font-20);
+            margin-right: 36px;
+            position: relative;
+            color: var(--vtc-bg-white1);
+
+            &::after {
+                content: "";
+                position: absolute;
+                top: 5px;
+                right: -16px;
+                height: 20px;
+                width: 2px;
+                background-color: var(--vtc-border-1);
+            }
+        }
+    }
+
+    .header5-social-wedget {
+        a {
+            display: inline-block;
+            height: 36px;
+            width: 36px;
+            text-align: center;
+            line-height: 36px;
+            border-radius: 50%;
+            background-color: rgba(255, 255, 255, 0.10);
+            color: var(--vtc-bg-white1);
+            font-size: 16px;
+            margin-right: 3px;
+            transition: all .4s;
+    
+            &:hover {
+                transition: all .4s;
+                color: var(--vtc-bg-white1);
+                transform: translateY(-4px);
+            }
+        }
+    }
+
+}
+
+
+/*
+::::::::::::::::::::::::::
+ HEADER AREA 5 CSS
+::::::::::::::::::::::::::
+*/

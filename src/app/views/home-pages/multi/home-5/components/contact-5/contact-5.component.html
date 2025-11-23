@@ -1,0 +1,60 @@
+<div class="contact5 sp" style="background-image: url(assets/img/bg/contact5-bg.jpg);">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 m-auto text-center">
+                <div class="heading5">
+                    <span class="white1 leading-18 text-18 mb-16 inline-block font-semibold uppercase sub-title3-w">our testimonial</span>
+                    <h2 class="white1 text-44 sm:text-30 md:text-30 leading-44 font-semibold text-anime-style-3">Hear From Our Satisfied Clients</h2>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-40">
+            <div class="col-lg-6">
+                <div class="images-all">
+                    <div class="image1 reveal image-anime" appGsapReveal>
+                        <img src="assets/img/others/contact5-image2.png" alt="">
+                    </div>
+                    <div class="image2 reveal image-anime" appGsapReveal>
+                        <img src="assets/img/others/contact5-image1.png" alt="">
+                    </div>
+                    <div class="shape">
+                        <img src="assets/img/shapes/contact5-image-shape.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="contact-form mt-40" data-aos="zoom-out" data-aos-duration="900">
+                    <h2>Send Us A Message</h2>
+                    <p class="subtitle">Our response time is within 30 minutes during business hours</p>
+                    <div class="categories">
+                        <button 
+                        class="category" 
+                        *ngFor="let category of categories"
+                        [class.active]="category === activeCategory"
+                        (click)="setCategory(category)">
+                        {{ category }}
+                      </button>
+                    </div>
+                    <div class="form-group">
+                      <input type="text" placeholder="Full Name" class="input-field">
+                      <input type="email" placeholder="Email" class="input-field">
+                    </div>
+                    <textarea class="textarea-field" placeholder="Message" rows="5"></textarea>
+                    <div class="slider-container">
+                      <div class="slider-label">
+                        <span>Limit of Balance</span>
+                        <span id="maxValue">{{ 10000 }}</span>
+                      </div>
+                      <input type="range"  [(ngModel)]="balance" id="balance-slider" min="0" max="10000" value="5000">
+                      <div class="selected-value">
+                        Selected Value: <span id="selectedValue">{{ balance }}</span>
+                      </div>
+                    </div>
+                    <div class="text-end">
+                        <button class="theme-btn6" type="submit"><span class="text">Subscribe</span><span class="arrow-all"><span class="arrow1"><i class="fas fa-arrow-right"></i></span><span class="arrow2"><i class="fas fa-arrow-right"></i></span></span></button>
+                    </div>
+                  </div>
+            </div>
+        </div>
+    </div>
+ </div>

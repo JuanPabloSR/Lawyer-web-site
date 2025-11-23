@@ -1,0 +1,12 @@
+import { Component } from '@angular/core';
+import { PageHeaderComponent } from '@app/components/page-header/page-header.component';
+
+@Component({
+  selector: 'app-contact',
+  imports: [PageHeaderComponent],
+  templateUrl: './contact.component.html',
+  styles: ``
+})
+export class ContactComponent {
+
+}

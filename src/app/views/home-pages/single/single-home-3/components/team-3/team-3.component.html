@@ -1,0 +1,23 @@
+<div class="team1 sp white-bg6">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-6 m-auto text-center">
+                <div class="heading3">
+                    <span class="sub-title3 leading-18 text-18 mb-16 inline-block font-semibold uppercase sub-text3">our
+                        financial expert</span>
+                    <h2
+                        class="black3 text-44 sm:text-30 md:text-30 leading-52 md:leading-36 sm:leading-36 font-semibold text-anime-style-3">
+                        Meet Our Expert Team</h2>
+                </div>
+            </div>
+        </div>
+        <div class="space30"></div>
+        <div class="row">
+            <div *ngFor="let member of teamMembers.slice(0,4)" class="col-lg-3 col-md-6" data-aos="fade-up"
+                data-aos-duration="1000" data-aos-duration="600">
+                <app-member-card [member]="member" containerClass="team3-box"/>
+            </div>
+
+        </div>
+    </div>
+</div>

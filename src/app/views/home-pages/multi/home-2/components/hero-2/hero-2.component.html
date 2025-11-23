@@ -1,0 +1,30 @@
+
+<div class="hero2 bg-cover _relative">
+    <ngx-slick-carousel [config]="sliderConfig" class="hero2-sliders">
+       <div ngxSlickItem *ngFor="let image of sliderImages" class="hero2-single-slider overflow-hidden _relative bg-cover" style="background-image: url({{image}});">
+          <div class="container">
+             <div class="row align-items-center">
+                <div class="col-lg-6">
+                   <div class="heading  _relative z-9">
+                      <span class="sub-title text-18 leading-18 flex white1 uppercase mb-20 font-medium"><img src="assets/img/icons/span1.svg" alt=""> Expert Insights to Drive Business </span>
+                      <h1 class="text-56 md:text-40 sm:text-40 leading64 inline-block white1 font-semibold text-anime-style-3">Achieve Your Goals For Tailored Business Consulting Services</h1>
+                      <p class="mt-16 text-18 leading-26 inline-block white1">Unlocking your business's potential starts with expert guidance, Our consultants at Advicx bring years of industry of experience.</p>
+                      <div class="button mt-30">
+                         <a class="theme-btn2" routerLink="/our-services"><span class="text">Schedule A Consultation</span><span class="arrow-all"><span class="arrow1"><i class="fas fa-arrow-right"></i></span><span class="arrow2"><i class="fas fa-arrow-right"></i></span></span></a>
+                      </div>
+                   </div>
+                </div>
+             </div>
+          </div>
+          <div class="main-image-shape">
+             <img src="assets/img/shapes/hero2-shape.png" alt="">
+          </div>
+       </div>
+
+    </ngx-slick-carousel>
+
+    <div class="hero2-arrow-buttons">
+       <button class="tes2-prev-arrow"><i class="fa-solid fa-angle-left"></i></button>
+       <button class="tes2-next-arrow"><i class="fa-solid fa-angle-right"></i></button>
+    </div>
+ </div>

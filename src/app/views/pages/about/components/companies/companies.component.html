@@ -1,0 +1,14 @@
+<div class="about-page-brand sec-bg1">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <p>Join 4,000+ companies already growing</p>
+                <ngx-slick-carousel [config]="sliderConfig" class="about-brand-slider">
+                    <div ngxSlickItem *ngFor="let image of companyImages" class="single-brand">
+                        <img [src]="image" alt="">
+                    </div>
+                </ngx-slick-carousel>
+            </div>
+        </div>
+    </div>
+</div>

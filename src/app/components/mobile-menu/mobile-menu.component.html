@@ -1,0 +1,163 @@
+<div class="vl-offcanvas vl-header-area1" [ngClass]="{ 'vl-offcanvas-open': isMenuOpen }">
+    <div class="vl-offcanvas-wrapper">
+        <div class="vl-offcanvas-header d-flex justify-content-between align-items-center mb-90">
+            <div class="vl-offcanvas-logo">
+                <a routerLink="home-1" class="header1-logo-block"><img src="assets/img/logo/header-logo1.png" alt=""></a>
+                <a routerLink="home-1" class="header1-logo-white"><img src="assets/img/logo/white-logo.png" alt=""></a>
+            </div>
+            <div class="vl-offcanvas-close">
+                <button class="vl-offcanvas-close-toggle" (click)="closeSidebar()"><i
+                        class="fa-solid fa-xmark"></i></button>
+            </div>
+        </div>
+
+        <div class="vl-offcanvas-menu d-lg-none mb-40">
+            <nav>
+                @if(scrollMenu){
+                    <ul>
+                        <li *ngFor="let item of scrollMenuItems">
+                            <a href="javascript:void(0);" (click)="toggleMenu()">{{item}}
+                                <span><i class="fas fa-angle-down"></i></span>
+                            </a>
+                        </li>
+                    </ul>
+                }
+                
+                @if(!scrollMenu){
+                    <ul>
+                        @for (item of menuItems; track $index) {
+                        <li class="has-dropdown" [ngClass]="{ 'active': menuOpen }">
+                            <a href="javascript:void(0);" (click)="toggleMenu()">Home
+                                <span><i class="fas fa-angle-down"></i></span>
+                            </a>
+    
+                            <div class="vl-mega-menu" [ngStyle]="{ 'display': menuOpen ? 'block' : 'none' }">
+                                <div class="vl-home-menu">
+                                    <div class="row gx-3 row-cols-1 row-cols-md-1 row-cols-lg-5">
+                                        @for (item of item.subMenu; track $index) {
+                                        <div class="col">
+                                            <div class="vl-home-thumb">
+                                                <div class="img1">
+                                                    <img [src]="item.image" [alt]="">
+                                                </div>
+                                                <a class="text" [routerLink]="item.link">{{ item.title }}</a>
+                                                <div class="btn-area1">
+                                                    <a [routerLink]="item.link" [class]="themeBtn"><span class="text">Multi Page</span><span class="arrow-all"><span class="arrow1"><i class="fa-solid fa-arrow-right"></i></span><span class="arrow2"><i class="fa-solid fa-arrow-right"></i></span></span></a>
+                                                    <a [routerLink]="item.link" [class]="themeBtn"><span class="text">One Page</span><span class="arrow-all"><span class="arrow1"><i class="fa-solid fa-arrow-right"></i></span><span class="arrow2"><i class="fa-solid fa-arrow-right"></i></span></span></a>
+                                                </div>
+                                                <div class="space20 d-lg-none d-block"></div>
+                                            </div>
+                                        </div>}
+                                    </div>
+                                </div>
+                            </div>
+    
+                            <button class="vl-menu-close" (click)="toggleMenu()">
+                                <i class="fas fa-chevron-right"></i>
+                            </button>
+                        </li>
+                        }
+                        @for (item of menu; track $index) {
+                        <li class="has-dropdown" [ngClass]="{ ' active': item.isOpen }">
+                            <a href="javascript:void(0);" (click)="toggleSubMenu(item)">
+                                {{ item.title }}
+                                @if (item.icon) {
+                                <span><i class="fas" [ngClass]="item.icon"></i></span>
+                                }
+                            </a>
+    
+                            <!-- First Level Submenu -->
+                            @if (item.subMenu) {
+                            <ul class="sub-menu" [ngStyle]="{ 'display': item.isOpen ? 'block' : 'none' }">
+                                @for (subItem of item.subMenu; track $index) {
+                                <li>
+                                    @if(subItem.subMenu){
+                                    <a href="javascript:void(0);" class="span-arrow"
+                                        (click)="toggleSubMenu(subItem, $event)">
+                                        {{ subItem.title }}
+                                    </a>
+                                    <ul class="sub-menu menu1" [ngClass]="{ 'd-block': subItem.isOpen }">
+                                        @for (subSubItem of subItem.subMenu; track $index) {
+                                        <li>
+                                            <a [href]="subSubItem.link">{{ subSubItem.title }}</a>
+                                        </li>
+                                        }
+                                    </ul>
+    
+                                    <button class="vl-menu-close" (click)="toggleSubMenu(subItem, $event)"><i
+                                            class="fas fa-chevron-right"></i></button>
+                                    }@else{
+                                    <a [href]="subItem.link">{{ subItem.title }}</a>
+                                    }
+                                </li>
+                                }
+                            </ul>
+                            <button class="vl-menu-close" (click)="toggleSubMenu(item, $event)"><i
+                                    class="fas fa-chevron-right"></i></button>
+                            }
+                        </li>
+                        }
+                    </ul>
+                }
+            </nav>
+        </div>
+
+        <div class="space20"></div>
+        <div class="vl-offcanvas-info">
+            <h4 class="black1 text-24 mb-30 leading-24 font-semibold">Contact Us</h4>
+            <div class="single-contact flex align-items-center">
+                <div class="icon">
+                    <img src="assets/img/icons/footer1-icon1.svg" alt="">
+                </div>
+                <div class="text">
+                    <a href="tel:+11234567890"
+                        class="ml-10 gray2 inline-block p-10-0 text-18 leading-18 text _hover1 font-medium">+1 123 456
+                        7890</a>
+                </div>
+            </div>
+
+            <div class="single-contact flex align-items-center mt-6">
+                <div class="icon">
+                    <img src="assets/img/icons/footer1-icon2.svg" alt="">
+                </div>
+                <div class="text">
+                    <a href="javascript:void(0)" class="ml-10 gray2 inline-block p-10-0 text-18 leading-18 text _hover1 font-medium">421
+                        Allen, Mexico 4233</a>
+                </div>
+            </div>
+
+            <div class="single-contact flex align-items-center mt-6">
+                <div class="icon">
+                    <img src="assets/img/icons/footer1-icon3.svg" alt="">
+                </div>
+                <div class="text">
+                    <a href="mailto:advicxconsult@com"
+                        class="ml-10 gray2 inline-block p-10-0 text-18 leading-18 text _hover1 font-medium">advicxconsult&#64;com</a>
+                </div>
+            </div>
+
+            <div class="single-contact flex align-items-center mt-6">
+                <div class="icon">
+                    <img src="assets/img/icons/footer1-icon1.svg" alt="">
+                </div>
+                <div class="text">
+                    <a href="javascript:void(0)" class="ml-10 gray2 inline-block p-10-0 text-18 leading-18 text _hover1 font-medium">+1
+                        123 456 7890</a>
+                </div>
+            </div>
+        </div>
+        <div class="space20"></div>
+        <div class="vl-offcanvas-social">
+            <h4 class="black1 text-24 mb-20 mt-20 leading-24 font-semibold">Follow Us</h4>
+            <div class="vl-copyright-social2 text-start mt-20">
+                <a href="javascript:void(0)"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="javascript:void(0)"><i class="fa-brands fa-instagram"></i></a>
+                <a href="javascript:void(0)"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="javascript:void(0)"><i class="fa-brands fa-x-twitter"></i></a>
+            </div>
+        </div>
+
+    </div>
+</div>
+<div class="vl-offcanvas-overlay" (click)="closeSidebar()" [ngClass]="{ 'vl-offcanvas-overlay-open': isMenuOpen }">
+</div>

@@ -1,0 +1,35 @@
+<div class="service4 sp shape-bg4">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 m-auto text-center">
+                <div class="heading4">
+                    <span data-aos="fade-left" data-aos-duration="900" class="sub-title4">our consulting service</span>
+                    <h2
+                        class="black3 text-44 sm:text-30 md:text-30 leading-52 md:leading-36 sm:leading-36 font-semibold text-anime-style-3">
+                        Empowering Your Success Through Expert Consulting</h2>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mt-30">
+            <div *ngFor="let service of services.slice(0,6)" class="col-lg-4 mt-30" data-aos="zoom-in-up" data-aos-duration="1200">
+                <div class="service4-box">
+                    <div class="icon">
+                        <img [src]="service.icon2" alt="">
+                    </div>
+                    <a routerLink="/service-details" class="arrow"><i class="fas fa-arrow-right"></i></a>
+                    <div class="heading1">
+                        <h4><a routerLink="/service-details"
+                                class="black1 font-24 text leading-24 font-semibold">{{service.title}}</a>
+                        </h4>
+                        <p class="text-18 leading-26 font-medium gray1 mt-16 mb-16">{{service.description}}</p>
+                        <p class="number text-18 leading-26 font-medium">{{service.id.toString().padStart(2,"0")}}</p>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+    <img src="assets/img/shapes/service4-shape.png" alt="" class="shape">
+</div>

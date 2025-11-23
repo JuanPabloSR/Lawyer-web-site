@@ -1,0 +1,130 @@
+@use '../../utils/' as * ;
+
+/*
+::::::::::::::::::::::::::
+ FOOTER AREA 3 CSS
+::::::::::::::::::::::::::
+*/
+
+.vl-copyright1 {
+    &._dv-top {
+        border-top: 1px solid var(--vtc-border-4);
+    }
+}
+
+.vl-footer-thumb3 {
+    width: 70px;
+    margin-bottom: 16px;
+    img {
+        width: 100%;
+        border-radius: 8px;
+        transition: all .4s;
+    }
+
+    a {
+        display: inline-block;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        height: 26px;
+        width: 26px;
+        text-align: center;
+        line-height: 26px;
+        color: var(--vtc-bg-white1);
+        background-color: var(--vtc-bg-main6);
+        margin-top: -13px;
+        margin-left: -13px;
+        border-radius: 4px;
+        transition: all .4s;
+        transform: scale(1.2);
+        opacity: 0;
+    }
+
+    &:hover {
+        transition: all .4s;
+        img {
+            transition: all .4s;
+            filter: grayscale(1);
+        }
+        a {
+            transform: scale(1);
+            transition: all .4s;
+            opacity: 1;
+        }
+    }
+}
+
+.vl-footer-thumb-box {
+    column-gap: 16px;
+}
+
+.vl-footer-area1 {
+    padding-top: 213px;
+}
+
+.vl-copyright-social3 {
+    a {
+        display: inline-block;
+        height: 36px;
+        width: 36px;
+        text-align: center;
+        line-height: 36px;
+        border-radius: 50%;
+        background-color: var(--vtc-bg-common-9);
+        color: var(--vtc-text-title-1);
+        font-size: 16px;
+        margin-right: 3px;
+        transition: all .4s;
+
+        &:hover {
+            transition: all .4s;
+            background-color: var(--vtc-bg-main6);
+            color: var(--vtc-bg-white1);
+        }
+    }
+}
+
+.vl-footer-list {
+    a {
+        transition: all .4s;
+        
+        &:hover {
+            transform: translateX(5px);
+            transition: all .4s;
+        }
+    }
+}
+
+.vl-footer-area3 {
+    .black-logo {
+        display: block;
+    }
+    .white-logo {
+        display: none;
+    }
+}
+
+.dark-mode {
+    .vl-footer-area3 {
+        .black-logo {
+            display: none;
+        }
+        .white-logo {
+            display: block;
+        }
+    }   
+    
+        .single-contact {
+            .icon {
+                img {
+                    filter: brightness(40);
+                }
+            }
+        }
+}
+
+/*
+::::::::::::::::::::::::::
+ FOOTER AREA 3 CSS
+::::::::::::::::::::::::::
+*/

@@ -1,0 +1,56 @@
+<div class="hero1 bg-cover _relative">
+    <ngx-slick-carousel [config]="sliderConfig" class="hero1-sliders">
+        <div *ngFor="let slide of heroSlides" ngxSlickItem class="hero1-single-slider overflow-hidden _relative"
+            style="background-image: url(assets/img/bg/hero1-bg.jpg);">
+
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6">
+                        <div class="heading mt-50 md:mt-100 sm:mt-100 _relative z-9">
+                            <span class="sub-title text-18 leading-18 flex white1 uppercase mb-20 font-medium"><img
+                                    src="assets/img/icons/span1.svg" alt="">CONSULTORIA ESPECIALIZADA</span>
+                            <h1
+                                class="text-56 md:text-40 sm:text-40 leading64 inline-block white1 font-semibold text-anime-style-3">
+                                Unlock The Future Of Business Consulting</h1>
+                            <p class="mt-16 text-18 leading-26 inline-block white1">We specialize in providing tailored
+                                consulting services that <br> drive success an transformation for businesses of all
+                                sizes.</p>
+                            <div class="button mt-30">
+                                <a class="theme-btn1" routerLink="/home-1"><span class="text">Schedule A
+                                        Consultation</span><span class="arrow-all"><span class="arrow1"><i
+                                                class="fa-solid fa-arrow-right"></i></span><span class="arrow2"><i
+                                                class="fa-solid fa-arrow-right"></i></span></span></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="all-images _relative">
+                            <div class="circle-area">
+                                <div class="circle-arrow">
+                                    <a routerLink="/services"><img src="assets/img/icons/hero1-circle-arrow.svg"
+                                            alt=""></a>
+                                </div>
+                                <div class="circle-bg round-circle">
+                                    <img src="assets/img/shapes/hero1-circle-bg.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="main-image">
+                <img [src]="slide.image" alt="">
+            </div>
+            <div class="main-image-shape">
+                <img src="assets/img/shapes/hero1-shape.png" alt="">
+            </div>
+
+        </div>
+
+    </ngx-slick-carousel>
+
+    <div class="hero1-arrow-buttons">
+        <button class="tes2-prev-arrow"><i class="fa-solid fa-angle-left"></i></button>
+        <button class="tes2-next-arrow"><i class="fa-solid fa-angle-right"></i></button>
+    </div>
+</div>

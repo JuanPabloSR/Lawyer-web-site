@@ -1,0 +1,53 @@
+<div class="blog2 sp white-bg4">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 m-auto text-center">
+                <div class="heading4">
+                    <span data-aos-duration="800" data-aos="fade-left" class="sub-title4">our latest blog</span>
+                    <h2
+                        class="black3 text-44 sm:text-30 md:text-30 leading-52 md:leading-36 sm:leading-36 font-semibold text-anime-style-3">
+                        Explore Our Latest Insights</h2>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mt-30">
+            <div
+            class="col-lg-6 col-md-6"
+            *ngFor="let post of blogPosts"
+            data-aos="zoom-in-up"
+            data-aos-duration="1200"
+          >
+            <div class="vl-blog-2-item white-bg2 mt-30">
+              <div class="vl-blog-3-thumb overflow-hidden _relative">
+                <img class="w-full" [src]="post.image" alt="">
+              </div>
+              <div class="vl-blog-2-content p-28">
+                <div class="vl-blog1-meta">
+                  <a href="javascript:void(0)" class="date text-18 text _hover3 leading-18 inline-block black2 font-semibold">
+                    <img src="assets/img/icons/blog1-date.svg" alt=""> {{ post.date }}
+                  </a>
+                  <a href="javascript:void(0)" class="user text _hover3 text-18 leading-18 inline-block black2 mb-16 font-semibold">
+                    <img src="assets/img/icons/blog1-user.svg" alt=""> By {{ post.name }}
+                  </a>
+                </div>
+                <h4>
+                  <a routerLink="/blog-details" class="text-24 mt-1 text _hover3 leading-32 inline-block black2 font-semibold">
+                    {{ post.title }}
+                  </a>
+                </h4>
+                <p class="text-18 leading-26 font-medium mt-10">
+                  {{ post.description }}
+                </p>
+                <a class="learn3" routerLink="/service-details">
+                  <span class="arrow-all">
+                    <span class="arrow1"><i class="fas fa-arrow-right"></i></span>
+                    <span class="arrow2"><i class="fas fa-arrow-right"></i></span>
+                  </span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+</div>

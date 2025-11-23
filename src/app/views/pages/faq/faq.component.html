@@ -1,0 +1,63 @@
+<app-page-header title="FAQ Question" />
+
+<div class="faq-page-sec sp">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 m-auto text-center">
+                <h2 class="black1 text-44 sm:text-30 md:text-30 leading-44 font-semibold text-anime-style-3">Frequently
+                    Asked Question</h2>
+            </div>
+        </div>
+        <div class="row mt-30">
+            <div class="col-lg-6">
+                <div class="faq-content mt-30">
+                    <div ngbAccordion [closeOthers]="true" class="accordion1 accordion" id="accordionExample">
+                        <div *ngFor="let faq of faqs1;let i = index" [collapsed]="i !== activeItemIndex"
+                            [class.active]="i === activeItemIndex" (shown)="activeItemIndex = i"
+                            ngbAccordionItem="{{faq.id}}" class="accordion-item">
+                            <h2 ngbAccordionHeader id="headingOne">
+                                <button ngbAccordionButton type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    {{faq.question}}
+                                </button>
+                            </h2>
+                            <div id="collapseOne" ngbAccordionCollapse aria-labelledby="headingOne"
+                                data-bs-parent="#accordionExample">
+                                <div ngbAccordionBody class="accordion-body">
+                                    {{faq.answer}}
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-6">
+                <div class="faq-content mt-30">
+                    <div ngbAccordion [closeOthers]="true" class="accordion1 accordion" id="accordionExample">
+                        <div *ngFor="let faq of faqs2;let i = index" [collapsed]="i !== activeItemIndex2"
+                        [class.active]="i === activeItemIndex2" (shown)="activeItemIndex2 = i"
+                          
+                            ngbAccordionItem="{{faq.id}}" class="accordion-item">
+                            <h2 ngbAccordionHeader id="headingOne">
+                                <button ngbAccordionButton type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    {{faq.question}}
+                                </button>
+                            </h2>
+                            <div id="collapseOne" ngbAccordionCollapse aria-labelledby="headingOne"
+                                data-bs-parent="#accordionExample">
+                                <div ngbAccordionBody class="accordion-body">
+                                    {{faq.answer}}
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>

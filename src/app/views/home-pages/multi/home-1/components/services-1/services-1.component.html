@@ -1,0 +1,64 @@
+<div class="service1 sp sec-bg1 shape-bg1">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="heading1 _relative z-3">
+                    <span data-aos="fade-left" data-aos-duration="900"
+                        class="sub-title1 sec-bg2 rounded-6 p-8-12 text-18 leading-18 inline-block sub-text1 uppercase mb-20 font-medium">Our
+                        Services</span>
+                    <h2 class="black1 text-44 sm:text-30 md:text-30 leading-44 font-semibold text-anime-style-3">
+                        Empowering Your Business Through Expert Solutions</h2>
+                    <p data-aos="fade-right" data-aos-duration="800" class="mt-16 text-18 leading-26 font-medium gray1">
+                        Our tailor approach ensures that every solution aligns with your specific goals whether
+                        optimizing efficiency, driving innovation.</p>
+                    <div class="mt-30" data-aos="fade-right" data-aos-duration="1100">
+                        <a class="theme-btn1" routerLink="/our-services"><span class="text">Schedule A Consultation</span><span
+                                class="arrow-all"><span class="arrow1"><i
+                                        class="fas fa-arrow-right"></i></span><span class="arrow2"><i
+                                        class="fas fa-arrow-right"></i></span></span></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="images _relative z-3 sm:mt-30 md:mt-30">
+                    <div class="image reveal _relative image-anime" appGsapReveal>
+                        <img src="assets/img/service/service1-image.png" alt="">
+                    </div>
+                    <div class="shape round-circle">
+                        <img src="assets/img/shapes/about1-shape3.png" alt="">
+                    </div>
+                    <div class="shape2 animate1">
+                        <img src="assets/img/shapes/service1-shape1.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row _relative z-3 mt-60" data-aos="fade-up" data-aos-duration="1000">
+            <ngx-slick-carousel [config]="sliderConfig" class="service1-slider">
+
+                <div ngxSlickItem *ngFor="let service of services;" class="service1-single-slider">
+                    <div class="icon">
+                        <img [src]="service.icon" alt="">
+                    </div>
+                    <a routerLink="/service-details" class="arrow"><i class="fas fa-arrow-right"></i></a>
+                    <div class="heading1">
+                        <h4><a routerLink="/service-details"
+                                class="black1 font-24 text _hover1 leading-24 font-semibold">{{service.title}}</a></h4>
+                        <p class="text-18 leading-26 font-medium gray1 mt-16 mb-16">{{service.description}}</p>
+                        <p class="number sub-text1 text-18 leading-26 font-medium">{{service.id.toString().padStart(2,
+                            '0')}}</p>
+                    </div>
+                </div>
+            </ngx-slick-carousel>
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="servie1-arrow-buttons text-end _relative z-3">
+                    <button class="service1-prev-arrow"><i class="fa-solid fa-angle-left"></i></button>
+                    <button class="service1-next-arrow"><i class="fa-solid fa-angle-right"></i></button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

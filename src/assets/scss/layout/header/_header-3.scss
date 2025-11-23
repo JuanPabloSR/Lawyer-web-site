@@ -1,0 +1,70 @@
+@use '../../utils/' as * ;
+
+/*
+::::::::::::::::::::::::::
+ HEADER AREA 3 CSS
+::::::::::::::::::::::::::
+*/
+
+@media screen and (min-width: 769px) {
+    .header3-bg {
+        padding: 20px 38px;
+        border-radius: 8px 8px 8px 8px;
+        position: relative;
+        z-index: 999;
+        margin-top: 20px;
+
+        &::after {
+            content: "";
+            position: absolute;
+            left: 11px;
+            top: 0;
+            height: 100%;
+            width: 98.3%;
+            border-radius: 8px 8px 8px 8px;
+            background-color: var(--vtc-text-white);
+            z-index: -1;
+        }
+
+        &::before {
+            content: "";
+            position: absolute;
+            left: 11px;
+            top: 0;
+            height: 100%;
+            width: 6px;
+            background-color: var(--vtc-bg-main6);
+            z-index: 0;
+            border-radius: 8px 0px 0px 8px
+        }
+    }
+}
+
+.header3-social-wedget {
+    a {
+        display: inline-block;
+        height: 36px;
+        width: 36px;
+        text-align: center;
+        line-height: 36px;
+        border-radius: 50%;
+        background-color: var(--vtc-bg-common-6);
+        color: var(--vtc-text-title-1);
+        font-size: 16px;
+        margin-right: 3px;
+        transition: all .4s;
+
+        &:hover {
+            transition: all .4s;
+            background-color: var(--vtc-bg-main6);
+            color: var(--vtc-bg-white1);
+        }
+    }
+}
+
+
+/*
+::::::::::::::::::::::::::
+ HEADER AREA 3 CSS
+::::::::::::::::::::::::::
+*/

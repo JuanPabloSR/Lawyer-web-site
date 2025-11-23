@@ -1,0 +1,42 @@
+<div class="work4 sp">
+    <div class="container">
+       <div class="row">
+          <div class="col-lg-6 m-auto text-center">
+             <div class="heading4">
+                <span data-aos="fade-left" data-aos-duration="800" class="sub-title4">how it works</span>
+                <h2 class="black3 text-44 sm:text-30 md:text-30 leading-52 md:leading-36 sm:leading-36 font-semibold text-anime-style-3">How Our Consulting Services Work for You</h2>
+             </div>
+          </div>
+       </div>
+       <div class="row">
+        <div
+          class="col-lg-3 col-md-6"
+          *ngFor="let step of workProcessSteps"
+          [attr.data-aos]="'zoom-in-up'"
+          [attr.data-aos-duration]="800 + (step.id * 100)"
+        >
+          <div class="work4-box mt-30">
+            <div class="image-area">
+              <div class="image image-anime">
+                <img [src]="step.image" [alt]="step.title">
+                <div class="number">
+                  <p>{{ step.id | number: '2.0' }}</p>
+                </div>
+              </div>
+            </div>
+            <div class="heading4 mt-20">
+              <h4>
+                <a routerLink="/service-details" class="black1 font-20 text _hover5 leading-20 font-semibold">
+                  {{ step.title }}
+                </a>
+              </h4>
+              <p class="text-18 leading-26 font-medium gray1 mt-16 mb-16">
+                {{ step.description }}
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+ </div>

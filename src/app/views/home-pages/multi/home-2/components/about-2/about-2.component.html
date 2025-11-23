@@ -1,0 +1,73 @@
+<div class="about2 sp overflow-hidden">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-6">
+                <div class="about2-images-all">
+                    <div class="main-shape">
+                        <img class="about2-shape-black" src="assets/img/shapes/about2-image-shape.png" alt="">
+                        <img class="about2-shape-white" src="assets/img/shapes/about2-image-shape2.png" alt="">
+                    </div>
+                    <div class="main-image reveal image-anime" appGsapReveal>
+                        <img src="assets/img/about/about2-main-image.png" alt="">
+                    </div>
+                    <div class="shape1 animate1">
+                        <img src="assets/img/shapes/about2-shape1.png" alt="">
+                    </div>
+                    <div class="shape2">
+                        <img src="assets/img/shapes/about2-shape2.png" alt="">
+                    </div>
+                    <div class="circle-shape">
+                        <div class="circle-shape-bg round-circle">
+                            <img src="assets/img/shapes/about2-circle-bg.svg" alt="">
+                        </div>
+                        <div class="circle-shape-arrow">
+                            <a routerLink="/our-services"><img src="assets/img/shapes/about2-circle-arrow.svg" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="heading2 _relative z-3">
+                    <span data-aos="fade-left" data-aos-duration="800"
+                        class="sub-title2 text-18 leading-18 inline-block black3 uppercase mb-20 font-medium"><img
+                            src="assets/img/icons/span2.svg" alt="">Delivering Results That Matter</span>
+                    <h2 class="black3 text-44 sm:text-30 md:text-30 leading-44 font-semibold text-anime-style-3">
+                        Experience the Difference Advicx’s Expert Consulting</h2>
+                    <p data-aos="fade-left" data-aos-duration="800" class="text-18 leading-26 font-medium gray3 mt-16">
+                        At Advicx, we understand that every business is unique, which is why we offer tailored
+                        consulting solutions that drive real results. </p>
+
+                    <div *ngFor="let item of aboutData; let i = index" [attr.data-aos]="'fade-left'"
+                        [attr.data-aos-duration]="1000 + (i * 200)">
+                        <div class="about3-icon-box">
+                            <div class="">
+                                <div class="icon">
+                                    <img [src]="item.icon" alt="" />
+                                </div>
+                            </div>
+                            <div class="heading2">
+                                <h4>
+                                    <a [href]="item.link" class="black3 font-20 text _hover3 leading-20 font-semibold">
+                                        {{ item.title }}
+                                    </a>
+                                </h4>
+                                <p class="text-18 leading-26 font-medium gray3 mt-10">
+                                    {{ item.description }}
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="mt-30" data-aos="fade-left" data-aos-duration="900">
+                        <a class="theme-btn2" routerLink="/our-services"><span class="text">Schedule A Consultation</span><span
+                                class="arrow-all"><span class="arrow1"><i
+                                        class="fas fa-arrow-right"></i></span><span class="arrow2"><i
+                                        class="fas fa-arrow-right"></i></span></span></a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

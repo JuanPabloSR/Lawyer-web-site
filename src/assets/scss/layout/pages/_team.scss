@@ -1,0 +1,581 @@
+@use '../../utils/' as * ;
+
+/*
+ ::::::::::::::::::::::::::
+  TEAM AREA CSS
+ ::::::::::::::::::::::::::
+ */
+
+// ===== team sytle 1 ====
+
+.team1-box {
+    text-align: center;
+    transition: all .4s;
+    .image-area {
+        background-color: var(--vtc-bg-common-2);
+        border-radius: 8px;
+        overflow: hidden;
+        position: relative;
+        min-height: 260px;
+
+        .image {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+
+            img {
+                transition: all .4s;
+            }
+        }
+
+        .icons {
+            position: absolute;
+            bottom: 30px;
+            left: 50%;
+            margin-left: -95px;
+            transform: translateY(100px);
+            opacity: 0;
+            transition: all .4s;
+            ul {
+                li {
+                    display: inline-block;
+                    a {
+                        display: inline-block;
+                        color: var(--vtc-text-title-2);
+                        height: 40px;
+                        text-align: center;
+                        line-height: 40px;
+                        width: 40px;
+                        border-radius: 50%;
+                        background-color: var(--vtc-bg-white1);
+                        margin: 0px 2px;
+                        transition: all .4s;
+
+                        &:hover {
+                            transition: all .4s;
+                            background-color: var(--vtc-bg-main1);
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    &:hover {
+        .icons {
+            transition: all .4s;
+            transform: translateY(0px);
+            opacity: 1;
+        }
+        transform: translateY(-10px);
+        transition: all .4s;
+
+        .image {
+            img {
+                filter: grayscale(1);
+                transition: all .4s;
+            }
+        }
+    }
+}
+
+.progresbar-area {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+
+    @media #{$md} {
+        justify-content: start;
+        margin-top: 20px;
+    }
+    @media #{$xs} {
+        justify-content: start;
+        margin-top: 20px;
+    }
+    
+    &.right-after {
+        position: relative;
+
+        &::after {
+            content: "";
+            position: absolute;
+            top: 24px;
+            right: -50px;
+            height: 30px;
+            width: 2px;
+            background-color: var(--vtc-bg-common-2);
+        }
+    }
+}
+
+.circle-progress {
+    .progressbar {
+        height: 80px;
+    }
+
+    tspan {
+        position: absolute;
+        top: 30px;
+        left: 20px;
+        fill: var(--vtc-text-sub-title-1);
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 20px; /* 100% */
+    }
+    p {
+        color: var(--vtc-text-sub-title-1);
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 20px; /* 100% */
+        padding-left: 16px;
+    }
+}
+
+// ===== team sytle 1 ====
+
+// ===== team sytle 2 ====
+
+.team2-box {
+    .image-area {
+        background-color: var(--vtc-bg-common-9);
+        border-radius: 16px;
+        min-height: 340px;
+        position: relative;
+        text-align: center;
+
+        .image {
+            position: absolute;
+            bottom: 0;
+            display: flex;
+            justify-content: center;
+            left: auto;
+            right: auto;
+            width: 415px;
+
+            img {
+                transition: all .4s;
+            }
+        }
+
+        .social-icons {
+            position: absolute;
+            right: 57px;
+            bottom: 88px;
+            transform: rotateX(45deg) translateY(75px);
+            opacity: 0;
+            transition: all .4s;
+            ul {
+                li {
+                    a {
+                        display: inline-block;
+                        text-align: center;
+                        height: 44px;
+                        width: 44px;
+                        line-height: 44px;
+                        background-color: var(--vtc-bg-white1);
+                        border-radius: 50%;
+                        position: relative;
+                        z-index: 5;
+                        color: var(--vtc-text-title-4);
+                        font-size: var(--f-fs-font-18);
+                        margin: 3px 0px;
+                        transition: all .4s;
+
+                        &:hover {
+                            background-color: var(--vtc-bg-main4);
+                            color: var(--vtc-bg-white1);
+                            transition: all .4s;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .content-area {
+        background-color: var(--vtc-bg-white6);
+        padding: 28px 24px;
+        border-radius: 16px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: -70px 30px 0px 30px;
+        position: relative;
+        z-index: 4;
+        border-radius: 16px;
+        box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.09);
+
+        .icon {
+            background-color: var(--vtc-bg-main4);
+            height: 50px;
+            width: 50px;
+            text-align: center;
+            line-height: 50px;
+            border-radius: 50%;
+
+            img {
+                transition: all .4s;
+            }
+        }
+
+        .heading {
+            h4 {
+                a {
+                    color: var(--vtc-text-title-3);
+                    font-size: var(--f-fs-font-20);
+                    font-style: normal;
+                    font-weight: var(--f-fw-semibold);
+                    line-height: var(--f-fs-font-20); /* 100% */
+                }
+            }
+            p {
+                color: var(--vtc-text-pera-4);
+                font-size: var(--f-fs-font-16);
+                font-style: normal;
+                font-weight: var(--f-fw-medium);
+                line-height: var(--f-fs-font-16); /* 100% */
+                padding-top: 10px;
+            }
+        }
+    }
+
+    &:hover {
+        transition: all .4s;
+
+        .image-area {
+            .social-icons {
+                transform: rotateX(0deg) translateY(0);
+                transition: all .4s;
+                opacity: 1;
+            }
+
+            .image {
+                img {
+                    transition: all .4s;
+                    filter: grayscale(1);
+                }
+            }
+        }
+        .content-area {
+            .icon {
+                img {
+                    transition: all .4s;
+                    filter: brightness(40);
+                }
+            }
+            .heading {
+                h4 {
+                    a {
+                        &:hover {
+                            color: var(--vtc-bg-main4);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// ===== team sytle 2 ====
+
+// ===== team sytle 3 ====
+
+.team3-box {
+    text-align: center;
+    transition: all .4s;
+    .image-area {
+        background-color: var(--vtc-bg-common-12);
+        border-radius: 8px;
+        overflow: hidden;
+        position: relative;
+        min-height: 260px;
+
+        .image {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+
+            img {
+                transition: all .4s;
+            }
+        }
+
+        .icons {
+            position: absolute;
+            bottom: 30px;
+            left: 50%;
+            margin-left: -95px;
+            transform: translateY(100px);
+            opacity: 0;
+            transition: all .4s;
+            ul {
+                li {
+                    display: inline-block;
+                    a {
+                        display: inline-block;
+                        color: var(--vtc-text-title-2);
+                        height: 40px;
+                        text-align: center;
+                        line-height: 40px;
+                        width: 40px;
+                        border-radius: 50%;
+                        background-color: var(--vtc-bg-white1);
+                        margin: 0px 2px;
+                        transition: all .4s;
+
+                        &:hover {
+                            transition: all .4s;
+                            background-color: var(--vtc-bg-main6);
+                            color: var(--vtc-bg-white1);
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    &:hover {
+        .icons {
+            transition: all .4s;
+            transform: translateY(0px);
+            opacity: 1;
+        }
+        transform: translateY(-10px);
+        transition: all .4s;
+
+        .image {
+            img {
+                filter: grayscale(1);
+                transition: all .4s;
+            }
+        }
+    }
+}
+
+// ===== team sytle 3 ====
+
+// ===== team sytle 4 ====
+
+.team4-box {
+    text-align: center;
+    transition: all .4s;
+    .image-area {
+        position: relative;
+
+        .shape2 {
+            position: absolute;
+            left: 18px;
+            top: -16px;
+            transition: all .6s;
+
+            @media #{$md} {
+                left: 31px;
+            }
+        }
+
+        .image {
+            overflow: hidden;
+            border-radius: 50%;
+            background-color: var(--vtc-bg-common-14);
+            height: 240px;
+            width: 240px;
+            position: relative;
+            margin: auto;
+            .img {
+                position: absolute;
+                bottom: 0;
+                left: 50%;
+                width: 170px;
+                margin-left: -85px;
+                z-index: 2;
+            }
+            .shape1 {
+                position: absolute;
+                z-index: 1;
+                left: 0;
+                top: 0;
+                transform: scale(1.2);
+                opacity: 0.2;
+                transition: all .4s;
+            }
+        }
+
+        .icon-area {
+            position: absolute;
+            bottom: 40px;
+            z-index: 3;
+            left: 50%;
+            margin-left: -75px;
+            transform: translateY(-50px);
+            opacity: 0;
+            transition: all .4s;
+            ul {
+                li {
+                    display: inline-block;
+                    a {
+                        display: inline-block;
+                        width: 44px;
+                        text-align: center;
+                        line-height: 44px;
+                        height: 44px;
+                        border-radius: 50%;
+                        background-color: var(--vtc-bg-white1);
+                        font-size: var(--f-fs-font-18);
+                        color: var(--vtc-bg-main8);
+                        margin: 0px 2px;
+                        transition: all .4s;
+
+                        &:hover {
+                            color: var(--vtc-bg-white1);
+                            background-color: var(--vtc-bg-main8);
+                            transition: all .4s;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    &:hover {
+        transition: all .4s;
+        transform: translateY(-10px);
+        .image-area {
+            .shape1 {
+                opacity: 1;
+                transition: all .4s;
+            }
+
+                .shape2 {
+                    transform: rotate(62deg);
+                    transition: all .4s;
+                 }
+
+                .icon-area {
+                    opacity: 1;
+                    transform: translateY(0);
+                    transition: all .4s;
+                }
+        }
+    }
+}
+
+@media screen and (max-width: 426px) {
+    .team4-box {
+        .image-area {
+            .shape2 {
+                left: 65px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 376px) {
+    .team4-box {
+        .image-area {
+            .shape2 {
+                left: 40px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 321px) {
+    .team4-box {
+        .image-area {
+            .shape2 {
+                left: 12px;
+            }
+        }
+    }
+}
+
+
+// ===== team sytle 4 ====
+
+
+// ===== team sytle 5 ====
+
+.team5-box {
+    text-align: center;
+    transition: all .4s;
+    .image-area {
+        background-color: var(--vtc-bg-common-17);
+        border-radius: 8px;
+        overflow: hidden;
+        position: relative;
+        min-height: 260px;
+
+        .image {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+
+            img {
+                transition: all .4s;
+            }
+        }
+
+        .icons {
+            position: absolute;
+            bottom: 30px;
+            left: 50%;
+            margin-left: -95px;
+            transform: translateY(100px);
+            opacity: 0;
+            transition: all .4s;
+            ul {
+                li {
+                    display: inline-block;
+                    a {
+                        display: inline-block;
+                        color: var(--vtc-text-title-2);
+                        height: 40px;
+                        text-align: center;
+                        line-height: 40px;
+                        width: 40px;
+                        border-radius: 50%;
+                        background-color: var(--vtc-bg-white1);
+                        margin: 0px 2px;
+                        transition: all .4s;
+
+                        &:hover {
+                            transition: all .4s;
+                            background-color: var(--vtc-bg-main12);
+                            color: var(--vtc-bg-white1);
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    &:hover {
+        .icons {
+            transition: all .4s;
+            transform: translateY(0px);
+            opacity: 1;
+        }
+        transform: translateY(-10px);
+        transition: all .4s;
+
+        .image {
+            img {
+                filter: grayscale(1);
+                transition: all .4s;
+            }
+        }
+    }
+}
+
+// ===== team sytle 5 ====
+
+ /*
+ ::::::::::::::::::::::::::
+  TEAM AREA CSS
+ ::::::::::::::::::::::::::
+ */

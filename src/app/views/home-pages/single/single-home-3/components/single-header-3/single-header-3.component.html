@@ -1,0 +1,48 @@
+<app-search-popup [isSearchOpen]="isSearchOpen"/>
+
+<header>
+    <div id="vl-header-sticky" class="vl-header-area3 header-tranperent" stickyScroll>
+        <div class="container header3-bg">
+            <div class="row align-items-center">
+                <div class="col-lg-2 col-md-6 col-6">
+                    <div class="vl-logo">
+                        <a routerLink="/home-1" class="header1-logo-block"><img src="assets/img/logo/header-logo1.png" alt=""></a>
+                        <a routerLink="/home-1" class="header1-logo-white"><img src="assets/img/logo/white-logo.png" alt=""></a>
+                    </div>
+                </div>
+                <div class="col-lg-7 d-none d-lg-block">
+                    <div class="vl-main-menu text-center">
+                        <nav class="vl-mobile-menu-active">
+                            <ul id="list-example">
+                                <li *ngFor="let item of menuItems" (click)="scroll.scrollTo(item)"
+                                class="cursor-pointer"><a
+                                    [class.active]="scroll.activeSection === item"
+                                    class="list-group-item list-group-item-action"><span>{{item | titleCaseFromKebab}}</span></a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-6">
+                    <div class="vl-header1-right d-none d-lg-flex">
+                      <div class="vl-search-top">
+                         <button (click)="openSearch()" class="search-open-btn"><i class="fas fa-magnifying-glass"></i></button>
+                      </div>
+                      <div class="header2-social-wedget gap-1 d-flex align-items-center flex-wrap">
+                         <a href="javascript:void(0)"><i class="fa-brands fa-facebook-f"></i></a>
+                         <a href="javascript:void(0)"><i class="fa-brands fa-instagram"></i></a>
+                         <a href="javascript:void(0)"><i class="fa-brands fa-linkedin-in"></i></a>
+                         <a href="javascript:void(0)"><i class="fa-brands fa-x-twitter"></i></a>
+                      </div>
+                    </div>
+                    <div class="vl-header-action-item d-block d-lg-none">
+                        <button type="button" class="vl-offcanvas-toggle" (click)="toggleMenu()"> 
+                         <i class="fa-duotone fa-solid fa-bars-staggered"></i>
+                        </button>
+                     </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  </header>
+
+<app-mobile-menu [isMenuOpen]="isMenuOpen" (closeMenuEvent)="closeMenu()" [scrollMenu]="true" />

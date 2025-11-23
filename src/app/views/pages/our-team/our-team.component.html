@@ -1,0 +1,20 @@
+<app-page-header title="Our Team" />
+
+<div class="team1 sp">
+    <div class="container">
+        <div class="row">
+            <div *ngFor="let member of teamMembers" class="col-lg-3 col-md-6" data-aos="fade-up"
+                data-aos-duration="1000">
+                <app-member-card [member]="member" />
+            </div>
+        </div>
+
+        <div class="space50"></div>
+        <div class="row">
+            <div class="col-12 mx-auto">
+               <app-pagination/>
+            </div>
+        </div>
+
+    </div>
+</div>

@@ -1,0 +1,93 @@
+<div class="tes2 sp1 shape-bg2 sp">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-7 m-auto text-center">
+                <div class="heading2">
+                    <span class="sub-title2 text-18 leading-18 inline-block black3 uppercase mb-20 font-medium"><img
+                            src="assets/img/icons/span2.svg" alt="">client feedback</span>
+                    <h2 class="black3 text-44 sm:text-30 md:text-30 leading-44 font-semibold text-anime-style-3">What
+                        Our Clients Are Saying</h2>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-60 md:mt-30 sm:mt-30">
+            <div class="col-lg-5">
+                <div class="img1 image-anime reveal" appGsapReveal>
+                    <img src="assets/img/testimonial/tes2-image.png" alt="">
+                </div>
+            </div>
+
+            <div class="col-lg-6">
+                <ngx-slick-carousel [config]="sliderConfig" class="slider-galeria">
+                    <div ngxSlickItem class="testimonial-slider-content-area" *ngFor="let testimonial of testimonials">
+                        <div class="testimonial-author-area">
+                            <ul>
+                                <li *ngFor="let star of [1,2,3,4,5]"><a href=""><i class="fa-solid fa-star"></i></a>
+                                </li>
+                            </ul>
+                            <div class="space16"></div>
+                            <img src="assets/img/icons/qute1.svg" alt="" class="quito1" />
+                            <img src="assets/img/shapes/tes2-shape.svg" alt="" class="elements18" />
+                            <p>{{ testimonial.message }}</p>
+                        </div>
+                        <div class="space60"></div>
+                        <div class="testimonial-man-info-area">
+                            <div class="man-images-text">
+                                <div class="mans-img">
+                                    <img [src]="testimonial.image" [alt]="testimonial.name" />
+                                </div>
+                                <div class="man-text">
+                                    <a routerLink="/our-team">{{ testimonial.name }}</a>
+                                    <div class="space12"></div>
+                                    <p>{{ testimonial.role }}</p>
+                                </div>
+                            </div>
+                            <img src="assets/img/logo/tes3-logo.png" alt="testimonial logo" />
+                        </div>
+                    </div>
+                </ngx-slick-carousel>
+
+            </div>
+
+            <div class="col-lg-1">
+                <ngx-slick-carousel [config]="sliderThumbsConfig" class="slider-galeria-thumbs text-center d-lg-block d-none">
+                    <!-- <div ngxSlickItem class="testimonial3-sliders-img" *ngFor="let testimonial of testimonials">
+                      <img [src]="testimonial.image" [alt]="testimonial.name" />
+                    </div> -->
+                        <div ngxSlickItem class="testimonial3-sliders-img">
+                          <img src="assets/img/testimonial/tes2-author1.png" alt="">
+                        </div>
+                        <div ngxSlickItem class="testimonial3-sliders-img">
+                         <img src="assets/img/testimonial/tes2-author2.png" alt="">
+                        </div>
+                        <div ngxSlickItem class="testimonial3-sliders-img">
+                         <img src="assets/img/testimonial/tes2-author3.png" alt="">
+                        </div>
+                        <div ngxSlickItem class="testimonial3-sliders-img">
+                         <img src="assets/img/testimonial/tes2-author4.png" alt="">
+                        </div>
+                        <div ngxSlickItem class="testimonial3-sliders-img">
+                         <img src="assets/img/testimonial/tes2-author1.png" alt="">
+                        </div>
+                        
+                        <div ngxSlickItem class="testimonial3-sliders-img">
+                          <img src="assets/img/testimonial/tes2-author1.png" alt="">
+                        </div>
+                        <div ngxSlickItem class="testimonial3-sliders-img">
+                         <img src="assets/img/testimonial/tes2-author2.png" alt="">
+                        </div>
+                        <div ngxSlickItem class="testimonial3-sliders-img">
+                         <img src="assets/img/testimonial/tes2-author3.png" alt="">
+                        </div>
+                        <div ngxSlickItem class="testimonial3-sliders-img">
+                         <img src="assets/img/testimonial/tes2-author4.png" alt="">
+                        </div>
+                        <div ngxSlickItem class="testimonial3-sliders-img">
+                         <img src="assets/img/testimonial/tes2-author1.png" alt="">
+                        </div>
+               
+                  </ngx-slick-carousel>
+            </div>
+        </div>
+    </div>
+</div>

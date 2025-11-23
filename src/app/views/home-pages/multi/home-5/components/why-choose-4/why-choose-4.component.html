@@ -1,0 +1,55 @@
+<div class="choose5 sp shape-bg5">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="heading5">
+                    <span class="sub-title5">Why Choose Us</span>
+                    <h2
+                        class="black3 text-44 sm:text-30 md:text-30 leading-52 md:leading-36 sm:leading-36 font-semibold text-anime-style-3">
+                        Why Choose Advicx: Tailored Strategies, Proven An Results</h2>
+                    <p data-aos="fade-left" data-aos-duration="800" class="text-18 leading-26 font-medium gray3 mt-16">
+                        Our team of dedicattion professionals works closely with each client the provide custom
+                        insurance solution that offer both our insurance.</p>
+                </div>
+                <div class="row choose-boxs _relative z-6">
+                    <div class="col-md-4" *ngFor="let feature of features">
+                        <div class="choose5-box mt-30">
+                            <div class="icon">
+                                <img [src]="feature.icon" alt="">
+                            </div>
+                            <div class="content">
+                                <h4><a routerLink="/case-details">{{ feature.title }}</a></h4>
+                                <p>{{ feature.description }}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="button mt-40">
+                    <a class="theme-btn6" routerLink="/case-study"><span class="text">Discover Our Solutions</span><span
+                            class="arrow-all"><span class="arrow1"><i class="fas fa-arrow-right"></i></span><span
+                                class="arrow2"><i class="fas fa-arrow-right"></i></span></span></a>
+                </div>
+            </div>
+
+            <div class="col-lg-6">
+                <div class="row _relative z-3 md:mt-30 sm:mt-30">
+                    <div class="col-md-6">
+                        <div class="image">
+                            <img class="w-full" src="assets/img/others/choose5-image1.png" alt="">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="image">
+                            <img class="w-full" src="assets/img/others/choose5-image2.png" alt="">
+                        </div>
+                    </div>
+                    <img src="assets/img/shapes/choose5-shape1.png" alt="" class="shape1 animate1">
+                    <img src="assets/img/shapes/choose5-shape2.png" alt="" class="shape2 animate3">
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>

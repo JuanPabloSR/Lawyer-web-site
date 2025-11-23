@@ -1,0 +1,50 @@
+<app-page-header title="Testimonials" />
+
+<div class="tes1 sp sec-bg1 shape-bg1 overflow-hidden">
+    <div class="container">
+        <app-testimonial-swiper />
+
+    </div>
+</div>
+
+<div class="tes-page-sec sp">
+    <div class="container">
+        <div class="row">
+            <div *ngFor="let testimonial of testimonials" class="col-lg-4 col-md-6 mb-30">
+                <div class="tes-page-box">
+                    <div class="qoute">
+                        <img src="assets/img/icons/page-qoute.svg" alt="">
+                    </div>
+                    <div class="stars">
+                        <ul>
+                            <li><i class="fa-solid fa-star"></i></li>
+                            <li><i class="fa-solid fa-star"></i></li>
+                            <li><i class="fa-solid fa-star"></i></li>
+                            <li><i class="fa-solid fa-star"></i></li>
+                            <li><i class="fa-solid fa-star"></i></li>
+                        </ul>
+                    </div>
+                    <p>{{testimonial.message}}</p>
+
+                    <div class="bottom-area">
+                        <div class="image">
+                            <img [src]="testimonial.image" alt="">
+                        </div>
+                        <div class="text">
+                            <a href="javascript:void(0)">{{testimonial.name}}</a>
+                            <p>{{testimonial.role}}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="space50"></div>
+        <div class="row">
+            <div class="col-12 m-auto">
+                <app-pagination/>
+            </div>
+        </div>
+
+    </div>
+</div>

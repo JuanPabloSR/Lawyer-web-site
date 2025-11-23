@@ -1,0 +1,47 @@
+<div class="case3 sp shape-bg3 z-1">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-5">
+                <div class="heading3">
+                    <span
+                        class="sub-title3 leading-18 text-18 mb-16 inline-block font-semibold uppercase sub-text3">case
+                        studies</span>
+                    <h2
+                        class="black3 text-44 sm:text-30 md:text-30 leading-52 md:leading-36 sm:leading-36 font-semibold text-anime-style-3">
+                        Let’s Discover Our All Client Recent Project</h2>
+                </div>
+            </div>
+            <div class="col-lg-7">
+                <div data-aos="fade-up" data-aos-duration="800"
+                    class="case3-arrow-buttons text-end _relative z-3 sm:text-start md:text-start">
+                    <button class="case3-prev-arrow"><i class="fa-solid fa-angle-left"></i></button>
+                    <button class="case3-next-arrow"><i class="fa-solid fa-angle-right"></i></button>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-60">
+            <div class="col-lg-12">
+                <ngx-slick-carousel [config]="sliderConfig" class="case3-slider" data-aos="fade-up"
+                    data-aos-duration="900">
+                    <div ngxSlickItem class="case3-single-slider" *ngFor="let case of caseStudies">
+                        <div class="image _relative image-anime">
+                            <img [src]="case.image" alt="">
+                        </div>
+                        <div class="content-area">
+                            <div class="heading">
+                                <p>{{ case.category }}</p>
+                                <h4><a routerLink="/case-details">{{ case.title }}</a></h4>
+                            </div>
+                            <a class="learn2" routerLink="/case-details">
+                                <span class="arrow-all">
+                                    <span class="arrow1"><i class="fas fa-arrow-right"></i></span>
+                                    <span class="arrow2"><i class="fas fa-arrow-right"></i></span>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                </ngx-slick-carousel>
+            </div>
+        </div>
+    </div>
+</div>

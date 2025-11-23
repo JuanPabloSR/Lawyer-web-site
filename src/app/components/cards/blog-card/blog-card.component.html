@@ -1,0 +1,23 @@
+<div class="vl-blog-1-item white-bg2 mt-30">
+    <div class="vl-blog-3-thumb overflow-hidden _relative">
+        <img class="w-full" [src]="blog.image" alt="">
+        <div class="vl-blog1-meta">
+            <a href="javascript:void(0)"
+                class="user text _hover1 rounded-6 p-8-12 white-bg1  text-18 leading-18 inline-block black2 mb-20 font-semibold"><img
+                    src="assets/img/icons/blog1-user.svg" alt=""> By {{blog.name}}</a>
+        </div>
+    </div>
+    <div class="vl-blog-1-content p-28">
+        <div class="vl-blog1-meta">
+            <a href="javascript:void(0)" class="date text-18 text _hover1 leading-18 inline-block black1 font-semibold"><img
+                    src="assets/img/icons/blog1-date.svg" alt=""> {{blog.date}}</a>
+        </div>
+        <h4><a routerLink="/blog-details"
+                class="text-20 mt-12 text _hover1 leading-28 inline-block black1 font-semibold">
+                {{blog.title}}</a></h4>
+        <a routerLink="/blog-details"
+            class="learn1 text _hover1 font-18 uppercase mt-20 leading-18 inline-block black1 font-semibold">learn
+            more <span class="arrow1"><i class="fas fa-arrow-right"></i></span><span class="arrow2"><i
+                    class="fas fa-arrow-right"></i></span></a>
+    </div>
+</div>

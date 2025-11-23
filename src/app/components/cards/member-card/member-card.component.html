@@ -1,0 +1,20 @@
+<div class="{{containerClass ?? 'team1-box'}} mt-30">
+    <div class="image-area">
+        <div class="image">
+            <img [src]="member.image" alt="">
+        </div>
+        <div class="icons">
+            <ul>
+                <li><a href="javascript:void(0)"><i class="fa-brands fa-x-twitter"></i></a></li>
+                <li><a href="javascript:void(0)"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                <li><a href="javascript:void(0)"><i class="fa-brands fa-instagram"></i></a></li>
+                <li><a href="javascript:void(0)"><i class="fa-brands fa-facebook-f"></i></a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="text-content">
+        <h4><a href="javascript:void(0)"
+                class="black1 font-20 text mt-24 _hover1 leading-20 font-semibold inline-block">{{member.name}}</a></h4>
+        <p class="text-16 leading-16 font-medium gray1 mt-10">{{member.role}}</p>
+    </div>
+</div>

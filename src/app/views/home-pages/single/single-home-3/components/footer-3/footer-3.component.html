@@ -1,0 +1,90 @@
+<footer class="white-bg5 vl-footer-area3">
+    <div>
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
+                    <div class="vl-footer-widget mb-50">
+                        <div class="vl-footer-logo black-logo">
+                            <a routerLink="/home-1"><img src="assets/img/logo/header-logo1.png" alt=""></a>
+                        </div>
+                        <div class="white-logo">
+                            <a routerLink="/home-1"><img src="assets/img/logo/white-logo.png" alt=""></a>
+                        </div>
+                        <div class="vl-footer-text">
+                            <p class="gray1 text-18 leading-28 mt-16 font-medium">Desires to obtain pain of it because
+                                it is pain but occasionally circum We work with a passion of challenges </p>
+                        </div>
+                        <div class="vl-copyright-social3 text-start mt-20">
+                            <a href="javascript:void(0)"><i class="fa-brands fa-facebook-f"></i></a>
+                            <a href="javascript:void(0)"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="javascript:void(0)"><i class="fa-brands fa-linkedin-in"></i></a>
+                            <a href="javascript:void(0)"><i class="fa-brands fa-x-twitter"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="vl-footer-widget mb-50 ml-70 md:ml-0 sm:ml-0">
+                        <h4 class="black1 text-24 mb-30 leading-24 mb-10 font-semibold">Quick Links</h4>
+                        <div class="vl-footer-list">
+                            <ul>
+                                <li *ngFor="let link of quickLinks">
+                                    <a [routerLink]="link.url"
+                                        class="gray2 inline-block p-10-0 text-18 leading-18 text _hover4 font-medium">
+                                        {{ link.label }}
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="vl-footer-widget mb-50 ml-10 md:ml-0 sm:ml-0">
+                        <h4 class="black1 text-24 mb-30 leading-24 mb-8 font-semibold">Contact Us</h4>
+                        <div class="vl-footer-contact">
+                            <div class="single-contact flex align-items-center mt-6"
+                                *ngFor="let contact of contactItems; let i = index">
+                                <div class="icon">
+                                    <img [src]="contact.icon" alt="">
+                                </div>
+                                <div class="text">
+                                    <a [routerLink]="contact.href"
+                                        class="ml-10 gray2 inline-block p-10-0 text-18 leading-18 text _hover4 font-medium">
+                                        {{ contact.text }}
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="vl-footer-widget mb-50 ml-60 sm:ml-0 md:ml-0">
+                        <h4 class="black1 text-24 mb-30 leading-24 mb-10 font-semibold">Instagram Post</h4>
+                        <div class="vl-footer-thumb-wrap pt-10">
+                            <div class="vl-footer-thumb-box d-flex" *ngFor="let row of [0, 1]">
+                                <div class="vl-footer-thumb3 _relative"
+                                    *ngFor="let img of instagramFeed.slice(row * 3, row * 3 + 3)">
+                                    <img [src]="img" alt="" class="w-full" />
+                                    <div class="vl-footer-thumb-icon">
+                                        <a href="javascript:void(0)"><i class="fa-brands fa-instagram"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row vl-copyright1 _dv-top">
+            <div class="col-xl-6 m-auto text-center">
+                <p class="black1 text-18 leading-18 font-medium p-24-0">© Copyright {{currentYear}} -Advicx. All Right
+                    Reserved</p>
+            </div>
+        </div>
+    </div>
+
+</footer>

@@ -1,0 +1,62 @@
+@use '../../utils/' as * ;
+
+  /*
+ ::::::::::::::::::::::::::
+  others AREA CSS
+ ::::::::::::::::::::::::::
+ */
+
+ .consultation {
+    padding: 80px 0px;
+
+    .consultation-box {
+        border-radius: 8px;
+        border: 1px solid rgba(255, 255, 255, 0.10);
+        background: rgba(255, 255, 255, 0.10);
+        backdrop-filter: blur(20px);
+        padding: 24px;
+        display: flex;
+        align-items: center;
+
+        .icon {
+            height: 60px;
+            width: 60px;
+            text-align: center;
+            line-height: 60px;
+            background-color: var(--vtc-bg-main4);
+            border-radius: 50%;
+        }
+        .text {
+            padding-left: 16px;
+            p {
+                color: var(--vtc-text-pera-3);
+                font-size: var(--f-fs-font-16);
+                font-style: normal;
+                font-weight: var(--f-fw-normal);
+                line-height: var(--f-fs-font-16); /* 100% */
+            }
+            a {
+                display: inline-block;
+                color: var(--vtc-bg-white1);
+                font-size: var(--f-fs-font-20);
+                font-style: normal;
+                font-weight: var(--f-fw-semibold);
+                line-height: var(--f-fs-font-20); /* 100% */
+                transition: all .4s;
+                padding-top: 10px;
+
+                &:hover {
+                    transition: all .4s;
+                    color: var(--vtc-bg-main4);
+                }
+            }
+        }
+    }
+ }
+
+
+/*
+ ::::::::::::::::::::::::::
+  others AREA CSS
+ ::::::::::::::::::::::::::
+ */

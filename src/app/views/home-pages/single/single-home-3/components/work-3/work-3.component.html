@@ -1,0 +1,35 @@
+<div class="work3 sp">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 m-auto text-center">
+                <div class="heading3">
+                    <span data-aos="fade-left" data-aos-duration="900"
+                        class="sub-title3 leading-18 text-18 mb-16 inline-block font-semibold uppercase sub-text3">how
+                        it works</span>
+                    <h2
+                        class="black3 text-44 sm:text-30 md:text-30 leading-52 md:leading-36 sm:leading-36 font-semibold text-anime-style-3">
+                        Advicx Work Process</h2>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-30 work-bxs-sec z-1">
+            <div class="col-lg-3 col-md-6" *ngFor="let step of steps; let i = index" [attr.data-aos]="'zoom-in-up'"
+                [attr.data-aos-duration]="[1200, 1000, 1300, 800][i]">
+                <div class="work3-box text-center mt-30">
+                    <div class="image _relative image-anime">
+                        <img [src]="step.image" alt="">
+                    </div>
+                    <div class="number">{{ step.id }}</div>
+                    <h4>
+                        <a routerLink="/case-details"
+                            class="black3 font-24 text _hover4 leading-24 mt-20 inline-block font-semibold">
+                            {{ step.title }}
+                        </a>
+                    </h4>
+                    <p class="text-18 leading-26 font-medium gray2 mt-16">{{ step.description }}</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>

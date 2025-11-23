@@ -1,0 +1,84 @@
+<article>
+    <div class="details-content">
+        <div class="image">
+            <img src="assets/img/others/case-details-image.png" alt="">
+        </div>
+        <div class="heading mt-30">
+            <h2 class="black1 text-38 sm:text-30 md:text-30 leading-38 font-semibold text-anime-style-3">
+                Business Strategic Marketing</h2>
+            <p class="black2 font-18 leading-26 gray1 font-medium mt-16">In today's fast-evolving
+                business landscape, having a clear, actionable strategy is key to sustainable
+                success. Our Business Strategy and Planning services are designed to help companies
+                define their vision, set achievable goals, and develop a structured.</p>
+            <p class="black2 font-18 leading-26 gray1 font-medium mt-16">In today’s competitive
+                market, a well-defined marketing strategy is essential driving growth and
+                establishing a strong brand presence. Our Business Strategic Marketing services
+                focus on creating customized, data-driven marketing plans that align with.</p>
+        </div>
+    </div>
+</article>
+
+<article>
+    <div class="details-content mt-50">
+        <div class="heading mt-30">
+            <h2 class="black1 text-32 sm:text-30 md:text-30 leading-32 font-semibold">New
+                Opportunities Tailored Strategic Planning</h2>
+            <p class="black2 font-18 leading-26 gray1 font-medium mt-16">Every business is unique,
+                and so are the challenges and opportunities it faces. Our on tailored Strategic
+                Planning services are designed to help you unlock new avenues for growth and
+                success. We don’t believe in one-size-fits-all solutions; instead, we take.</p>
+            <p class="black2 font-18 leading-26 gray1 font-medium mt-16">We don’t believe in
+                one-size-fits-all solutions; instead, we take a customize approach to understand
+                your specific goals, market position, and competitive landscape. By on combining
+                in-depth market research, data analysis, an our extensive best consulting.</p>
+        </div>
+        <div class="row mt-10">
+            <div class="col-lg-4 col-md-6" *ngFor="let benefit of benefits">
+              <ul>
+                <li class="detials-check-list2">
+                  <span class="check"><i class="fa-solid fa-check"></i></span>
+                  {{ benefit }}
+                </li>
+              </ul>
+            </div>
+          </div>
+          
+    </div>
+</article>
+
+<article>
+    <div class="details-content mt-50">
+        <div class="heading mt-30">
+            <h2 class="black1 text-32 sm:text-30 md:text-30 leading-32 font-semibold">Unlock Growth
+                Targeted Marketing Strategies</h2>
+            <p class="black2 font-18 leading-26 gray1 font-medium mt-16">Effective marketing is more
+                than just visibility-it’s about reaching the right audience with the right message
+                at the right time. Our Business Strategic Marketing approach.</p>
+        </div>
+
+        <div class="about-page-progress-area">
+            <div *ngFor="let item of progressData; let last = last">
+              <div class="about-page-progress">
+                <div class="text-area">
+                  <p>{{ item.title }}</p>
+                  <p>{{ item.value }}%</p>
+                </div>
+                <div class="progress">
+                  <div
+                    class="progress-bar"
+                    [style.width.%]="item.value"
+                    role="progressbar"
+                    [attr.aria-valuenow]="item.value"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  ></div>
+                </div>
+              </div>
+          
+              <div class="space30" *ngIf="!last"></div>
+            </div>
+          </div>
+          
+
+    </div>
+</article>

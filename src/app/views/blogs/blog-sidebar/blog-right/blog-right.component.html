@@ -1,0 +1,29 @@
+<app-page-header title="Blog Right Sidebar" />
+
+<div class="blog-sidebar-page sp">
+    <div class="container">
+        <div class="row">
+
+            <div class="col-lg-8">
+                <div class="row mr-30 sm:ml-0 md:ml-0" style="margin-top: -30px;">
+                    <div *ngFor="let blog of blogs.slice(0,8)" class="col-md-6">
+                        <app-blog-card [blog]="blog" />
+                    </div>
+                </div>
+
+                <div class="space50"></div>
+                <div class="row">
+                    <div class="col-12 m-auto">
+                        <app-pagination />
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="col-lg-4">
+                <app-blog-sidebar />
+            </div>
+
+        </div>
+    </div>
+</div>
