@@ -69,7 +69,7 @@ export class MobileMenuComponent {
             "isOpen": false,
             "subMenu": [
                 { title: 'About Us', link: '/about' },
-                { title: 'Our Team', link: '/our-team' },
+                { title: 'Nuestro equipo', link: '/our-team' },
                 { title: 'Testimonials', link: '/testimonials' },
                 { title: 'FAQ', link: '/faq' },
                 { title: '404', link: '/error' },

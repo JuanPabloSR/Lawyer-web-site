@@ -6,42 +6,36 @@ import { FaqComponent } from './faq/faq.component';
 import { Error404Component } from './error-404/error-404.component';
 import { ContactComponent } from './contact/contact.component';
 
+
 export const PAGES_ROUTES: Routes = [
     {
-        path: 'pages/about',
+        path: 'acerca-de',
         component: AboutComponent,
-        data: { title: "About"}
-
+        data: { title: "Acerca de" }
     },
     {
-        path: 'pages/our-team',
+        path: 'nuestro-equipo',
         component: OurTeamComponent,
-        data: { title: "Our Team"}
-
+        data: { title: "Nuestro Equipo" }
     },
     {
-        path: 'pages/testimonials',
+        path: 'testimonios',
         component: TestimonialsComponent,
-        data: { title: "Testimonials"}
-
+        data: { title: "Testimonios" }
     },
     {
-        path: 'pages/faq',
+        path: 'preguntas-frecuentes',
         component: FaqComponent,
-        data: { title: "Faq"}
-
+        data: { title: "Preguntas Frecuentes" }
     },
     {
-        path: 'pages/error-404',
+        path: 'error-404',
         component: Error404Component,
-        data: { title: "404"}
-
+        data: { title: "Error 404" }
     },
     {
-        path: 'contact',
+        path: 'contacto',
         component: ContactComponent,
-        data: { title: "Contact"}
-
+        data: { title: "Contacto" }
     },
-
 ];

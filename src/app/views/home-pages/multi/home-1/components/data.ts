@@ -2,14 +2,14 @@ import type { HeroSliderType, TestimonialType, WorkStepType } from "@/types";
 
 export const heroSliderData: HeroSliderType[] = [
     {
-        title: 'Unlock The Future Of Business Consulting',
-        description: 'We specialize in providing tailored consulting services that drive success an transformation for businesses of all sizes.',
+        title: 'Expertos en Derecho del Trabajo y Pensiones',
+        description: 'Protegemos sus derechos con más de 15 años de experiencia garantizando el futuro de docentes y trabajadores en Colombia.',
         image: 'assets/img/hero/hero1-slider-image1.png',
     },
     {
-        title: 'Unlock The Future Of Business Consulting',
-        description: 'We specialize in providing tailored consulting services that drive success an transformation for businesses of all sizes.',
-        image: 'assets/img/hero/hero1-slider-image2.png',
+        title: 'Asesoría Jurídica Especializada para el Magisterio',
+        description: 'Soluciones efectivas en FOMAG, cesantías, sanciones por mora y pensiones. Su tranquilidad y justicia son nuestra prioridad.',
+        image: 'assets/img/hero/hero1-slider-vera1.webp',
     },
 ]
 

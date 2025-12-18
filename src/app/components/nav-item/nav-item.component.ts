@@ -1,7 +1,6 @@
 import { Component, Input } from '@angular/core';
 import { RouterLink } from '@angular/router';
 
-
 interface MenuItem {
     title: string;
     link?: string;
@@ -26,85 +25,74 @@ export class NavItemComponent {
 
     menuItems: MenuItem[] = [
         {
-            title: 'Home',
+            title: 'Páginas',
             icon: 'fa-solid fa-angle-down',
-            megaMenu: [
-                { title: 'Business Consulting 01', link: '/home-1', singleLink: "/single-home-1", image: 'assets/img/demo/demo1.jpg' },
-                { title: 'Business Consulting 02', link: '/home-2', singleLink: "/single-home-2", image: 'assets/img/demo/demo2.jpg' },
-                { title: 'Business Consulting 03', link: '/home-3', singleLink: "/single-home-3", image: 'assets/img/demo/demo3.jpg' },
-                { title: 'Business Consulting 04', link: '/home-4', singleLink: "/single-home-4", image: 'assets/img/demo/demo4.jpg' },
-                { title: 'Business Consulting 05', link: '/home-5', singleLink: "/single-home-5", image: 'assets/img/demo/demo5.jpg' },
+            submenu: [
+                { title: 'Sobre Nosotros', link: '/acerca-de' },
+                { title: 'Nuestro Equipo', link: '/nuestro-equipo' },
+                { title: 'Testimonios', link: '/testimonios' },
+                { title: 'Preguntas Frecuentes', link: '/preguntas-frecuentes' },
+                { title: 'Error 404', link: '/error-404' },
             ],
         },
         {
-            title: 'Pages',
+            title: 'Servicios',
             icon: 'fa-solid fa-angle-down',
             submenu: [
-                { title: 'About Us', link: '/pages/about' },
-                { title: 'Our Team', link: '/pages/our-team' },
-                { title: 'Testimonials', link: '/pages/testimonials' },
-                { title: 'FAQ', link: '/pages/faq' },
-                { title: '404', link: '/pages/error-404' },
-            ],
-        },
-        {
-            title: 'Services',
-            icon: 'fa-solid fa-angle-down',
-            submenu: [
-                { title: 'Our Services', link: '/our-services' },
+                { title: 'Nuestros Servicios', link: '/servicios' },
                 {
-                    title: 'Service Details',
+                    title: 'Detalles de Servicio',
                     submenu: [
-                        { title: "Service Details Left", link: '/service-details/left' },
-                        { title: "Service Details Right", link: '/service-details/right' },
-                        { title: "Service Details", link: '/service-details' }
+                        { title: "Servicio Detalles Izquierda", link: '/servicios/detalles/izquierda' },
+                        { title: "Servicio Detalles Derecha", link: '/servicios/detalles/derecha' },
+                        { title: "Servicio Detalles", link: '/servicios/detalles' }
                     ]
                 },
             ],
         },
         {
-            title: 'Case Study',
+            title: 'Casos de Estudio',
             icon: 'fa-solid fa-angle-down',
             submenu: [
-                { title: 'Case Study', link: '/case-study' },
+                { title: 'Casos de Estudio', link: '/casos-de-estudio' },
                 {
-                    title: 'Case Details',
+                    title: 'Detalles del Caso',
                     submenu: [
-                        { title: "Case Details Left", link: '/case-details/left' },
-                        { title: "Case Details Right", link: '/case-details/right' },
-                        { title: "Case Single", link: '/case-single' }
+                        { title: "Caso Detalles Izquierda", link: '/casos-de-estudio/detalles/izquierda' },
+                        { title: "Caso Detalles Derecha", link: '/casos-de-estudio/detalles/derecha' },
+                        { title: "Caso Único", link: '/casos-de-estudio/unico' }
                     ]
                 },
             ],
         },
         {
-            title: 'Blogs',
+            title: 'Blog',
             icon: 'fa-solid fa-angle-down',
             submenu: [
                 {
-                    title: 'Our Blogs',
+                    title: 'Nuestro Blog',
                     submenu: [
-                        { title: 'Blog 2 Grid', link: '/blog/grid-2' },
-                        { title: 'Blog 3 Grid', link: '/blog/grid-3' },
+                        { title: 'Blog 2 Columnas', link: '/blogs/grid-2' },
+                        { title: 'Blog 3 Columnas', link: '/blogs/grid-3' },
                     ],
                 },
                 {
                     title: 'Blog Sidebar',
                     submenu: [
-                        { title: 'Blog Left', link: '/blog-sidebar/left' },
-                        { title: 'Blog Right', link: '/blog-sidebar/right' },
+                        { title: 'Blog Izquierda', link: '/blogs/sidebar/izquierda' },
+                        { title: 'Blog Derecha', link: '/blogs/sidebar/derecha' },
                     ],
                 },
                 {
-                    title: 'Blog Details',
+                    title: 'Detalles del Blog',
                     submenu: [
-                        { title: 'Blog Details Left', link: '/blog-details/left' },
-                        { title: 'Blog Details Right', link: '/blog-details/right' },
-                        { title: 'Blog Details', link: '/blog-details' },
+                        { title: 'Detalles Izquierda', link: '/blogs/detalles/izquierda' },
+                        { title: 'Detalles Derecha', link: '/blogs/detalles/derecha' },
+                        { title: 'Detalles', link: '/blogs/detalles' },
                     ],
                 },
             ],
         },
-        { title: 'Contact', link: '/contact' },
+        { title: 'Contacto', link: '/contacto' },
     ];
 }

@@ -8,10 +8,24 @@ import { CaseStudies1Component } from "./components/case-studies-1/case-studies-
 import { Team1Component } from "./components/team-1/team-1.component";
 import { Testimonial1Component } from "./components/testimonial-1/testimonial-1.component";
 import { Blogs1Component } from "./components/blogs-1/blogs-1.component";
+import { Header3Component } from "../home-3/components/header-3/header-3.component";
+import { CtaComponent } from '@layouts/components/cta/cta.component';
+import { FooterComponent } from '@app/components/footer/footer.component';
 
 @Component({
   selector: 'app-home-1',
-  imports: [Hero1Component, LayoutComponent, About1Component, Services1Component, Work1Component, CaseStudies1Component, Team1Component, Testimonial1Component, Blogs1Component],
+  imports: [
+    Header3Component, // <-- Agregamos el nuevo Header
+    Hero1Component,
+    About1Component,
+    Services1Component,
+    Work1Component,
+    CaseStudies1Component,
+    Team1Component,
+    Testimonial1Component,
+    Blogs1Component,
+    FooterComponent
+  ],
   templateUrl: './home-1.component.html',
   styles: ``
 })

@@ -1,6 +1,6 @@
 $colors: (
     'text': (
-        'title-1': #0B0916,
+        'title-1': #0B0916,       // Títulos principales (Se mantiene oscuro para legibilidad)
         'title-2': #0B0916,
         'title-3': #0D0E1F,
         'title-4': #0D0E1F,
@@ -8,43 +8,56 @@ $colors: (
         'title-6': #0B0916,
         'title-7': #0A1613,
         'title-8': #0A1613,
-        'sub-title-1': #10343B,
-        'sub-title-2': #024912,
-        'sub-title-3': #E74526,
+        
+        // Aquí aplicamos tu Azul Oscuro a los subtítulos que antes eran verde oscuro
+        'sub-title-1': #005b8a,   // [Vera] Azul Oscuro (Antes #10343B)
+        'sub-title-2': #005b8a,   // [Vera] Azul Oscuro (Antes #024912)
+        'sub-title-3': #E74526,   // (Rojo alerta, se puede dejar igual)
         'sub-title-4': #7246EA,
-        'pera-1': #585858,
+        
+        'pera-1': #58595B,        // [Vera] Gris exacto de tu marca (Antes #585858)
         'pera-2': #37385C,
         'pera-3': #ffffffc5,
         'pera-4': #4E4D59,
         'pera-5': rgba(255, 255, 255, 0.90),
-        'pera-6': #585858,
+        'pera-6': #58595B,        // [Vera] Gris exacto
         'pera-7': #414141,
         'pera-8': #414141,
         'white': #fff,
     ),
     'bg': (
-        'main1': #F0C73C,
-        'main2': #10343B,
-        'main3': #10343B,
+        // --- COLORES PRINCIPALES DE LA PLANTILLA HOME 1 ---
+        'main1': #00a9d4,         // [Vera] TU COLOR ACENTO (Azul Claro). Reemplaza al amarillo #F0C73C
+        'main2': #005b8a,         // [Vera] TU COLOR PRINCIPAL (Azul Oscuro). Reemplaza al #10343B
+        'main3': #005b8a,         // [Vera] Igualamos al principal
+        
+        // Otros colores de otras demos (se pueden ajustar si los usas)
         'main4': #FB8500,
         'main5': #191D88,
-        'main6': #86B03C,
+        'main6': #00a9d4,         // [Vera] Ajustado también por si usas elementos de la Home 3
         'main7': #024912,
         'main8': #E74526,
         'main9': #000052,
         'main10': linear-gradient(90deg, #2E0797 0%, #726EFC 100%),
         'main11': linear-gradient(90deg, #726EFC 0%, #2E0797 100%),
         'main12': #7246EA,
-        'common-1': #10343B,
-        'common-2': #F3F5F5,
+
+        // --- COLORES COMUNES (Fondos, secciones) ---
+        'common-1': #005b8a,      // [Vera] Fondo Oscuro Principal (Antes #10343B)
+        
+        'common-2': #F3F5F5,      // Fondos grises claros (se ven bien, se mantienen)
         'common-3': #E7EBEB,
-        'common-4': #ffffff17,
-        'common-5': #F4F5FF,
-        'common-6': #F4F5FF,
+        'common-4': #ffffff17,    // Transparencias sobre fondos oscuros
+        
+        // Fondos muy suaves (a veces usados detrás de iconos azules)
+        'common-5': #F4F5FF,      
+        'common-6': #F4F5FF,      
         'common-7': #DEDFF3,
         'common-8': #F4F5FF,
         'common-9': #F2F2F2,
-        'common-10': #02491317,
+        
+        'common-10': rgba(0, 91, 138, 0.08), // [Vera] Versión muy transparente de tu azul oscuro (Para fondos de tarjetas)
+        
         'common-11': #EFF1ED,
         'common-12': #EFF1ED,
         'common-13': rgba(231, 69, 38, 0.10),
@@ -54,6 +67,7 @@ $colors: (
         'common-17': #EFF1FF,
         'common-18': #EFF1FF,
         'common-19': #F1F1F8,
+        
         'white1': #ffffff,
         'white2': #ffffff,
         'white3': #ffffff,
