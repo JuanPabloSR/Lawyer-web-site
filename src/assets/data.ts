@@ -2,24 +2,24 @@ import type { BlogType, CaseStudyType, FooterContactType, FooterLinkType, Member
 
 export const teamMembers: MemberType[] = [
     {
-        name: 'Dr. Vera Villamizar',
-        image: 'assets/img/team/team1-image1.png',
-        role: 'Socio Fundador',
-    },
-    {
-        name: 'Dra. Camila Rodríguez',
-        image: 'assets/img/team/team1-image2.png',
-        role: 'Abogada Senior',
-    },
-    {
-        name: 'Dr. Andrés Martínez',
-        image: 'assets/img/team/team1-image3.png',
+        name: 'Dra Allyson Rivera',
+        image: 'assets/img/team/daniela.png',
         role: 'Especialista Laboral',
     },
     {
-        name: 'Lic. Laura García',
-        image: 'assets/img/team/team1-image4.png',
-        role: 'Asesora Jurídica',
+        name: 'Dr Jorge Vera Villamizar',
+        image: 'assets/img/team/Jorge.jpg',
+        role: 'Abogado Senior',
+    },
+    {
+        name: 'Dra Daniela Rivera',
+        image: 'assets/img/team/daniela2.png',
+        role: 'Especialista Pensiones',
+    },
+    {
+        name: 'Dr Jorge Vera Villamizar',
+        image: 'assets/img/team/jorge2.jpg',
+        role: 'Especialista Civil',
     }
 ]
 

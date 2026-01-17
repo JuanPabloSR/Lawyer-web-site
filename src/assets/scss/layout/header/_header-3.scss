@@ -1,4 +1,4 @@
-@use '../../utils/' as * ;
+@use '../../utils/' as *;
 
 /*
 ::::::::::::::::::::::::::
@@ -62,6 +62,48 @@
     }
 }
 
+/* Contenedor flexible para alinear imagen y texto */
+.logo-container {
+    display: flex;
+    align-items: center;
+    /* Esto es clave: centra verticalmente */
+    text-decoration: none;
+    /* Quita el subrayado del link */
+    gap: 10px;
+    /* Espacio entre el icono y el texto */
+}
+
+/* Ajustes de la imagen */
+.logo-icon {
+    width: 45px;
+    /* Ajuste leve para proporción */
+    height: auto;
+    display: block;
+}
+
+/* Estilos del texto para parecerse al logo original */
+.logo-text {
+    font-family: 'Montserrat', 'Open Sans', sans-serif;
+    /* Fuente geométrica similar */
+    font-weight: 700;
+    /* Negrita */
+    font-size: 24px;
+    /* Ajusta según necesidad */
+    margin: 0;
+    /* IMPORTANTE: Quita el margen por defecto del h3 que desalinea todo */
+    line-height: 1;
+    /* Evita espacios extra arriba/abajo */
+    color: #6c6d70;
+    /* El color GRIS de "Vera" */
+    letter-spacing: -0.5px;
+    /* Un poco más pegado como el logo */
+}
+
+/* El color AZUL de "Villamizar" */
+.logo-text .text-blue {
+    color: #024466;
+    /* Azul oscuro corporativo (ajústalo con el gotero de tu imagen) */
+}
 
 /*
 ::::::::::::::::::::::::::

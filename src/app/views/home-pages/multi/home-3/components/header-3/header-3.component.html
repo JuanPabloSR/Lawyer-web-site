@@ -1,14 +1,19 @@
-<app-search-popup [isSearchOpen]="isSearchOpen"/>
+<app-search-popup [isSearchOpen]="isSearchOpen" />
 <header>
     <div id="vl-header-sticky" class="vl-header-area3 header-tranperent" stickyScroll>
         <div class="container header3-bg">
             <div class="row align-items-center">
                 <div class="col-lg-2 col-md-6 col-6">
-                    <div class="vl-logo">
-                        <a routerLink="/home-1" class="header1-logo-block"><img src="assets/img/logo/header-logo1.png"
-                                alt=""></a>
-                        <a routerLink="home-1" class="header1-logo-white"><img src="assets/img/logo/white-logo.png"
-                                alt=""></a>
+                    <div class="col-lg-3 col-md-6 col-6">
+                        <div class="vl-logo">
+                            <a routerLink="/home-1" class="logo-container">
+                                <img class="logo-icon" src="assets/img/logo/logo_vera_small.png" alt="Vera Villamizar">
+
+                                <h3 class="logo-text">
+                                    Vera<span class="text-blue">Villamizar</span>
+                                </h3>
+                            </a>
+                        </div>
                     </div>
                 </div>
                 <div class="col-lg-7 d-none d-lg-block">
