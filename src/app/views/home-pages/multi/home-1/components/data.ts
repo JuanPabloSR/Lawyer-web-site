@@ -18,26 +18,25 @@ export const workSteps: WorkStepType[] = [
     {
         id: 1,
         image: 'assets/img/work/work1-image1.png',
-        title: 'On Discussion',
-        description: 'We begin with a free consultation understand your unique financial',
+        title: 'Consulta y Diagnóstico',
+        description: 'Iniciamos con una valoración detallada para entender a fondo tu situación laboral o pensional.',
     },
     {
         id: 2,
         image: 'assets/img/work/work1-image2.png',
-        title: 'Ideas And Concept',
-        description: 'We don’t just provide a plan; we help you are implement it work.',
+        title: 'Análisis y Estrategia',
+        description: 'Estudiamos la viabilidad jurídica de tu caso y trazamos la ruta legal más efectiva para ti.',
     },
     {
         id: 3,
         image: 'assets/img/work/work1-image3.png',
-        title: 'Tailored Strategy Develop',
-        description: 'Based on our assessment, we are create and customized financial.',
+        title: 'Representación Legal',
+        description: 'Radicamos las reclamaciones administrativas o demandas judiciales defendiendo tus intereses.',
     },
     {
         id: 4,
         image: 'assets/img/work/work1-image4.png',
-        title: 'Ongoing Monitoring',
-        description: 'Financial landscapes change, and so your needs, We best ongoing.',
+        title: 'Seguimiento Continuo',
+        description: 'Te acompañamos e informamos en cada etapa del proceso hasta lograr una resolución definitiva.',
     },
 ]
-

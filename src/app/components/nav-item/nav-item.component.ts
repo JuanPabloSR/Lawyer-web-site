@@ -39,7 +39,7 @@ export class NavItemComponent {
             title: 'Servicios',
             icon: 'fa-solid fa-angle-down',
             submenu: [
-                { title: 'Nuestros Servicios', link: '/servicios' },
+                { title: 'Nuestros Servicios', link: '/our-services' },
                 {
                     title: 'Detalles de Servicio',
                     submenu: [
@@ -72,23 +72,23 @@ export class NavItemComponent {
                 {
                     title: 'Nuestro Blog',
                     submenu: [
-                        { title: 'Blog 2 Columnas', link: '/blogs/grid-2' },
-                        { title: 'Blog 3 Columnas', link: '/blogs/grid-3' },
+                        { title: 'Blog 2 Columnas', link: '/blog/grid-2' },
+                        { title: 'Blog 3 Columnas', link: '/blog/grid-3' },
                     ],
                 },
                 {
                     title: 'Blog Sidebar',
                     submenu: [
-                        { title: 'Blog Izquierda', link: '/blogs/sidebar/izquierda' },
-                        { title: 'Blog Derecha', link: '/blogs/sidebar/derecha' },
+                        { title: 'Blog Izquierda', link: '/blog/sidebar/izquierda' },
+                        { title: 'Blog Derecha', link: '/blog/sidebar/derecha' },
                     ],
                 },
                 {
                     title: 'Detalles del Blog',
                     submenu: [
-                        { title: 'Detalles Izquierda', link: '/blogs/detalles/izquierda' },
-                        { title: 'Detalles Derecha', link: '/blogs/detalles/derecha' },
-                        { title: 'Detalles', link: '/blogs/detalles' },
+                        { title: 'Detalles Izquierda', link: '/blog/detalles/izquierda' },
+                        { title: 'Detalles Derecha', link: '/blog/detalles/derecha' },
+                        { title: 'Detalles', link: '/blog/detalles' },
                     ],
                 },
             ],

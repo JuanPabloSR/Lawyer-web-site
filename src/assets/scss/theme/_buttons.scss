@@ -1,38 +1,42 @@
-
 @use '../utils/' as *;
 
-  /*
+/*
  ::::::::::::::::::::::::::
   BUTTONS AREA CSS
  ::::::::::::::::::::::::::
  */
 
- .theme-btn1 {
+.theme-btn1 {
   display: inline-flex;
   align-items: center;
   background: none;
   border: none;
+
   span.text {
     display: inline-block;
     padding: 18px 24px;
-    background-color: var(--vtc-bg-main1);
-    color: var(--vtc-text-title-2);
+    background-color: #005b8a;
+    /* <--- TU COLOR AZUL OSCURO */
+    color: var(--vtc-text-white);
     font-size: var(--f-fs-font-18);
     font-style: normal;
     font-weight: var(--f-fw-bold);
-    line-height: var(--f-fs-font-18); /* 100% */
+    line-height: var(--f-fs-font-18);
+    /* 100% */
     text-transform: uppercase;
     border-radius: 111px;
     transition: all .4s;
   }
+
   span.arrow-all {
     display: inline-block;
-    background-color: var(--vtc-bg-main1);
+        background-color: #005b8a;
     color: var(--vtc-text-title-2);
     font-size: var(--f-fs-font-18);
     font-style: normal;
     font-weight: var(--f-fw-bold);
-    line-height: var(--f-fs-font-18); /* 100% */
+    line-height: var(--f-fs-font-18);
+    /* 100% */
     text-transform: uppercase;
     border-radius: 111px;
     height: 50px;
@@ -43,39 +47,44 @@
     overflow: hidden;
     transition: all .4s;
 
-      span {
-        display: inline-block;
-        transform: rotate(-45deg) translateX(6px) translateY(7px);
-        font-size: var(--f-fs-font-18);
-        transition: all .4s;
-        background: none;
-      }
-      .arrow2 {
-        transform: translateY(-8px) rotate(-45deg) translateX(-52px);
-        transition: all .4s;
-        opacity: 0;
-      }
-      .arrow1 {
-        transition: all .4s;
-        opacity: 1;
-      }
+    span {
+      display: inline-block;
+      transform: rotate(-45deg) translateX(6px) translateY(7px);
+      font-size: var(--f-fs-font-18);
+      transition: all .4s;
+      background: none;
+    }
+
+    .arrow2 {
+      transform: translateY(-8px) rotate(-45deg) translateX(-52px);
+      transition: all .4s;
+      opacity: 0;
+    }
+
+    .arrow1 {
+      transition: all .4s;
+      opacity: 1;
+    }
 
   }
 
   &:hover {
     span {
       transition: all .4s;
-      background-color: #d6b64c;
+      background-color: #005b8a;
     }
 
     .arrow-all {
+      
       transform: translateX(3px);
       transition: all .4s;
+
       .arrow2 {
         transform: translateY(-7px) rotate(-45deg) translateX(-10px);
         transition: all .4s;
         opacity: 1;
       }
+
       .arrow1 {
         transition: all .4s;
         transform: translateY(-7px) rotate(-45deg) translateX(45px);
@@ -83,13 +92,14 @@
       }
     }
   }
- }
+}
 
- .theme-btn2 {
+.theme-btn2 {
   display: inline-flex;
   align-items: center;
   background: none;
   border: none;
+
   span.text {
     display: inline-block;
     padding: 18px 24px;
@@ -98,19 +108,22 @@
     font-size: var(--f-fs-font-18);
     font-style: normal;
     font-weight: var(--f-fw-bold);
-    line-height: var(--f-fs-font-18); /* 100% */
+    line-height: var(--f-fs-font-18);
+    /* 100% */
     text-transform: uppercase;
     border-radius: 111px;
     transition: all .4s;
   }
+
   span.arrow-all {
     display: inline-block;
-    background-color: var(--vtc-bg-main4);
+    background-color: #005b8a;
     color: var(--vtc-text-white);
     font-size: var(--f-fs-font-18);
     font-style: normal;
     font-weight: var(--f-fw-bold);
-    line-height: var(--f-fs-font-18); /* 100% */
+    line-height: var(--f-fs-font-18);
+    /* 100% */
     text-transform: uppercase;
     border-radius: 111px;
     height: 50px;
@@ -121,22 +134,24 @@
     overflow: hidden;
     transition: all .4s;
 
-      span {
-        display: inline-block;
-        transform: rotate(-45deg) translateX(6px) translateY(7px);
-        font-size: var(--f-fs-font-18);
-        transition: all .4s;
-        background: none;
-      }
-      .arrow2 {
-        transform: translateY(-8px) rotate(-45deg) translateX(-52px);
-        transition: all .4s;
-        opacity: 0;
-      }
-      .arrow1 {
-        transition: all .4s;
-        opacity: 1;
-      }
+    span {
+      display: inline-block;
+      transform: rotate(-45deg) translateX(6px) translateY(7px);
+      font-size: var(--f-fs-font-18);
+      transition: all .4s;
+      background: none;
+    }
+
+    .arrow2 {
+      transform: translateY(-8px) rotate(-45deg) translateX(-52px);
+      transition: all .4s;
+      opacity: 0;
+    }
+
+    .arrow1 {
+      transition: all .4s;
+      opacity: 1;
+    }
 
   }
 
@@ -149,11 +164,13 @@
     .arrow-all {
       transform: translateX(3px);
       transition: all .4s;
+
       .arrow2 {
         transform: translateY(-7px) rotate(-45deg) translateX(-10px);
         transition: all .4s;
         opacity: 1;
       }
+
       .arrow1 {
         transition: all .4s;
         transform: translateY(-7px) rotate(-45deg) translateX(45px);
@@ -161,9 +178,9 @@
       }
     }
   }
- }
- 
- .theme-btn3 {
+}
+
+.theme-btn3 {
   display: inline-block;
   padding: 19px 22px;
   border-radius: 8px;
@@ -171,7 +188,8 @@
   font-size: var(--f-fs-font-18);
   font-style: normal;
   font-weight: var(--f-fw-bold);
-  line-height: var(--f-fs-font-18); /* 100% */
+  line-height: var(--f-fs-font-18);
+  /* 100% */
   text-transform: uppercase;
   transition: all .4s;
   position: relative;
@@ -194,6 +212,7 @@
       border-radius: 50%;
     }
   }
+
   &::after {
     content: "";
     position: absolute;
@@ -230,9 +249,9 @@
       transform: rotateY(0deg);
     }
   }
- }
+}
 
- .theme-btn4 {
+.theme-btn4 {
   display: inline-block;
   padding: 19px 22px;
   border-radius: 8px;
@@ -240,7 +259,8 @@
   font-size: var(--f-fs-font-18);
   font-style: normal;
   font-weight: var(--f-fw-bold);
-  line-height: var(--f-fs-font-18); /* 100% */
+  line-height: var(--f-fs-font-18);
+  /* 100% */
   text-transform: uppercase;
   transition: all .4s;
   position: relative;
@@ -263,6 +283,7 @@
       border-radius: 50%;
     }
   }
+
   &::after {
     content: "";
     position: absolute;
@@ -299,9 +320,9 @@
       transform: rotateY(0deg);
     }
   }
- }
+}
 
- .theme-btn5 {
+.theme-btn5 {
   display: inline-flex;
   padding: 19px 22px;
   border-radius: 8px;
@@ -309,7 +330,8 @@
   font-size: var(--f-fs-font-18);
   font-style: normal;
   font-weight: var(--f-fw-bold);
-  line-height: var(--f-fs-font-18); /* 100% */
+  line-height: var(--f-fs-font-18);
+  /* 100% */
   text-transform: uppercase;
   transition: all .4s;
   position: relative;
@@ -317,7 +339,7 @@
   overflow: hidden;
   transition: all .4s;
   border: none;
-  
+
   span.arrow-all {
     display: inline-block;
     transform: translateX(0px) translateY(-2px);
@@ -326,12 +348,14 @@
     width: 25px;
     height: 18px;
   }
+
   .arrow2 {
     display: inline-block;
     transform: translateY(-20px) translateX(-20px);
     transition: all .4s;
     opacity: 0;
   }
+
   .arrow1 {
     transition: all .4s;
     opacity: 1;
@@ -345,6 +369,7 @@
       display: inline-block;
       transform: translateY(-20px) translateX(0px);
     }
+
     .arrow1 {
       display: inline-block;
       transition: all .4s;
@@ -369,6 +394,7 @@
       z-index: -1;
     }
   }
+
   &::after {
     content: "";
     position: absolute;
@@ -405,9 +431,9 @@
       transform: rotateY(0deg);
     }
   }
- }
+}
 
- .theme-btn6 {
+.theme-btn6 {
   display: inline-flex;
   padding: 19px 18px 19px 22px;
   border-radius: 8px;
@@ -415,7 +441,8 @@
   font-size: var(--f-fs-font-18);
   font-style: normal;
   font-weight: var(--f-fw-bold);
-  line-height: var(--f-fs-font-18); /* 100% */
+  line-height: var(--f-fs-font-18);
+  /* 100% */
   text-transform: uppercase;
   transition: all .4s;
   position: relative;
@@ -423,7 +450,7 @@
   overflow: hidden;
   transition: all .4s;
   border: none;
-  
+
   span.arrow-all {
     display: inline-block;
     transform: translateX(3px) translateY(-3px) rotate(-45deg);
@@ -432,12 +459,14 @@
     width: 25px;
     height: 18px;
   }
+
   .arrow2 {
     display: inline-block;
     transform: translateY(-20px) translateX(-20px);
     transition: all .4s;
     opacity: 0;
   }
+
   .arrow1 {
     transition: all .4s;
     opacity: 1;
@@ -451,6 +480,7 @@
       display: inline-block;
       transform: translateY(-20px) translateX(0px);
     }
+
     .arrow1 {
       display: inline-block;
       transition: all .4s;
@@ -463,6 +493,7 @@
     position: relative;
     display: inline-block;
   }
+
   &::after {
     content: "";
     position: absolute;
@@ -499,9 +530,9 @@
       transform: rotateY(0deg);
     }
   }
- }
+}
 
- .theme-btn7 {
+.theme-btn7 {
   display: inline-flex;
   padding: 19px 18px 19px 22px;
   border-radius: 8px;
@@ -509,7 +540,8 @@
   font-size: var(--f-fs-font-18);
   font-style: normal;
   font-weight: var(--f-fw-bold);
-  line-height: var(--f-fs-font-18); /* 100% */
+  line-height: var(--f-fs-font-18);
+  /* 100% */
   text-transform: uppercase;
   transition: all .4s;
   position: relative;
@@ -517,7 +549,7 @@
   overflow: hidden;
   transition: all .4s;
   border: none;
-  
+
   span.arrow-all {
     display: inline-block;
     transform: translateX(3px) translateY(-3px) rotate(-45deg);
@@ -526,12 +558,14 @@
     width: 25px;
     height: 18px;
   }
+
   .arrow2 {
     display: inline-block;
     transform: translateY(-20px) translateX(-20px);
     transition: all .4s;
     opacity: 0;
   }
+
   .arrow1 {
     transition: all .4s;
     opacity: 1;
@@ -545,6 +579,7 @@
       display: inline-block;
       transform: translateY(-20px) translateX(0px);
     }
+
     .arrow1 {
       display: inline-block;
       transition: all .4s;
@@ -557,6 +592,7 @@
     position: relative;
     display: inline-block;
   }
+
   &::after {
     content: "";
     position: absolute;
@@ -593,24 +629,27 @@
       transform: rotateY(0deg);
     }
   }
- }
+}
 
 // ===== Learn buttons area ====
 
- .learn1 {
+.learn1 {
   display: inline-block;
   overflow: hidden;
+
   span {
     display: inline-block;
     transform: rotate(-45deg) translateX(0px) translateY(1px);
     font-size: 17px;
     transition: all .4s;
   }
+
   .arrow2 {
     transform: translateY(-8px) rotate(-45deg) translateX(-52px);
     transition: all .4s;
     opacity: 0;
   }
+
   .arrow1 {
     transition: all .4s;
     opacity: 1;
@@ -618,11 +657,13 @@
 
   &:hover {
     color: #4A43DD;
+
     .arrow2 {
       transform: translateY(-12px) rotate(-45deg) translateX(-18px);
       transition: all .4s;
       opacity: 1;
     }
+
     .arrow1 {
       transition: all .4s;
       transform: translateY(-7px) rotate(-45deg) translateX(45px);
@@ -636,6 +677,7 @@
   align-items: center;
   background: none;
   border: none;
+
   span.arrow-all {
     display: inline-block;
     background-color: var(--vtc-bg-main6);
@@ -643,7 +685,8 @@
     font-size: var(--f-fs-font-18);
     font-style: normal;
     font-weight: var(--f-fw-bold);
-    line-height: var(--f-fs-font-18); /* 100% */
+    line-height: var(--f-fs-font-18);
+    /* 100% */
     text-transform: uppercase;
     border-radius: 111px;
     height: 50px;
@@ -654,22 +697,24 @@
     overflow: hidden;
     transition: all .4s;
 
-      span {
-        display: inline-block;
-        transform: rotate(-45deg) translateX(6px) translateY(6px);
-        font-size: var(--f-fs-font-18);
-        transition: all .4s;
-        background: none;
-      }
-      .arrow2 {
-        transform: translateY(-8px) rotate(-45deg) translateX(-52px);
-        transition: all .4s;
-        opacity: 0;
-      }
-      .arrow1 {
-        transition: all .4s;
-        opacity: 1;
-      }
+    span {
+      display: inline-block;
+      transform: rotate(-45deg) translateX(6px) translateY(6px);
+      font-size: var(--f-fs-font-18);
+      transition: all .4s;
+      background: none;
+    }
+
+    .arrow2 {
+      transform: translateY(-8px) rotate(-45deg) translateX(-52px);
+      transition: all .4s;
+      opacity: 0;
+    }
+
+    .arrow1 {
+      transition: all .4s;
+      opacity: 1;
+    }
 
   }
 
@@ -682,11 +727,13 @@
     .arrow-all {
       transform: translateX(3px);
       transition: all .4s;
+
       .arrow2 {
         transform: translateY(-7px) rotate(-45deg) translateX(-10px);
         transition: all .4s;
         opacity: 1;
       }
+
       .arrow1 {
         transition: all .4s;
         transform: translateY(-7px) rotate(-45deg) translateX(45px);
@@ -694,13 +741,14 @@
       }
     }
   }
- }
+}
 
- .learn3 {
+.learn3 {
   display: inline-flex;
   align-items: center;
   background: none;
   border: none;
+
   span.arrow-all {
     display: inline-block;
     background-color: var(--vtc-bg-main4);
@@ -708,7 +756,8 @@
     font-size: var(--f-fs-font-18);
     font-style: normal;
     font-weight: var(--f-fw-bold);
-    line-height: var(--f-fs-font-18); /* 100% */
+    line-height: var(--f-fs-font-18);
+    /* 100% */
     text-transform: uppercase;
     border-radius: 111px;
     height: 50px;
@@ -719,22 +768,24 @@
     overflow: hidden;
     transition: all .4s;
 
-      span {
-        display: inline-block;
-        transform: rotate(-45deg) translateX(6px) translateY(6px);
-        font-size: var(--f-fs-font-18);
-        transition: all .4s;
-        background: none;
-      }
-      .arrow2 {
-        transform: translateY(-8px) rotate(-45deg) translateX(-52px);
-        transition: all .4s;
-        opacity: 0;
-      }
-      .arrow1 {
-        transition: all .4s;
-        opacity: 1;
-      }
+    span {
+      display: inline-block;
+      transform: rotate(-45deg) translateX(6px) translateY(6px);
+      font-size: var(--f-fs-font-18);
+      transition: all .4s;
+      background: none;
+    }
+
+    .arrow2 {
+      transform: translateY(-8px) rotate(-45deg) translateX(-52px);
+      transition: all .4s;
+      opacity: 0;
+    }
+
+    .arrow1 {
+      transition: all .4s;
+      opacity: 1;
+    }
 
   }
 
@@ -747,11 +798,13 @@
     .arrow-all {
       transform: translateX(3px);
       transition: all .4s;
+
       .arrow2 {
         transform: translateY(-7px) rotate(-45deg) translateX(-10px);
         transition: all .4s;
         opacity: 1;
       }
+
       .arrow1 {
         transition: all .4s;
         transform: translateY(-7px) rotate(-45deg) translateX(45px);
@@ -759,13 +812,12 @@
       }
     }
   }
- }
+}
 
 // ===== Learn buttons area ====
 
-  /*
+/*
  ::::::::::::::::::::::::::
      BUTOTNS AREA CSS
  ::::::::::::::::::::::::::
  */
-

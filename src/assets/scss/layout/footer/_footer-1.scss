@@ -127,3 +127,20 @@
  FOOTER AREA 1 CSS
 ::::::::::::::::::::::::::
 */
+
+/* Agrega esto para controlar el tamaño del icono de contacto */
+.single-contact {
+    .icon {
+        width: 24px; /* Ajusta este valor si lo quieres más grande (ej. 30px) */
+        min-width: 24px; /* Evita que se aplaste */
+        margin-right: 10px; /* Espacio entre el icono y el texto */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+}
