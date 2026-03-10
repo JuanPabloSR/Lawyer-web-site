@@ -9,31 +9,27 @@ import { Component } from '@angular/core';
 })
 export class BlogDetailContentComponent {
     services: string[] = [
-        'Management Consulting',
-        'Customize Consulting',
-        'Sustainability Consulting',
-        'Financial Consulting',
-        'Clear Scope and Goals',
-        'Problem Solve Business'
+        'Análisis de Historia Laboral',
+        'Cálculo Actuarial Especializado',
+        'Representación ante Colpensiones',
+        'Trámites en Fondos Privados (AFP)',
+        'Demandas Ordinarias Laborales',
+        'Asesoría Preventiva'
     ];
 
     comments = [
         {
-            author: 'Alex Robertson',
-            date: '8 December 2024',
+            author: 'Carlos Rodríguez',
+            date: '8 Diciembre 2024',
             image: 'assets/img/testimonial/tes1-author1.png',
-            content: `In today’s dynamic business landscape, organizations face numerous challenges that
-            require strategic thinking and expert guidance. Business consulting serves as a crucial
-            resource, providing companies with the insights an tools necessary.`,
+            content: `Me parece excelente que aclaren todos estos temas. Muchos no sabemos que tenemos derecho a reclamar cuando el fondo de pensiones comete errores en el cálculo de nuestras mesadas.`,
             isReply: false
         },
         {
-            author: 'Theo Hernandez',
-            date: '8 December 2024',
+            author: 'Equipo Vera Villamizar',
+            date: '8 Diciembre 2024',
             image: 'assets/img/testimonial/tes1-author2.png',
-            content: `At Advicx, our consulting services are tailored to meet the unique needs of each client,
-            focusing on areas such as operational efficiency, market expansion, and digital
-            transformation. By leveraging data analytics and.`,
+            content: `Gracias por su comentario, Carlos. En efecto, la revisión de la historia laboral es el primer paso vital para garantizar que su esfuerzo de toda la vida sea reconocido adecuadamente.`,
             isReply: true
         }
     ];

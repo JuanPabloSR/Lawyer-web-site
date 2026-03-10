@@ -10,23 +10,22 @@ import { RouterLink } from '@angular/router';
 })
 export class BlogDetailSidebarComponent {
     services: string[] = [
-        'Business Strategy Planning',
-        'Corporate Growth Advisory',
-        'Strategic Risk Management',
-        'Business Process Optimization',
-        'Business Continuity Planning',
-        'Crisis Management Solution',
+        'Derecho Pensional',
+        'Derecho Laboral',
+        'Derecho Administrativo',
+        'Nulidad de Traslados',
+        'Casación Laboral',
+        'Seguridad Social',
     ];
 
     tags: string[] = [
-        '#BusinessConsulting',
-        '#SalesStrategy',
-        '#DigitalTransformation',
-        '#MarketAnalysis',
-        '#RiskManagement',
-        '#ClientSuccess',
-        '#SuccessConsulting',
-        '#GrowthStrategy'
+        '#PensiónColombia',
+        '#TusDerechos',
+        '#DemandaLaboral',
+        '#Indemnización',
+        '#TrasladoDeFondo',
+        '#AsesoríaLegal',
+        '#VeraVillamizar'
     ];
 
     authorImages: string[] = [
@@ -43,18 +42,18 @@ export class BlogDetailSidebarComponent {
     recentBlogs = [
         {
             image: 'assets/img/blog/recent-blog1.png',
-            date: '4 August 2024',
-            title: 'From Vision Reality: Crafting Winning To Business Strategies',
+            date: '4 Agosto 2024',
+            title: 'Novedades sobre la Reforma Pensional',
         },
         {
             image: 'assets/img/blog/recent-blog2.png',
-            date: '4 August 2024',
-            title: 'Stay Ahead of the Curve with Strategic Business Insights',
+            date: '4 Agosto 2024',
+            title: 'Cómo calcular su retroactivo pensional paso a paso',
         },
         {
             image: 'assets/img/blog/recent-blog3.png',
-            date: '4 August 2024',
-            title: 'Strategic Roadmaps for Navigating Best Business Challenges',
+            date: '4 Agosto 2024',
+            title: '¿Fui despedido sin justa causa? Esto debe saber',
         }
     ];
 }

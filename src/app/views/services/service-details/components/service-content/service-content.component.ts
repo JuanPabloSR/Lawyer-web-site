@@ -11,34 +11,34 @@ import { NgbAccordionModule } from '@ng-bootstrap/ng-bootstrap';
 export class ServiceContentComponent {
     activeItemIndex = 0;
     services: string[] = [
-        'Management Consulting',
-        'Management Consulting',
-        'Management Consulting',
-        'Management Consulting',
-        'Management Consulting',
-        'Management Consulting'
+        'Análisis de Historia Laboral',
+        'Cálculo Actuarial Especializado',
+        'Representación ante Colpensiones',
+        'Trámites en Fondos Privados (AFP)',
+        'Demandas Ordinarias Laborales',
+        'Asesoría Preventiva'
     ];
 
     faqData1 = [
         {
-            question: 'What is SEO and why is it important for my business?',
-            answer: 'SEO helps improve your website’s visibility in search engines, which can drive more organic traffic and potential customers to your business.',
+            question: '¿Qué es una reliquidación pensional y cuándo aplica?',
+            answer: 'Es un ajuste al valor de la pensión cuando no se tuvieron en cuenta todos los factores salariales o el número correcto de semanas al momento de su reconocimiento.',
         },
         {
-            question: 'How long does it take to see results from SEO?',
-            answer: 'SEO is a long-term strategy. It usually takes 3 to 6 months to see significant results depending on your competition and strategy.',
+            question: '¿Cuánto tiempo dura un proceso contra Colpensiones?',
+            answer: 'Generalmente un proceso ordinario laboral toma entre 1 o 2 años en primera instancia, dependiendo del juzgado asignado, pero nosotros actuamos para agilizar cada etapa.',
         },
         {
-            question: 'What services do offer SEO marketing company?',
-            answer: 'Typical SEO services include keyword research, on-page optimization, content creation, link building, and technical SEO audits.',
+            question: '¿Es posible trasladarse de un fondo privado a Colpensiones?',
+            answer: 'Sí. Si no recibió la doble asesoría y le convence más el régimen público, iniciamos un proceso de Nulidad de Afiliación para recuperar su régimen original.',
         },
         {
-            question: 'How do you approach backlink building?',
-            answer: 'Backlink building involves earning links from reputable websites through outreach, guest posting, and creating valuable content.',
+            question: '¿Qué factores salariales se deben incluir en mi pensión?',
+            answer: 'Deben incluirse sueldos, primas extralegales, sobresueldos, horas extras, bonificaciones habituales y recargos nocturnos debidamente demostrados.',
         },
         {
-            question: 'What is local SEO how can it benefit my business?',
-            answer: 'Local SEO helps your business appear in local search results, making it easier for nearby customers to find and contact you.',
+            question: '¿Garantizan resultados en mi demanda?',
+            answer: 'Como profesionales, garantizamos el mayor celo y aplicación jurídica en su defensa (obligación de medio), pero el último fallo depende del juez.',
         }
     ];
 

@@ -9,17 +9,17 @@ import { Component } from '@angular/core';
 })
 export class CaseContentComponent {
     benefits: string[] = [
-        'Increased Efficiency',
-        'Enhanced Security',
-        'Business Continuity',
-        'Access To Expertise',
-        'Custom IT Solutions',
-        'Seamless Integration'
+        'Análisis Exhaustivo',
+        'Representación Legal Sólida',
+        'Protección del Patrimonio',
+        'Asesoría Especializada',
+        'Acompañamiento Constante',
+        'Resultados Comprobados'
     ];
 
     progressData = [
-        { title: 'Financial Delivered Growth', value: 98 },
-        { title: 'Financial Revenue Growth', value: 98 },
-        { title: 'Result And Review', value: 99 }
+        { title: 'Éxito en Reclamaciones', value: 98 },
+        { title: 'Satisfacción del Cliente', value: 99 },
+        { title: 'Incremento Pensional Logrado', value: 85 }
     ];
 }
