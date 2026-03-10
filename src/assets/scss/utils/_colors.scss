@@ -1,13 +1,13 @@
 $colors: (
     'text': (
-        'title-1': #0B0916,       // Títulos principales (Se mantiene oscuro para legibilidad)
-        'title-2': #0B0916,
-        'title-3': #0D0E1F,
-        'title-4': #0D0E1F,
-        'title-5': #061D19,
-        'title-6': #0B0916,
-        'title-7': #0A1613,
-        'title-8': #0A1613,
+        'title-1': #333333,       // [Vera] Títulos y textos principales sobre claro
+        'title-2': #333333,
+        'title-3': #333333,
+        'title-4': #333333,
+        'title-5': #333333,
+        'title-6': #333333,
+        'title-7': #333333,
+        'title-8': #333333,
         
         // Aquí aplicamos tu Azul Oscuro a los subtítulos que antes eran verde oscuro
         'sub-title-1': #005b8a,   // [Vera] Azul Oscuro (Antes #10343B)
@@ -15,26 +15,26 @@ $colors: (
         'sub-title-3': #E74526,   // (Rojo alerta, se puede dejar igual)
         'sub-title-4': #7246EA,
         
-        'pera-1': #58595B,        // [Vera] Gris exacto de tu marca (Antes #585858)
-        'pera-2': #37385C,
+        'pera-1': #333333,        // [Vera] Textos principales sobre oscuro
+        'pera-2': #333333,
         'pera-3': #ffffffc5,
-        'pera-4': #4E4D59,
+        'pera-4': #333333,
         'pera-5': rgba(255, 255, 255, 0.90),
-        'pera-6': #58595B,        // [Vera] Gris exacto
-        'pera-7': #414141,
-        'pera-8': #414141,
+        'pera-6': #333333,        
+        'pera-7': #333333,
+        'pera-8': #333333,
         'white': #fff,
     ),
     'bg': (
         // --- COLORES PRINCIPALES DE LA PLANTILLA HOME 1 ---
-        'main1': #00a9d4,         // [Vera] TU COLOR ACENTO (Azul Claro). Reemplaza al amarillo #F0C73C
+        'main1': #d6b64c,         // [Vera] TU COLOR ACENTO
         'main2': #005b8a,         // [Vera] TU COLOR PRINCIPAL (Azul Oscuro). Reemplaza al #10343B
         'main3': #005b8a,         // [Vera] Igualamos al principal
         
         // Otros colores de otras demos (se pueden ajustar si los usas)
         'main4': #FB8500,
         'main5': #191D88,
-        'main6': #00a9d4,         // [Vera] Ajustado también por si usas elementos de la Home 3
+        'main6': #00a9d4,         // [Vera] COLOR HOVER (Interacción)
         'main7': #024912,
         'main8': #E74526,
         'main9': #000052,

@@ -63,73 +63,75 @@ export class MobileMenuComponent {
 
     menu: MenuItem[] = [
         {
-            "title": "Pages",
+            "title": "Páginas",
             "link": "#",
             "icon": 'fas fa-angle-down',
             "isOpen": false,
             "subMenu": [
-                { title: 'About Us', link: '/about' },
-                { title: 'Nuestro equipo', link: '/our-team' },
-                { title: 'Testimonials', link: '/testimonials' },
-                { title: 'FAQ', link: '/faq' },
-                { title: '404', link: '/error' },
+                { title: 'Sobre Nosotros', link: '/about' },
+                { title: 'Nuestro Equipo', link: '/our-team' },
+                { title: 'Testimonios', link: '/testimonials' },
+                { title: 'Preguntas Frecuentes', link: '/faq' },
+                { title: 'Error 404', link: '/error-404' },
             ]
         },
         {
-            "title": "Services",
+            "title": "Servicios",
             "link": "#",
             "isOpen": false,
             "icon": 'fa-angle-down',
             "subMenu": [
-                { title: "Service Details Left", link: '/service-details/left' },
-                { title: "Service Details Right", link: '/service-details/right' },
-                { title: "Service Details", link: '/service-details' }
+                { title: 'Nuestros Servicios', link: '/our-services' },
+                { title: "Servicio Detalles Izquierda", link: '/service-details/left' },
+                { title: "Servicio Detalles Derecha", link: '/service-details/right' },
+                { title: "Servicio Detalles", link: '/service-details' }
             ]
         },
         {
-            "title": "Case Study",
+            "title": "Casos de Estudio",
             "link": "#",
             "isOpen": false,
             "icon": 'fa-angle-down',
             "subMenu": [
-                { title: "Case Details Left", link: '/case-details/left' },
-                { title: "Case Details Right", link: '/case-details/right' },
-                { title: "Case Single", link: '/case-single' }
+                { title: 'Casos de Estudio', link: '/case-study' },
+                { title: "Caso Detalles Izquierda", link: '/case-details/left' },
+                { title: "Caso Detalles Derecha", link: '/case-details/right' },
+                { title: "Caso Único", link: '/case-single' }
             ]
         },
         {
-            "title": "Blogs ",
+            "title": "Blog",
             "link": "#",
             "isOpen": false,
             "icon": 'fa-angle-down',
             "subMenu": [
                 {
-                    title: 'Our Blogs',
+                    title: 'Nuestro Blog',
                     subMenu: [
-                        { title: 'Blog 2 Grid', link: '/blog/grid-2' },
-                        { title: 'Blog 3 Grid', link: '/blog/grid-3' },
+                        { title: 'Blog 2 Columnas', link: '/blog/grid-2' },
+                        { title: 'Blog 3 Columnas', link: '/blog/grid-3' },
                     ],
                 },
                 {
                     title: 'Blog Sidebar',
                     subMenu: [
-                        { title: 'Blog Left', link: '/blog-sidebar/left' },
-                        { title: 'Blog Right', link: '/blog-sidebar/right' },
+                        { title: 'Blog Izquierda', link: '/blog-sidebar/left' },
+                        { title: 'Blog Derecha', link: '/blog-sidebar/right' },
                     ],
                 },
                 {
-                    title: 'Blog Details',
+                    title: 'Detalles del Blog',
                     subMenu: [
-                        { title: 'Blog Details Left', link: '/blog-details/left' },
-                        { title: 'Blog Details Right', link: '/blog-details/right' },
-                        { title: 'Blog Details', link: '/blog-details' },
+                        { title: 'Detalles Izquierda', link: '/blog-details/left' },
+                        { title: 'Detalles Derecha', link: '/blog-details/right' },
+                        { title: 'Detalles', link: '/blog-details' },
                     ],
                 },
             ],
 
         },
         {
-            "title": "Contact ",
+            "title": "Contacto",
             "link": "/contact",
         }
     ]
