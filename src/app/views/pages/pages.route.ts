@@ -9,22 +9,22 @@ import { ContactComponent } from './contact/contact.component';
 
 export const PAGES_ROUTES: Routes = [
     {
-        path: 'acerca-de',
+        path: 'about',
         component: AboutComponent,
         data: { title: "Acerca de" }
     },
     {
-        path: 'nuestro-equipo',
+        path: 'our-team',
         component: OurTeamComponent,
         data: { title: "Nuestro Equipo" }
     },
     {
-        path: 'testimonios',
+        path: 'testimonials',
         component: TestimonialsComponent,
         data: { title: "Testimonios" }
     },
     {
-        path: 'preguntas-frecuentes',
+        path: 'faq',
         component: FaqComponent,
         data: { title: "Preguntas Frecuentes" }
     },
@@ -34,7 +34,7 @@ export const PAGES_ROUTES: Routes = [
         data: { title: "Error 404" }
     },
     {
-        path: 'contacto',
+        path: 'contact',
         component: ContactComponent,
         data: { title: "Contacto" }
     },

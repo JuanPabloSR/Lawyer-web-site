@@ -9,22 +9,22 @@ export const SERVICES_ROUTES: Routes = [
     {
         path: 'our-services',
         component: OurServiceComponent,
-        data: { title: "Our Services"}
+        data: { title: "Nuestros Servicios"}
     },
     {
         path: 'service-details/left',
         component: ServiceDetailsLeftComponent,
-        data: { title: "Service Details Left"}
+        data: { title: "Detalles de Servicio Izquierda"}
     },
     {
         path: 'service-details/right',
         component: ServiceDetailsRightComponent,
-        data: { title: "Service Details Right"}
+        data: { title: "Detalles de Servicio Derecha"}
     },
     {
         path: 'service-details',
         component: ServiceDetailsComponent,
-        data: { title: "Service Details"}
+        data: { title: "Detalles de Servicio"}
     },
 
 ];

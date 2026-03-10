@@ -28,10 +28,10 @@ export class NavItemComponent {
             title: 'Páginas',
             icon: 'fa-solid fa-angle-down',
             submenu: [
-                { title: 'Sobre Nosotros', link: '/acerca-de' },
-                { title: 'Nuestro Equipo', link: '/nuestro-equipo' },
-                { title: 'Testimonios', link: '/testimonios' },
-                { title: 'Preguntas Frecuentes', link: '/preguntas-frecuentes' },
+                { title: 'Sobre Nosotros', link: '/about' },
+                { title: 'Nuestro Equipo', link: '/our-team' },
+                { title: 'Testimonios', link: '/testimonials' },
+                { title: 'Preguntas Frecuentes', link: '/faq' },
                 { title: 'Error 404', link: '/error-404' },
             ],
         },
@@ -43,9 +43,9 @@ export class NavItemComponent {
                 {
                     title: 'Detalles de Servicio',
                     submenu: [
-                        { title: "Servicio Detalles Izquierda", link: '/servicios/detalles/izquierda' },
-                        { title: "Servicio Detalles Derecha", link: '/servicios/detalles/derecha' },
-                        { title: "Servicio Detalles", link: '/servicios/detalles' }
+                        { title: "Servicio Detalles Izquierda", link: '/service-details/left' },
+                        { title: "Servicio Detalles Derecha", link: '/service-details/right' },
+                        { title: "Servicio Detalles", link: '/service-details' }
                     ]
                 },
             ],
@@ -54,13 +54,13 @@ export class NavItemComponent {
             title: 'Casos de Estudio',
             icon: 'fa-solid fa-angle-down',
             submenu: [
-                { title: 'Casos de Estudio', link: '/casos-de-estudio' },
+                { title: 'Casos de Estudio', link: '/case-study' },
                 {
                     title: 'Detalles del Caso',
                     submenu: [
-                        { title: "Caso Detalles Izquierda", link: '/casos-de-estudio/detalles/izquierda' },
-                        { title: "Caso Detalles Derecha", link: '/casos-de-estudio/detalles/derecha' },
-                        { title: "Caso Único", link: '/casos-de-estudio/unico' }
+                        { title: "Caso Detalles Izquierda", link: '/case-details/left' },
+                        { title: "Caso Detalles Derecha", link: '/case-details/right' },
+                        { title: "Caso Único", link: '/case-single' }
                     ]
                 },
             ],
@@ -79,20 +79,20 @@ export class NavItemComponent {
                 {
                     title: 'Blog Sidebar',
                     submenu: [
-                        { title: 'Blog Izquierda', link: '/blog/sidebar/izquierda' },
-                        { title: 'Blog Derecha', link: '/blog/sidebar/derecha' },
+                        { title: 'Blog Izquierda', link: '/blog-sidebar/left' },
+                        { title: 'Blog Derecha', link: '/blog-sidebar/right' },
                     ],
                 },
                 {
                     title: 'Detalles del Blog',
                     submenu: [
-                        { title: 'Detalles Izquierda', link: '/blog/detalles/izquierda' },
-                        { title: 'Detalles Derecha', link: '/blog/detalles/derecha' },
-                        { title: 'Detalles', link: '/blog/detalles' },
+                        { title: 'Detalles Izquierda', link: '/blog-details/left' },
+                        { title: 'Detalles Derecha', link: '/blog-details/right' },
+                        { title: 'Detalles', link: '/blog-details' },
                     ],
                 },
             ],
         },
-        { title: 'Contacto', link: '/contacto' },
+        { title: 'Contacto', link: '/contact' },
     ];
 }

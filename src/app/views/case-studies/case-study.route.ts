@@ -8,22 +8,22 @@ export const CASE_STUDY_ROUTES: Routes = [
     {
         path: 'case-study',
         component: CaseStudyComponent,
-        data: { title: "Case Study" }
+        data: { title: "Casos de Estudio" }
     },
     {
         path: 'case-details/left',
         component: CaseDetailLeftComponent,
-        data: { title: "Case Study Left" }
+        data: { title: "Detalles de Caso Izquierda" }
     },
     {
         path: 'case-details/right',
         component: CaseDetailRightComponent,
-        data: { title: "Case Study Right" }
+        data: { title: "Detalles de Caso Derecha" }
     },
     {
         path: 'case-single',
         component: CaseStudyDetailComponent,
-        data: { title: "Case Study Single" }
+        data: { title: "Detalles de Caso Único" }
     },
 
 

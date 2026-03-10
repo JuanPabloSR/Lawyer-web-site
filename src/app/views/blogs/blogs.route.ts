@@ -11,36 +11,36 @@ export const BLOGS_ROUTES: Routes = [
     {
         path: 'blog/grid-2',
         component: BlogGrid2Component,
-        data: { title: "Blog Grid 2" }
+        data: { title: "Blog 2 Columnas" }
     },
     {
         path: 'blog/grid-3',
         component: BlogGrid3Component,
-        data: { title: "Blog Grid 3" }
+        data: { title: "Blog 3 Columnas" }
     },
     {
         path: 'blog-sidebar/left',
         component: BlogLeftComponent,
-        data: { title: "Blog Sidebar Left" }
+        data: { title: "Blog Sidebar Izquierda" }
     },
     {
         path: 'blog-sidebar/right',
         component: BlogRightComponent,
-        data: { title: "Blog Sidebar Right" }
+        data: { title: "Blog Sidebar Derecha" }
     },
     {
         path: 'blog-details/left',
         component: BlogDetailLeftComponent,
-        data: { title: "Blog Details Left" }
+        data: { title: "Detalles del Blog Izquierda" }
     },
     {
         path: 'blog-details/right',
         component: BlogDetailRightComponent,
-        data: { title: "Blog Details Right" }
+        data: { title: "Detalles del Blog Derecha" }
     },
     {
         path: 'blog-details',
         component: BlogDetailsComponent,
-        data: { title: "Blog Details" }
+        data: { title: "Detalles del Blog" }
     },
 ];
