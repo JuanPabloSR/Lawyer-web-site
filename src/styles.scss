@@ -1,11 +1,11 @@
-/* You can add global styles to this file, and also import other style files */
+
 @use "bootstrap/scss/bootstrap.scss";
+@use "aos/dist/aos.css";
+@use "swiper/swiper-bundle.min.css";
+@use "slick-carousel/slick/slick.css";
+@use "slick-carousel/slick/slick-theme.css";
+@use "nice-select2/dist/css/nice-select2.css";
+@use "assets/css/mobile-menu.css";
+@use "assets/css/utility.css";
+@use "@fortawesome/fontawesome-free/css/all.min.css";
 @use "./assets/scss/main.scss";
-@import "aos/dist/aos.css";
-@import "swiper/swiper-bundle.min.css";
-@import "slick-carousel/slick/slick.css";
-@import "slick-carousel/slick/slick-theme.css";
-@import "nice-select2/dist/css/nice-select2.css";
-@import "assets/css/mobile-menu.css";
-@import "assets/css/utility.css";
-@import "@fortawesome/fontawesome-free/css/all.min.css";
