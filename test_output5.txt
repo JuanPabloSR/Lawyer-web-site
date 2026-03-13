@@ -1,0 +1,54 @@
+
+> advicx-ng@0.0.0 test
+> ng test --no-watch --browsers=ChromeHeadless --reporters=dots
+
+- Generating browser application bundles (phase: setup)...
+✔ Browser application bundle generation complete.
+[32m12 03 2026 19:52:46.762:INFO [karma-server]: [39mKarma v6.4.4 server started at http://localhost:9877/
+[32m12 03 2026 19:52:46.764:INFO [launcher]: [39mLaunching browsers ChromeHeadless with concurrency unlimited
+[32m12 03 2026 19:52:46.767:INFO [launcher]: [39mStarting browser ChromeHeadless
+[32m12 03 2026 19:52:47.801:INFO [Chrome Headless 145.0.0.0 (Windows 10)]: [39mConnected on socket nVHmmMlk2pDviaqqAAAB with id 81586189
+................................................
+[31mChrome Headless 145.0.0.0 (Windows 10) BlogCardComponent should create FAILED[39m
+	TypeError: Cannot read properties of undefined (reading 'image')
+	    at templateFn (ng:///BlogCardComponent.js:42:41)
+	    at executeTemplate (node_modules/@angular/core/fesm2022/core.mjs:12369:9)
+	    at refreshView (node_modules/@angular/core/fesm2022/core.mjs:14054:13)
+	    at detectChangesInView (node_modules/@angular/core/fesm2022/core.mjs:14274:9)
+	    at detectChangesInViewIfAttached (node_modules/@angular/core/fesm2022/core.mjs:14234:5)
+	    at detectChangesInComponent (node_modules/@angular/core/fesm2022/core.mjs:14222:5)
+	    at detectChangesInChildComponents (node_modules/@angular/core/fesm2022/core.mjs:14293:9)
+	    at refreshView (node_modules/@angular/core/fesm2022/core.mjs:14109:13)
+	    at detectChangesInView (node_modules/@angular/core/fesm2022/core.mjs:14274:9)
+	    at detectChangesInViewWhileDirty (node_modules/@angular/core/fesm2022/core.mjs:13966:9)
+.............
+[31mChrome Headless 145.0.0.0 (Windows 10) CaseStudyCardComponent should create FAILED[39m
+	TypeError: Cannot read properties of undefined (reading 'image')
+	    at templateFn (ng:///CaseStudyCardComponent.js:27:41)
+	    at executeTemplate (node_modules/@angular/core/fesm2022/core.mjs:12369:9)
+	    at refreshView (node_modules/@angular/core/fesm2022/core.mjs:14054:13)
+	    at detectChangesInView (node_modules/@angular/core/fesm2022/core.mjs:14274:9)
+	    at detectChangesInViewIfAttached (node_modules/@angular/core/fesm2022/core.mjs:14234:5)
+	    at detectChangesInComponent (node_modules/@angular/core/fesm2022/core.mjs:14222:5)
+	    at detectChangesInChildComponents (node_modules/@angular/core/fesm2022/core.mjs:14293:9)
+	    at refreshView (node_modules/@angular/core/fesm2022/core.mjs:14109:13)
+	    at detectChangesInView (node_modules/@angular/core/fesm2022/core.mjs:14274:9)
+	    at detectChangesInViewWhileDirty (node_modules/@angular/core/fesm2022/core.mjs:13966:9)
+.............
+[31mChrome Headless 145.0.0.0 (Windows 10) MemberCardComponent should create FAILED[39m
+	TypeError: Cannot read properties of undefined (reading 'image')
+	    at templateFn (ng:///MemberCardComponent.js:39:43)
+	    at executeTemplate (node_modules/@angular/core/fesm2022/core.mjs:12369:9)
+	    at refreshView (node_modules/@angular/core/fesm2022/core.mjs:14054:13)
+	    at detectChangesInView (node_modules/@angular/core/fesm2022/core.mjs:14274:9)
+	    at detectChangesInViewIfAttached (node_modules/@angular/core/fesm2022/core.mjs:14234:5)
+	    at detectChangesInComponent (node_modules/@angular/core/fesm2022/core.mjs:14222:5)
+	    at detectChangesInChildComponents (node_modules/@angular/core/fesm2022/core.mjs:14293:9)
+	    at refreshView (node_modules/@angular/core/fesm2022/core.mjs:14109:13)
+	    at detectChangesInView (node_modules/@angular/core/fesm2022/core.mjs:14274:9)
+	    at detectChangesInViewWhileDirty (node_modules/@angular/core/fesm2022/core.mjs:13966:9)
+................................................................................
+..............
+Chrome Headless 145.0.0.0 (Windows 10): Executed 171 of 171[31m (3 FAILED)[39m (2.033 secs / 1.758 secs)
+✔ Browser application bundle generation complete.
+✔ Browser application bundle generation complete.
