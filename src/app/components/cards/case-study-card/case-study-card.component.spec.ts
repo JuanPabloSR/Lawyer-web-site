@@ -5,6 +5,7 @@ import { provideRouter } from '@angular/router';
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { CaseStudyCardComponent } from './case-study-card.component';
+import { CaseStudyType } from '@/types';
 
 describe('CaseStudyCardComponent', () => {
   let component: CaseStudyCardComponent;
@@ -16,10 +17,14 @@ describe('CaseStudyCardComponent', () => {
       providers: [provideRouter([])],
       imports: [CaseStudyCardComponent]
     })
-    .compileComponents();
+      .compileComponents();
 
     fixture = TestBed.createComponent(CaseStudyCardComponent);
     component = fixture.componentInstance;
+    component.case = {
+      image: 'ruta/de/prueba.jpg',
+    } as CaseStudyType;
+
     fixture.detectChanges();
   });
 

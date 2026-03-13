@@ -5,6 +5,7 @@ import { provideRouter } from '@angular/router';
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { MemberCardComponent } from './member-card.component';
+import { MemberType } from '@/types';
 
 describe('MemberCardComponent', () => {
   let component: MemberCardComponent;
@@ -16,10 +17,14 @@ describe('MemberCardComponent', () => {
       providers: [provideRouter([])],
       imports: [MemberCardComponent]
     })
-    .compileComponents();
+      .compileComponents();
 
     fixture = TestBed.createComponent(MemberCardComponent);
     component = fixture.componentInstance;
+    component.member = {
+      image: 'ruta/de/prueba.jpg',
+    } as MemberType;
+
     fixture.detectChanges();
   });
 
