@@ -23,7 +23,9 @@ export type WorkStepType = {
 export type MemberType = {
     name: string;
     image: string;
-    role: string
+    role: string;
+    specialty?: string;
+    linkedin?: string;
 }
 
 export type TestimonialType = {

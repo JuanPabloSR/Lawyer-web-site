@@ -18,25 +18,25 @@ export const workSteps: WorkStepType[] = [
     {
         id: 1,
         image: 'assets/img/work/work1-image1.png',
-        title: 'Consulta y Diagnóstico',
-        description: 'Iniciamos con una valoración detallada para entender a fondo tu situación laboral o pensional.',
+        title: 'Análisis del caso',
+        description: 'Estudiamos tu situación a detalle para identificar oportunidades y definir la mejor estrategia jurídica.',
     },
     {
         id: 2,
         image: 'assets/img/work/work1-image2.png',
-        title: 'Análisis y Estrategia',
-        description: 'Estudiamos la viabilidad jurídica de tu caso y trazamos la ruta legal más efectiva para ti.',
+        title: 'Estrategia legal',
+        description: 'Diseñamos un plan claro y personalizado enfocado en obtener resultados efectivos.',
     },
     {
         id: 3,
         image: 'assets/img/work/work1-image3.png',
-        title: 'Representación Legal',
-        description: 'Radicamos las reclamaciones administrativas o demandas judiciales defendiendo tus intereses.',
+        title: 'Gestión y representación',
+        description: 'Te acompañamos en todo el proceso, desde trámites hasta litigio ante entidades y jueces.',
     },
     {
         id: 4,
         image: 'assets/img/work/work1-image4.png',
-        title: 'Seguimiento Continuo',
-        description: 'Te acompañamos e informamos en cada etapa del proceso hasta lograr una resolución definitiva.',
+        title: 'Resultados y seguimiento',
+        description: 'Buscamos soluciones concretas y hacemos seguimiento hasta garantizar el cumplimiento de tus derechos.',
     },
 ]

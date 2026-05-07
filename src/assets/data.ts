@@ -2,25 +2,25 @@ import type { BlogType, CaseStudyType, FooterContactType, FooterLinkType, Member
 
 export const teamMembers: MemberType[] = [
     {
-        name: 'Dra Allyson Rivera',
+        name: 'Allison Daniela Rivera Ardila',
         image: 'assets/img/team/daniela.png',
-        role: 'Especialista Laboral',
+        role: 'Abogada Coordinadora',
+        specialty: 'Especialista en Derecho Administrativo',
+        linkedin: 'https://www.linkedin.com/in/allison-daniela-rivera-ardila-3a9364298',
     },
     {
-        name: 'Dr Jorge Vera Villamizar',
+        name: 'Jorge Alberto Vera Villamizar',
         image: 'assets/img/team/Jorge.jpg',
-        role: 'Abogado Senior',
+        role: 'Socio Director',
+        specialty: 'Especialista en Seguridad Social',
+        linkedin: 'https://www.linkedin.com/in/jorge-alberto-vera-villamizar-0113b9137/',
     },
     {
-        name: 'Dra Daniela Rivera',
+        name: 'Jairo Enrique Silva Santamaría',
         image: 'assets/img/team/daniela2.png',
-        role: 'Especialista Pensiones',
+        role: 'Socio Senior',
+        specialty: 'Especialista en Derecho Público',
     },
-    {
-        name: 'Dr Jorge Vera Villamizar',
-        image: 'assets/img/team/jorge2.jpg',
-        role: 'Especialista Civil',
-    }
 ]
 
 export const blogs: BlogType[] = [
@@ -97,65 +97,86 @@ export const servicesData: ServiceType[] = [
         id: 1,
         icon2: 'assets/img/icons/service4-icon1.svg',
         icon: 'assets/img/icons/service1-icon1.svg',
-        title: 'Derecho Pensional',
-        description: 'Asesoría experta en trámites de pensión de vejez, invalidez y sobrevivientes, garantizando su futuro.'
+        title: 'Reconocimiento de Pensiones',
+        description: 'Tramitamos tu pensión en Colpensiones y fondos privados con respaldo legal y agilidad, maximizando tu beneficio.',
     },
     {
         id: 2,
         icon2: 'assets/img/icons/service4-icon2.svg',
         icon: 'assets/img/icons/service1-icon2.svg',
-        title: 'Derecho Laboral',
-        description: 'Defensa de derechos laborales, liquidaciones, indemnizaciones y representación en juicios.'
+        title: 'Docentes Afiliados al FOMAG',
+        description: 'Reconocimiento pensional docente régimen 2277, contabilizando la totalidad de los tiempos laborados y factores salariales devengados.',
     },
     {
         id: 3,
         icon2: 'assets/img/icons/service4-icon3.svg',
         icon: 'assets/img/icons/service1-icon3.svg',
-        title: 'Derecho Administrativo',
-        description: 'Representación ante entidades públicas, demandas contra el Estado y reclamaciones administrativas.'
+        title: 'Docentes 1278 como 2277',
+        description: 'Analizamos la transición pensional de Docentes 1278 como docentes 2277, buscando la compatibilidad entre salario y pensión.',
     },
     {
         id: 4,
         icon2: 'assets/img/icons/service4-icon4.svg',
         icon: 'assets/img/icons/service1-icon4.svg',
-        title: 'Nulidad de Traslados',
-        description: 'Recupere su régimen pensional anterior mediante procesos de nulidad de traslado de fondo.'
+        title: 'Pensión por Muerte',
+        description: 'Defendemos el reconocimiento de la pensión de sobrevivientes y sustituciones pensionales con respaldo legal.',
     },
     {
         id: 5,
         icon2: 'assets/img/icons/service4-icon5.svg',
         icon: 'assets/img/icons/service1-icon5.svg',
-        title: 'Casación Laboral',
-        description: 'Recursos extraordinarios ante la Corte Suprema de Justicia para defender sus intereses.'
+        title: 'Pensión de Invalidez',
+        description: 'Gestionamos pensión por invalidez desde la calificación hasta el reconocimiento, garantizando todos tus derechos.',
     },
     {
         id: 6,
         icon2: 'assets/img/icons/service4-icon6.svg',
         icon: 'assets/img/icons/service1-icon6.svg',
-        title: 'Fuero de Estabilidad',
-        description: 'Protección para trabajadores con condiciones de salud especiales o maternidad/paternidad.'
+        title: 'Indemnizaciones / Devolución de Saldos',
+        description: 'Recupera saldos o indemnizaciones pensionales sin perder dinero con asesoría legal especializada.',
     },
     {
         id: 7,
-        icon2: 'assets/img/icons/service4-icon4.svg',
+        icon2: 'assets/img/icons/service4-icon1.svg',
         icon: 'assets/img/icons/service1-icon7.svg',
-        title: 'Responsabilidad Médica',
-        description: 'Asesoría en casos de negligencia médica y reclamaciones por daños y perjuicios.'
+        title: 'Reliquidación de Pensiones',
+        description: 'Recalculamos tu pensión para aumentar ingresos de forma legal, revisando todos los factores salariales aplicables.',
     },
     {
         id: 8,
-        icon2: 'assets/img/icons/service4-icon5.svg',
+        icon2: 'assets/img/icons/service4-icon2.svg',
         icon: 'assets/img/icons/service1-icon8.svg',
-        title: 'Sucesiones y Familia',
-        description: 'Trámites de herencias, testamentos y procesos de derecho de familia relacionados.'
+        title: 'Bonificación 383',
+        description: 'Gestionamos el reconocimiento de la bonificación del Decreto 383 para empleados de la Rama Judicial, Policía y Fiscalía.',
     },
     {
         id: 9,
-        icon2: 'assets/img/icons/service4-icon6.svg',
+        icon2: 'assets/img/icons/service4-icon3.svg',
         icon: 'assets/img/icons/service1-icon9.svg',
-        title: 'Consultoría Empresarial',
-        description: 'Asesoría preventiva para empresas en contratación y cumplimiento de normativa laboral.'
-    }
+        title: 'Cesantías',
+        description: 'Tramitamos reconocimiento de cesantías y reclamamos sanción moratoria por pago tardío con resultados efectivos.',
+    },
+    {
+        id: 10,
+        icon2: 'assets/img/icons/service4-icon4.svg',
+        icon: 'assets/img/icons/service1-icon1.svg',
+        title: 'Seguros por Muerte e Invalidez',
+        description: 'Reclamamos seguros por fallecimiento y por invalidez con acompañamiento total durante todo el proceso.',
+    },
+    {
+        id: 11,
+        icon2: 'assets/img/icons/service4-icon5.svg',
+        icon: 'assets/img/icons/service1-icon2.svg',
+        title: 'Accidentes de Tránsito',
+        description: 'Reclamamos indemnizaciones por accidentes viales eficazmente, defendiendo tus derechos frente a aseguradoras.',
+    },
+    {
+        id: 12,
+        icon2: 'assets/img/icons/service4-icon6.svg',
+        icon: 'assets/img/icons/service1-icon3.svg',
+        title: 'Indemnización por Falla Médica',
+        description: 'Demandamos fallas en salud buscando indemnización justa para víctimas de negligencia médica.',
+    },
 ]
 
 export const caseStudies: CaseStudyType[] = [
@@ -300,17 +321,17 @@ export const contactItems: FooterContactType[] = [
     },
     {
         icon: 'assets/img/icons/footer1-icon2.svg',
-        text: 'Bucaramanga, Santander',
-        href: '',
+        text: 'Calle 36 #13-48, García Rovira, Bucaramanga',
+        href: 'https://maps.google.com/?q=Vera+Villamizar+Abogados+SAS+Bucaramanga',
     },
     {
         icon: 'assets/img/icons/footer1-icon3.svg',
-        text: 'contacto@veravillamizar.com',
-        href: 'mailto:contacto@veravillamizar.com',
+        text: 'veravillamizarabogados@gmail.com',
+        href: 'mailto:veravillamizarabogados@gmail.com',
     },
     {
         icon: 'assets/img/icons/footer1-icon1.svg',
-        text: '+57 315 718 9078',
-        href: 'tel:+573157189078',
+        text: 'Lun – Vie: 8:00 AM – 4:00 PM',
+        href: '',
     },
 ];

@@ -1,9 +1,10 @@
 import type { MemberType } from '@/types';
+import { CommonModule } from '@angular/common';
 import { Component, Input } from '@angular/core';
 
 @Component({
     selector: 'app-member-card',
-    imports: [],
+    imports: [CommonModule],
     templateUrl: './member-card.component.html',
     styles: ``
 })
