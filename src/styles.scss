@@ -19,12 +19,15 @@
 }
 
 /* FIX: Lighthouse Cumulative Layout Shift (CLS) */
-/* Reservar espacio inicial para el carrusel y evitar saltos de la web */
-.hero1-sliders {
+/* Reservar espacio inicial para toda la sección hero y evitar saltos de la web */
+.hero1 {
     min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 @media (max-width: 768px) {
-    .hero1-sliders {
+    .hero1 {
         min-height: 600px;
     }
 }
