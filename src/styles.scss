@@ -17,3 +17,14 @@
 .service-page-item:hover .service-arrow-fix i.fa-arrow-right {
     color: #005a8c !important;
 }
+
+/* FIX: Lighthouse Cumulative Layout Shift (CLS) */
+/* Reservar espacio inicial para el carrusel y evitar saltos de la web */
+.hero1-sliders {
+    min-height: 100vh;
+}
+@media (max-width: 768px) {
+    .hero1-sliders {
+        min-height: 600px;
+    }
+}
