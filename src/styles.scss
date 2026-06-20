@@ -22,9 +22,6 @@
 /* Reservar espacio inicial para toda la sección hero y evitar saltos de la web */
 .hero1 {
     min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
 }
 @media (max-width: 768px) {
     .hero1 {
