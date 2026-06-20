@@ -12,19 +12,19 @@ import { CaseStudyCardComponent } from "@app/components/cards/case-study-card/ca
 export class MoreCasesComponent {
     caseStudiesData: CaseStudyType[] = [
         {
-            image: 'assets/img/others/case1-image1.png',
-            category: 'Business Consulting',
-            title: 'Strategic Marketing',
+            title: 'Casos de Éxito en Pensiones',
+            category: 'Derecho Pensional',
+            image: 'assets/img/others/case1-image1.webp',
         },
         {
-            image: 'assets/img/others/case1-image2.png',
-            category: 'Business Consulting',
-            title: 'Strategic Marketing',
+            title: 'Representación Laboral',
+            category: 'Derecho Laboral',
+            image: 'assets/img/others/case1-image2.webp',
         },
         {
-            image: 'assets/img/others/case1-image3.png',
-            category: 'Business Consulting',
-            title: 'Strategic Marketing',
+            title: 'Derecho Laboral Docente',
+            category: 'Administrativo',
+            image: 'assets/img/others/case1-image3.webp',
         },
     ];
 }

@@ -14,49 +14,49 @@ import { PaginationComponent } from "@app/components/pagination/pagination.compo
 export class CaseStudyComponent {
     caseStudies: CaseStudyType[] = [
         {
-            image: 'assets/img/others/case1-image1.png',
-            category: 'Business Consulting',
-            title: 'Strategic Marketing',
+            title: 'Casos de Éxito en Pensiones',
+            category: 'Derecho Pensional',
+            image: 'assets/img/others/case1-image1.webp',
         },
         {
-            image: 'assets/img/others/case1-image2.png',
-            category: 'Business Consulting',
-            title: 'Strategic Marketing',
+            title: 'Representación Laboral',
+            category: 'Derecho Laboral',
+            image: 'assets/img/others/case1-image2.webp',
         },
         {
-            image: 'assets/img/others/case1-image3.png',
-            category: 'Business Consulting',
-            title: 'Strategic Marketing',
+            title: 'Derecho Laboral Docente',
+            category: 'Administrativo',
+            image: 'assets/img/others/case1-image3.webp',
         },
         {
-            image: 'assets/img/others/case1-image4.png',
-            category: 'Business Consulting',
-            title: 'Strategic Marketing',
+            title: 'Asesoría Empresarial',
+            category: 'Derecho Laboral',
+            image: 'assets/img/others/case1-image4.webp',
         },
         {
-            image: 'assets/img/others/case1-image5.png',
-            category: 'Business Consulting',
-            title: 'Strategic Marketing',
+            title: 'Indemnización por Despido',
+            category: 'Derecho Laboral',
+            image: 'assets/img/others/case1-image5.webp',
         },
         {
-            image: 'assets/img/others/case1-image6.png',
-            category: 'Business Consulting',
-            title: 'Strategic Marketing',
+            title: 'Nulidad de Traslado',
+            category: 'Derecho Pensional',
+            image: 'assets/img/others/case1-image1.webp',
         },
         {
-            image: 'assets/img/others/case1-image7.png',
-            category: 'Business Consulting',
-            title: 'Strategic Marketing',
+            title: 'Reparación Directa',
+            category: 'Derecho Administrativo',
+            image: 'assets/img/others/case1-image2.webp',
         },
         {
-            image: 'assets/img/others/case1-image8.png',
-            category: 'Business Consulting',
-            title: 'Strategic Marketing',
+            title: 'Sucesión Tramitada',
+            category: 'Derecho Familiar',
+            image: 'assets/img/others/case1-image3.webp',
         },
         {
-            image: 'assets/img/others/case1-image9.png',
-            category: 'Business Consulting',
-            title: 'Strategic Marketing',
-        },
+            title: 'Litigio Estratégico',
+            category: 'Litigio',
+            image: 'assets/img/others/case1-image4.webp',
+        }
     ];
 }

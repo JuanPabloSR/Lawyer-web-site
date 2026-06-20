@@ -31,7 +31,7 @@
         text-align: center;
         line-height: 26px;
         color: var(--vtc-text-title-1);
-        background-color: var(--vtc-bg-main1);
+        background-color: var(--vtc-bg-main6);
         margin-top: -13px;
         margin-left: -13px;
         border-radius: 4px;
@@ -78,7 +78,7 @@
 
         &:hover {
             transition: all .4s;
-            background-color: var(--vtc-bg-main1);
+            background-color: var(--vtc-bg-main6);
         }
     }
 }

@@ -25,17 +25,19 @@
       overflow: hidden;
 
       @media #{$md} {
-        height: 900px;
+        min-height: 600px;
       }
 
       @media #{$xs} {
-        height: 880px;
+        min-height: 100svh;
+        padding-bottom: 80px;
       }
 
       .heading {
         overflow: hidden;
         @media #{$xs} {
-          padding-top: 80px;
+          padding-top: 40px;
+          padding-bottom: 40px;
         }
         span.sub-title {
           display: inline-block;
@@ -67,20 +69,21 @@
       .main-image {
         position: absolute;
         right: 0;
-        transform: scale(0.8) translateX(180px);
+        top: 0;
+        bottom: 0;
+        height: 100%;
+        transform: translateX(200px);
         z-index: 2;
         transition: all 2s ease-in-out;
-        opacity: 0.9;
+        opacity: 0.1;
+        overflow: hidden;
+        clip-path: polygon(8% 0%, 100% 0%, 100% 100%, 0% 100%);
 
-        @media #{$md} {
-          bottom: -70px;
-        }
         @media #{$xs} {
-          bottom: -70px;
-        }
-    
-        @media #{$xxl} {
-          transform: scale(0.8) translateX(280px);
+          clip-path: none;
+          width: 100%;
+          opacity: 0.15;
+          z-index: 1;
         }
       }
 
@@ -161,17 +164,25 @@
         .main-image {
           position: absolute;
           right: 0;
-          transform: scale(0.8) translateX(180px);
+          top: 0;
+          bottom: 0;
+          height: 100%;
+          transform: translateX(0);
           z-index: 2;
           transition: all 1.3s ease-in-out;
           opacity: 1;
+          overflow: hidden;
+          clip-path: polygon(8% 0%, 100% 0%, 100% 100%, 0% 100%);
 
           @media #{$xs} {
-            width: 600px;
+            clip-path: none;
+            width: 100%;
+            opacity: 0.25;
+            z-index: 1;
           }
       
           @media #{$xxl} {
-            transform: scale(0.8) translateX(280px);
+            transform: translateX(0);
           }
         }
 
@@ -210,8 +221,18 @@
   .hero1-arrow-buttons {
     position: absolute;
     bottom: 32px;
-    display: grid;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
     right: 32px;
+    z-index: 10;
+
+    @media #{$xs} {
+      bottom: 16px;
+      right: 50%;
+      transform: translateX(50%);
+    }
+
     button {
       border: none;
       border-radius: 50%;
@@ -222,12 +243,16 @@
       text-align: center;
       line-height: 56px;
       background: var(--vtc-bg-white1);
-      margin: 5px 0px;
+      margin: 0;
       transition: all .4s;
+      display: flex;
+      align-items: center;
+      justify-content: center;
 
       &:hover {
         transition: all .4s;
-        background-color: var(--vtc-bg-main1);
+        background-color: var(--vtc-bg-main6);
+        color: #fff;
       }
     }
   }

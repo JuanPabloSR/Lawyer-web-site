@@ -4,7 +4,9 @@
             <div class="col-lg-6 m-auto text-center">
                 <div class="heading5">
                     <span class="sub-title5">our work process</span>
-                    <h2 class="black3 text-44 sm:text-30 md:text-30 leading-52 md:leading-36 sm:leading-36 font-semibold text-anime-style-3">Securing Future Made Simple</h2>
+                    <h2
+                        class="black3 text-44 sm:text-30 md:text-30 leading-52 md:leading-36 sm:leading-36 font-semibold text-anime-style-3">
+                        Securing Future Made Simple</h2>
                 </div>
             </div>
         </div>
@@ -12,52 +14,67 @@
         <div class="row">
             <div class="col-lg-10 m-auto">
                 <div class="service-widgets-section mt-60">
-                      <div class="tab-content" [ngbNavOutlet]="nav" id="pills-tabContent">
-                      </div>
-                      <div class="space80"></div>
-                     <div class="tabs-btn-area">
-                        <ul ngbNav #nav="ngbNav" [(activeId)]="active" class="nav nav-pills" id="pills-tab" role="tablist">
-                            <li *ngFor="let service of services" [ngbNavItem]="service.id" class="nav-item" role="presentation">
-                              <button ngbNavLink class="nav-link" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">
-                                <span><img [src]="service.icon" alt=""></span>
-                                {{service.title}}
-                              </button>
-                              <ng-template ngbNavContent>
-                                <div class="row align-items-center">
-                                    <div class="col-lg-6">
-                                        <div class="service-boxarea">
-                                            <div class="icons" data-aos="fade-left" data-aos-duration="700">
-                                                <img [src]="service.icon" alt="">
+                    <div class="tab-content" [ngbNavOutlet]="nav" id="pills-tabContent">
+                    </div>
+                    <div class="space80"></div>
+                    <div class="tabs-btn-area">
+                        <ul ngbNav #nav="ngbNav" [(activeId)]="active" class="nav nav-pills" id="pills-tab"
+                            role="tablist">
+                            <li *ngFor="let service of services" [ngbNavItem]="service.id" class="nav-item"
+                                role="presentation">
+                                <button ngbNavLink class="nav-link" id="pills-home-tab" data-bs-toggle="pill"
+                                    data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home"
+                                    aria-selected="true">
+                                    <span><img [src]="service.icon" alt=""></span>
+                                    {{service.title}}
+                                </button>
+                                <ng-template ngbNavContent>
+                                    <div class="row align-items-center">
+                                        <div class="col-lg-6">
+                                            <div class="service-boxarea">
+                                                <div class="icons" data-aos="fade-left" data-aos-duration="700">
+                                                    <img [src]="service.icon" alt="">
+                                                </div>
+                                                <div class="space28"></div>
+                                                <div class="content-area">
+                                                    <h3 data-aos="fade-left" data-aos-duration="800">{{service.title}}
+                                                    </h3>
+                                                    <p data-aos="fade-left" data-aos-duration="900">Your business
+                                                        deserves protection, we’re here to provide it. Our business
+                                                        insurance services are designed to cover best companies of all
+                                                        sizes, from smalls startups to insurance. </p>
+                                                    <div class="button mt-40">
+                                                        <a class="theme-btn6" href="javascript:void(0)"><span
+                                                                class="text">Más información</span><span
+                                                                class="arrow-all"><span class="arrow1"><i
+                                                                        class="fas fa-arrow-right"></i></span><span
+                                                                    class="arrow2"><i
+                                                                        class="fas fa-arrow-right"></i></span></span></a>
+                                                    </div>
+                                                </div>
                                             </div>
-                                            <div class="space28"></div>
-                                            <div class="content-area">
-                                                <h3 data-aos="fade-left" data-aos-duration="800">{{service.title}}</h3>
-                                                <p data-aos="fade-left" data-aos-duration="900">Your business deserves protection, we’re here to provide it. Our business insurance services are designed to cover best companies of all sizes, from smalls startups to insurance. </p>
-                                                <div class="button mt-40">
-                                                    <a class="theme-btn6" href="javascript:void(0)"><span class="text">Learn More</span><span class="arrow-all"><span class="arrow1"><i class="fas fa-arrow-right"></i></span><span class="arrow2"><i class="fas fa-arrow-right"></i></span></span></a>
-                                                 </div>
+                                        </div>
+                                        <div class="col-lg-1"></div>
+                                        <div class="col-lg-5">
+                                            <div class="images-area">
+                                                <div class="img1 reveal">
+                                                    <img src="assets/img/service/service5-image.png" alt="">
+                                                </div>
+                                                <div class="arrow-circle text-end">
+                                                    <a href="javascript:void(0)">
+                                                        <img src="assets/img/shapes/service5-circle-bg.svg" alt=""
+                                                            class="elements20 round-circle">
+                                                        <img src="assets/img/shapes/service5-circle-arrow.svg" alt=""
+                                                            class="arrow1">
+                                                    </a>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-lg-1"></div>
-                                    <div class="col-lg-5">
-                                        <div class="images-area">
-                                            <div class="img1 reveal">
-                                                <img src="assets/img/service/service5-image.png" alt="">
-                                            </div>
-                                            <div class="arrow-circle text-end">
-                                                <a href="javascript:void(0)">
-                                                    <img src="assets/img/shapes/service5-circle-bg.svg" alt="" class="elements20 round-circle">
-                                                    <img src="assets/img/shapes/service5-circle-arrow.svg" alt="" class="arrow1">
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                              </ng-template>
+                                </ng-template>
                             </li>
-                          </ul>
-                     </div>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
