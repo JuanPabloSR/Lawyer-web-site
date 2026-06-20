@@ -10,6 +10,7 @@ export const CASE_STUDY_ROUTES: Routes = [
         component: CaseStudyComponent,
         data: { title: "Casos de Estudio" }
     },
+    /*
     {
         path: 'case-details/left',
         component: CaseDetailLeftComponent,
@@ -20,6 +21,7 @@ export const CASE_STUDY_ROUTES: Routes = [
         component: CaseDetailRightComponent,
         data: { title: "Detalles de Caso Derecha" }
     },
+    */
     {
         path: 'case-single',
         component: CaseStudyDetailComponent,

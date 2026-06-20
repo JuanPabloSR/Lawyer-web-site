@@ -11,6 +11,7 @@ export const SERVICES_ROUTES: Routes = [
         component: OurServiceComponent,
         data: { title: "Nuestros Servicios"}
     },
+    /*
     {
         path: 'service-details/left',
         component: ServiceDetailsLeftComponent,
@@ -21,6 +22,7 @@ export const SERVICES_ROUTES: Routes = [
         component: ServiceDetailsRightComponent,
         data: { title: "Detalles de Servicio Derecha"}
     },
+    */
     {
         path: 'service-details',
         component: ServiceDetailsComponent,

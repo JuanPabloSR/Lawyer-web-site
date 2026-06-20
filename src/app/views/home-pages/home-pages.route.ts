@@ -16,6 +16,7 @@ export const HOME_PAGES_ROUTES: Routes = [
         component: Home1Component,
         data: { title: "Home-1" }
     },
+    /*
     {
         path: 'home-2',
         component: Home2Component,
@@ -62,6 +63,7 @@ export const HOME_PAGES_ROUTES: Routes = [
         component: SingleHome5Component,
         data: { title: "Single Home 5"}
     },
+    */
 ];
 
 

@@ -13,6 +13,7 @@ export const BLOGS_ROUTES: Routes = [
         component: BlogGrid2Component,
         data: { title: "Blog 2 Columnas" }
     },
+    /*
     {
         path: 'blog/grid-3',
         component: BlogGrid3Component,
@@ -38,6 +39,7 @@ export const BLOGS_ROUTES: Routes = [
         component: BlogDetailRightComponent,
         data: { title: "Detalles del Blog Derecha" }
     },
+    */
     {
         path: 'blog-details',
         component: BlogDetailsComponent,
