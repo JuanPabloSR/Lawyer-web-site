@@ -5,12 +5,12 @@
         </div>
         <div class="icons">
             <ul>
-                <li><a [href]="member.linkedin ?? 'javascript:void(0)'" [target]="member.linkedin ? '_blank' : ''" rel="noopener"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                <li><a [href]="member.linkedin ?? 'javascript:void(0)'" [target]="member.linkedin ? '_blank' : ''" rel="noopener" aria-label="Perfil de LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a></li>
             </ul>
         </div>
     </div>
     <div class="text-content">
-        <h4><a href="javascript:void(0)"
+        <h4><a href="javascript:void(0)" aria-label="Ver perfil"
                 class="black1 font-20 text mt-24 _hover1 leading-20 font-semibold inline-block">{{member.name}}</a></h4>
         <p class="text-16 leading-16 font-medium gray1 mt-10">{{member.role}}</p>
         <p *ngIf="member.specialty" class="text-14 leading-16 font-medium gray1 mt-6" style="font-style:italic;">{{member.specialty}}</p>
