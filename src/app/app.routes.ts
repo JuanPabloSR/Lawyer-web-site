@@ -10,5 +10,8 @@ export const routes: Routes = [
         path: '',
         loadChildren: () => import('./views/views.route').then((mod) => mod.VIEWS_ROUTES)
     },
-
+    {
+        path: '**',
+        redirectTo: 'home-1'
+    }
 ];

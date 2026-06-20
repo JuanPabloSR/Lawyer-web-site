@@ -25,6 +25,10 @@ export class NavItemComponent {
 
     menuItems: MenuItem[] = [
         {
+            title: 'Inicio',
+            link: '/home-1',
+        },
+        {
             title: 'Páginas',
             icon: 'fa-solid fa-angle-down',
             submenu: [
@@ -43,8 +47,6 @@ export class NavItemComponent {
                 {
                     title: 'Detalles de Servicio',
                     submenu: [
-                        { title: "Servicio Detalles Izquierda", link: '/service-details/left' },
-                        { title: "Servicio Detalles Derecha", link: '/service-details/right' },
                         { title: "Servicio Detalles", link: '/service-details' }
                     ]
                 },
@@ -58,8 +60,6 @@ export class NavItemComponent {
                 {
                     title: 'Detalles del Caso',
                     submenu: [
-                        { title: "Caso Detalles Izquierda", link: '/case-details/left' },
-                        { title: "Caso Detalles Derecha", link: '/case-details/right' },
                         { title: "Caso Único", link: '/case-single' }
                     ]
                 },
@@ -72,22 +72,12 @@ export class NavItemComponent {
                 {
                     title: 'Nuestro Blog',
                     submenu: [
-                        { title: 'Blog 2 Columnas', link: '/blog/grid-2' },
-                        { title: 'Blog 3 Columnas', link: '/blog/grid-3' },
-                    ],
-                },
-                {
-                    title: 'Blog Sidebar',
-                    submenu: [
-                        { title: 'Blog Izquierda', link: '/blog-sidebar/left' },
-                        { title: 'Blog Derecha', link: '/blog-sidebar/right' },
+                        { title: 'Blog 2 Columnas', link: '/blog/grid-2' }
                     ],
                 },
                 {
                     title: 'Detalles del Blog',
                     submenu: [
-                        { title: 'Detalles Izquierda', link: '/blog-details/left' },
-                        { title: 'Detalles Derecha', link: '/blog-details/right' },
                         { title: 'Detalles', link: '/blog-details' },
                     ],
                 },

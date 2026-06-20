@@ -22,10 +22,14 @@ files_to_convert = {
     "IMG_4489.HEIC": "service/service1-image.webp",
     # Case Studies (Home & Page)
     "IMG_4503.HEIC": "others/case1-image1.webp",
-    "IMG_4512.HEIC": "others/case1-image2.webp",
-    "IMG_4522.HEIC": "others/case1-image3.webp",
-    "IMG_4531.HEIC": "others/case1-image4.webp",
+    "IMG_4550.HEIC": "others/case1-image2.webp",
+    "IMG_4464.HEIC": "others/case1-image3.webp",
+    "IMG_4618.HEIC": "others/case1-image4.webp",
     "IMG_4545.HEIC": "others/case1-image5.webp",
+    "IMG_4444.HEIC": "others/case1-image6.webp",
+    "IMG_4472.HEIC": "others/case1-image7.webp",
+    "IMG_4525.HEIC": "others/case1-image8.webp",
+    "IMG_4596.HEIC": "others/case1-image9.webp",
     # About Page
     "IMG_4560.HEIC": "about/about-page-advicx-image1.webp",
     "IMG_4573.HEIC": "about/about-page-advicx-image2.webp",

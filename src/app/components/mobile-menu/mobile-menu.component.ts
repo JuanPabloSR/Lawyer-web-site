@@ -49,15 +49,10 @@ export class MobileMenuComponent {
 
     menuItems = [
         {
-            label: 'Home',
-            icon: 'fas fa-angle-down',
-            subMenu: [
-                { title: 'Business Consulting 01', link: '/index', image: 'assets/img/demo/demo1.jpg' },
-                { title: 'Business Consulting 02', link: '/index2', image: 'assets/img/demo/demo2.jpg' },
-                { title: 'Business Consulting 03', link: '/index3', image: 'assets/img/demo/demo3.jpg' },
-                { title: 'Business Consulting 04', link: '/index4', image: 'assets/img/demo/demo4.jpg' },
-                { title: 'Business Consulting 05', link: '/index5', image: 'assets/img/demo/demo5.jpg' },
-            ]
+            label: 'Inicio',
+            icon: '',
+            link: '/home-1',
+            subMenu: []
         }
     ];
 
@@ -82,8 +77,6 @@ export class MobileMenuComponent {
             "icon": 'fa-angle-down',
             "subMenu": [
                 { title: 'Nuestros Servicios', link: '/our-services' },
-                { title: "Servicio Detalles Izquierda", link: '/service-details/left' },
-                { title: "Servicio Detalles Derecha", link: '/service-details/right' },
                 { title: "Servicio Detalles", link: '/service-details' }
             ]
         },
@@ -94,8 +87,6 @@ export class MobileMenuComponent {
             "icon": 'fa-angle-down',
             "subMenu": [
                 { title: 'Casos de Estudio', link: '/case-study' },
-                { title: "Caso Detalles Izquierda", link: '/case-details/left' },
-                { title: "Caso Detalles Derecha", link: '/case-details/right' },
                 { title: "Caso Único", link: '/case-single' }
             ]
         },
@@ -108,22 +99,12 @@ export class MobileMenuComponent {
                 {
                     title: 'Nuestro Blog',
                     subMenu: [
-                        { title: 'Blog 2 Columnas', link: '/blog/grid-2' },
-                        { title: 'Blog 3 Columnas', link: '/blog/grid-3' },
-                    ],
-                },
-                {
-                    title: 'Blog Sidebar',
-                    subMenu: [
-                        { title: 'Blog Izquierda', link: '/blog-sidebar/left' },
-                        { title: 'Blog Derecha', link: '/blog-sidebar/right' },
+                        { title: 'Blog 2 Columnas', link: '/blog/grid-2' }
                     ],
                 },
                 {
                     title: 'Detalles del Blog',
                     subMenu: [
-                        { title: 'Detalles Izquierda', link: '/blog-details/left' },
-                        { title: 'Detalles Derecha', link: '/blog-details/right' },
                         { title: 'Detalles', link: '/blog-details' },
                     ],
                 },

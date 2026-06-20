@@ -41,22 +41,22 @@ export class CaseStudyComponent {
         {
             title: 'Nulidad de Traslado',
             category: 'Derecho Pensional',
-            image: 'assets/img/others/case1-image1.webp',
+            image: 'assets/img/others/case1-image6.webp',
         },
         {
             title: 'Reparación Directa',
             category: 'Derecho Administrativo',
-            image: 'assets/img/others/case1-image2.webp',
+            image: 'assets/img/others/case1-image7.webp',
         },
         {
             title: 'Sucesión Tramitada',
             category: 'Derecho Familiar',
-            image: 'assets/img/others/case1-image3.webp',
+            image: 'assets/img/others/case1-image8.webp',
         },
         {
             title: 'Litigio Estratégico',
             category: 'Litigio',
-            image: 'assets/img/others/case1-image4.webp',
+            image: 'assets/img/others/case1-image9.webp',
         }
     ];
 }

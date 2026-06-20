@@ -2,28 +2,28 @@ import type { HeroSliderType, TestimonialType, WorkStepType } from "@/types";
 
 export const heroSliderData: HeroSliderType[] = [
     {
-        title: 'Expertos en Derecho del Trabajo y Pensiones',
-        description: 'Protegemos sus derechos con más de 15 años de experiencia garantizando el futuro de docentes y trabajadores en Colombia.',
+        title: 'Donde la experiencia jurídica se convierte en resultados',
+        description: 'Expertos en derecho Docente, Derecho laboral y pensiones, acompañándote con compromiso, experiencia y resultados reales en cada caso.',
         image: 'assets/img/hero/hero1-slider-jorge.webp',
     },
     {
-        title: 'Asesoría Jurídica Especializada para el Magisterio',
-        description: 'Soluciones efectivas en FOMAG, cesantías, sanciones por mora y pensiones. Su tranquilidad y justicia son nuestra prioridad.',
+        title: 'Donde la experiencia jurídica se convierte en resultados',
+        description: 'Expertos en derecho Docente, Derecho laboral y pensiones, acompañándote con compromiso, experiencia y resultados reales en cada caso.',
         image: 'assets/img/hero/hero1-slider-allyson.webp',
     },
     {
-        title: 'Gestión Confiable y Resultados Reales',
-        description: 'Un equipo dedicado a conseguir los mejores resultados para cada caso, con total transparencia y compromiso.',
+        title: 'Donde la experiencia jurídica se convierte en resultados',
+        description: 'Expertos en derecho Docente, Derecho laboral y pensiones, acompañándote con compromiso, experiencia y resultados reales en cada caso.',
         image: 'assets/img/hero/hero1-slider-img_4526.webp',
     },
     {
-        title: 'Defensa Efectiva de sus Derechos Pensionales',
-        description: 'Representamos a docentes, trabajadores y familias en procesos pensionales, laborales y administrativos ante el Estado.',
+        title: 'Donde la experiencia jurídica se convierte en resultados',
+        description: 'Expertos en derecho Docente, Derecho laboral y pensiones, acompañándote con compromiso, experiencia y resultados reales en cada caso.',
         image: 'assets/img/hero/hero1-slider-img_4546.webp',
     },
     {
-        title: 'Compromiso con Cada Caso, Cada Cliente',
-        description: 'Brindamos atención personalizada y acompañamiento jurídico integral para que usted siempre tenga la representación que merece.',
+        title: 'Donde la experiencia jurídica se convierte en resultados',
+        description: 'Expertos en derecho Docente, Derecho laboral y pensiones, acompañándote con compromiso, experiencia y resultados reales en cada caso.',
         image: 'assets/img/hero/hero1-slider-img_4624.webp',
     },
 ]

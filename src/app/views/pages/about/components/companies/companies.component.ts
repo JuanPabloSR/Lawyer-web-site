@@ -10,14 +10,10 @@ import { SlickCarouselModule } from 'ngx-slick-carousel';
 })
 export class CompaniesComponent {
     companyImages = [
-        "assets/img/logo/about-page-brand1.png",
-        "assets/img/logo/about-page-brand2.png",
-        "assets/img/logo/about-page-brand3.png",
-        "assets/img/logo/about-page-brand4.png",
-        "assets/img/logo/about-page-brand1.png",
-        "assets/img/logo/about-page-brand2.png",
-        "assets/img/logo/about-page-brand3.png",
-        "assets/img/logo/about-page-brand4.png",
+        "assets/img/aliados/pinilla_consultores_logo.jpeg",
+        "assets/img/aliados/pinilla_consultores_logo.jpeg",
+        "assets/img/aliados/pinilla_consultores_logo.jpeg",
+        "assets/img/aliados/pinilla_consultores_logo.jpeg",
     ]
 
     sliderConfig = {

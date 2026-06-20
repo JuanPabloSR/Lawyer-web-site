@@ -25,38 +25,9 @@
                 
                 @if(!scrollMenu){
                     <ul>
-                        @for (item of menuItems; track $index) {
-                        <li class="has-dropdown" [ngClass]="{ 'active': menuOpen }">
-                            <a href="javascript:void(0);" (click)="toggleMenu()">Home
-                                <span><i class="fas fa-angle-down"></i></span>
-                            </a>
-    
-                            <div class="vl-mega-menu" [ngStyle]="{ 'display': menuOpen ? 'block' : 'none' }">
-                                <div class="vl-home-menu">
-                                    <div class="row gx-3 row-cols-1 row-cols-md-1 row-cols-lg-5">
-                                        @for (item of item.subMenu; track $index) {
-                                        <div class="col">
-                                            <div class="vl-home-thumb">
-                                                <div class="img1">
-                                                    <img [src]="item.image" [alt]="">
-                                                </div>
-                                                <a class="text" [routerLink]="item.link">{{ item.title }}</a>
-                                                <div class="btn-area1">
-                                                    <a [routerLink]="item.link" [class]="themeBtn"><span class="text">Multi Page</span><span class="arrow-all"><span class="arrow1"><i class="fa-solid fa-arrow-right" style="color: white;"></i></span><span class="arrow2"><i class="fa-solid fa-arrow-right" style="color: white;"></i></span></span></a>
-                                                    <a [routerLink]="item.link" [class]="themeBtn"><span class="text">One Page</span><span class="arrow-all"><span class="arrow1"><i class="fa-solid fa-arrow-right" style="color: white;"></i></span><span class="arrow2"><i class="fa-solid fa-arrow-right" style="color: white;"></i></span></span></a>
-                                                </div>
-                                                <div class="space20 d-lg-none d-block"></div>
-                                            </div>
-                                        </div>}
-                                    </div>
-                                </div>
-                            </div>
-    
-                            <button class="vl-menu-close" (click)="toggleMenu()">
-                                <i class="fas fa-chevron-right"></i>
-                            </button>
+                        <li>
+                            <a routerLink="/home-1" (click)="closeSidebar()">Inicio</a>
                         </li>
-                        }
                         @for (item of menu; track $index) {
                         <li class="has-dropdown" [ngClass]="{ ' active': item.isOpen }">
                             <a href="javascript:void(0);" (click)="toggleSubMenu(item)">
