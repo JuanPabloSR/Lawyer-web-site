@@ -41,6 +41,6 @@ export class TestimonialSwiperComponent {
             delay: 2500,
             disableOnInteraction: false,
         },
-        a11y: false,
+        a11y: { enabled: false },
     };
 }
