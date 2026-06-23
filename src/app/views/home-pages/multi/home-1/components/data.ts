@@ -2,28 +2,28 @@ import type { HeroSliderType, TestimonialType, WorkStepType } from "@/types";
 
 export const heroSliderData: HeroSliderType[] = [
     {
-        title: 'Donde la experiencia jurídica se convierte en resultados',
+        title: 'Abogados en Bucaramanga: Especialistas en Derecho Laboral y Pensiones',
         description: 'Expertos en derecho Docente, Derecho laboral y pensiones, acompañándote con compromiso, experiencia y resultados reales en cada caso.',
         image: 'assets/img/hero/hero1-slider-jorge.webp',
     },
     {
-        title: 'Donde la experiencia jurídica se convierte en resultados',
-        description: 'Expertos en derecho Docente, Derecho laboral y pensiones, acompañándote con compromiso, experiencia y resultados reales en cada caso.',
+        title: 'Protegemos sus Derechos Laborales y Seguridad Social',
+        description: 'Brindamos asesoría integral y representación legal para asegurar que sus derechos sean respetados en todo momento.',
         image: 'assets/img/hero/hero1-slider-allyson.webp',
     },
     {
-        title: 'Donde la experiencia jurídica se convierte en resultados',
-        description: 'Expertos en derecho Docente, Derecho laboral y pensiones, acompañándote con compromiso, experiencia y resultados reales en cada caso.',
+        title: 'Más de 15 Años de Experiencia Jurídica a su Servicio',
+        description: 'Nuestro equipo de profesionales en Santander cuenta con una trayectoria comprobada ganando casos complejos.',
         image: 'assets/img/hero/hero1-slider-img_4526-opt.webp',
     },
     {
-        title: 'Donde la experiencia jurídica se convierte en resultados',
-        description: 'Expertos en derecho Docente, Derecho laboral y pensiones, acompañándote con compromiso, experiencia y resultados reales en cada caso.',
+        title: 'Expertos en Pensión Docente FOMAG y Reliquidaciones',
+        description: 'Conocemos a fondo el sistema pensional colombiano. Le ayudamos a reclamar lo que por ley le corresponde.',
         image: 'assets/img/hero/hero1-slider-img_4546-opt.webp',
     },
     {
-        title: 'Donde la experiencia jurídica se convierte en resultados',
-        description: 'Expertos en derecho Docente, Derecho laboral y pensiones, acompañándote con compromiso, experiencia y resultados reales en cada caso.',
+        title: 'Asesoría Legal Personalizada para su Tranquilidad',
+        description: 'Cada caso es único. Analizamos su situación a detalle para ofrecerle la mejor estrategia jurídica posible.',
         image: 'assets/img/hero/hero1-slider-img_4624-opt.webp',
     },
 ]
