@@ -40,6 +40,9 @@
                             "node_modules/jquery/dist/jquery.min.js",
                             "node_modules/slick-carousel/slick/slick.min.js",
                             "node_modules/nice-select2/dist/js/nice-select2.js"
+                        ],
+                        "allowedCommonJsDependencies": [
+                            "aos"
                         ]
                     },
                     "configurations": {

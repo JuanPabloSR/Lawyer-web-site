@@ -1,20 +1,20 @@
 import type { HeroSliderType, TestimonialType, WorkStepType } from "@/types";
 
 export const heroSliderData: HeroSliderType[] = [
+    // {
+    //     title: 'Abogados en Bucaramanga: Especialistas en Derecho Laboral y Pensiones',
+    //     description: 'Expertos en derecho Docente, Derecho laboral y pensiones, acompañándote con compromiso, experiencia y resultados reales en cada caso.',
+    //     image: 'assets/img/hero/hero1-slider-jorge.webp',
+    // },
     {
-        title: 'Abogados en Bucaramanga: Especialistas en Derecho Laboral y Pensiones',
-        description: 'Expertos en derecho Docente, Derecho laboral y pensiones, acompañándote con compromiso, experiencia y resultados reales en cada caso.',
-        image: 'assets/img/hero/hero1-slider-jorge.webp',
+        title: 'Más de 15 Años de Experiencia Jurídica a su Servicio',
+        description: 'Nuestro equipo de profesionales en Santander cuenta con una trayectoria comprobada ganando casos complejos.',
+        image: 'assets/img/hero/hero1-slider-img_4526-opt.webp',
     },
     {
         title: 'Protegemos sus Derechos Laborales y Seguridad Social',
         description: 'Brindamos asesoría integral y representación legal para asegurar que sus derechos sean respetados en todo momento.',
         image: 'assets/img/hero/hero1-slider-allyson.webp',
-    },
-    {
-        title: 'Más de 15 Años de Experiencia Jurídica a su Servicio',
-        description: 'Nuestro equipo de profesionales en Santander cuenta con una trayectoria comprobada ganando casos complejos.',
-        image: 'assets/img/hero/hero1-slider-img_4526-opt.webp',
     },
     {
         title: 'Expertos en Pensión Docente FOMAG y Reliquidaciones',
