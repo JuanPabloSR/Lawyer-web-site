@@ -15,7 +15,6 @@ import type { SwiperOptions } from 'swiper/types';
 export class TestimonialSwiperComponent {
     @Input() buttonClass?: string;
     testimonials = TestimonialSlides
-    thumbImages = ["assets/img/testimonial/tes1-author1.png", "assets/img/testimonial/tes1-author2.png", "assets/img/testimonial/tes1-author3.png", "assets/img/testimonial/tes1-author4.png", "assets/img/testimonial/tes1-author5.png", "assets/img/testimonial/tes1-author6.png"]
 
     swiperThumbConfig: SwiperOptions = {
         spaceBetween: 10,

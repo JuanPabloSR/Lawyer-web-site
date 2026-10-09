@@ -2,8 +2,8 @@
     <div class="vl-offcanvas-wrapper">
         <div class="vl-offcanvas-header d-flex justify-content-between align-items-center mb-90">
             <div class="vl-offcanvas-logo">
-                <a routerLink="home-1" class="header1-logo-block"><img src="assets/img/logo/logo_vera-opt.png" alt="Vera Villamizar" style="max-width: 180px; height: auto;"></a>
-                <a routerLink="home-1" class="header1-logo-white"><img src="assets/img/logo/white-logo.png" alt="Vera Villamizar" style="max-width: 180px; height: auto;"></a>
+                <a routerLink="/home-1" class="header1-logo-block"><img src="assets/img/logo/logo_vera-opt.png" alt="Vera Villamizar" style="max-width: 180px; height: auto;"></a>
+                <a routerLink="/home-1" class="header1-logo-white"><img src="assets/img/logo/white-logo.png" alt="Vera Villamizar" style="max-width: 180px; height: auto;"></a>
             </div>
             <div class="vl-offcanvas-close">
                 <button class="vl-offcanvas-close-toggle" (click)="closeSidebar()"><i
@@ -30,13 +30,17 @@
                         </li>
                         @for (item of menu; track $index) {
                         <li class="has-dropdown" [ngClass]="{ ' active': item.isOpen }">
+                            @if (item.subMenu) {
                             <a href="javascript:void(0);" (click)="toggleSubMenu(item)">
                                 {{ item.title }}
                                 @if (item.icon) {
                                 <span><i class="fas" [ngClass]="item.icon"></i></span>
                                 }
                             </a>
-    
+                            } @else {
+                            <a [routerLink]="item.link" (click)="closeSidebar()">{{ item.title }}</a>
+                            }
+
                             <!-- First Level Submenu -->
                             @if (item.subMenu) {
                             <ul class="sub-menu" [ngStyle]="{ 'display': item.isOpen ? 'block' : 'none' }">
@@ -50,7 +54,7 @@
                                     <ul class="sub-menu menu1" [ngClass]="{ 'd-block': subItem.isOpen }">
                                         @for (subSubItem of subItem.subMenu; track $index) {
                                         <li>
-                                            <a [href]="subSubItem.link">{{ subSubItem.title }}</a>
+                                            <a [routerLink]="subSubItem.link" (click)="closeSidebar()">{{ subSubItem.title }}</a>
                                         </li>
                                         }
                                     </ul>
@@ -58,7 +62,7 @@
                                     <button class="vl-menu-close" (click)="toggleSubMenu(subItem, $event)"><i
                                             class="fas fa-chevron-right"></i></button>
                                     }@else{
-                                    <a [href]="subItem.link">{{ subItem.title }}</a>
+                                    <a [routerLink]="subItem.link" (click)="closeSidebar()">{{ subItem.title }}</a>
                                     }
                                 </li>
                                 }

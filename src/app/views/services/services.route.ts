@@ -1,3 +1,4 @@
+import { servicesData, siteConfig } from '@/assets/data';
 import { Routes } from '@angular/router';
 import { OurServiceComponent } from './our-service/our-service.component';
 import { ServiceDetailsLeftComponent } from './service-details/service-details-left/service-details-left.component';
@@ -27,6 +28,13 @@ export const SERVICES_ROUTES: Routes = [
         path: 'service-details',
         component: ServiceDetailsComponent,
         data: { title: "Detalles de Servicio"}
+    },
+    {
+        path: 'service-details/:slug',
+        component: ServiceDetailsComponent,
+        data: { title: "Detalles de Servicio" },
+        // Título dinámico de la pestaña: el nombre del servicio.
+        title: (route) => (servicesData.find(s => s.slug === route.paramMap.get('slug'))?.title ?? 'Nuestros Servicios') + siteConfig.titleSuffix
     },
 
 ];

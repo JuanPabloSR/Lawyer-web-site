@@ -14,8 +14,8 @@
                         <div class="space32"></div>
                         <div class="names-area">
                             <div class="man-textarea">
-                                <div class="man">
-                                    <img [src]="testimonial.image" alt="">
+                                <div class="man" [class.man-company]="testimonial.isCompany" [class.man-company-dark]="testimonial.onDark">
+                                    <img [src]="testimonial.image" [alt]="'Logo de ' + testimonial.name">
                                 </div>
                                 <div class="text">
                                     <a href="javascript:void(0)">{{testimonial.name}}</a>
@@ -23,8 +23,6 @@
                                     <p>{{testimonial.role}}</p>
                                 </div>
                             </div>
-                            <img class="black-logo elements20" src="assets/img/logo/tes3-logo.png" alt="">
-                            <img class="white-logo elements20" src="assets/img/logo/brand-white.png" alt="">
                         </div>
                     </div>
                 </swiper-slide>
@@ -39,11 +37,11 @@
             </div>
         </div>
     </div>
-    <div class="map-testimonial">
+    <div class="map-testimonial" [class.thumbs-4]="testimonials.length === 4">
         <swiper-container init="false" class="my-thumbs" [config]="swiperThumbConfig" style="display: contents;">
-            <swiper-slide *ngFor="let image of thumbImages" class="swiper-slide">
-                <div>
-                    <img [src]="image" alt="">
+            <swiper-slide *ngFor="let testimonial of testimonials" class="swiper-slide">
+                <div [class.thumb-company]="testimonial.isCompany" [class.thumb-company-dark]="testimonial.onDark">
+                    <img [src]="testimonial.image" [alt]="'Logo de ' + testimonial.name">
                 </div>
             </swiper-slide>
         </swiper-container>

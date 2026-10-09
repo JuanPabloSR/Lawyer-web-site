@@ -1,3 +1,4 @@
+import { caseDetails } from '@/assets/data';
 import type { CaseStudyType } from '@/types';
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
@@ -12,51 +13,5 @@ import { PaginationComponent } from "@app/components/pagination/pagination.compo
   styles: ``
 })
 export class CaseStudyComponent {
-    caseStudies: CaseStudyType[] = [
-        {
-            title: 'Casos de Éxito en Pensiones',
-            category: 'Derecho Pensional',
-            image: 'assets/img/others/case1-image1.webp',
-        },
-        {
-            title: 'Representación Laboral',
-            category: 'Derecho Laboral',
-            image: 'assets/img/others/case1-image2.webp',
-        },
-        {
-            title: 'Derecho Laboral Docente',
-            category: 'Administrativo',
-            image: 'assets/img/others/case1-image3.webp',
-        },
-        {
-            title: 'Asesoría Empresarial',
-            category: 'Derecho Laboral',
-            image: 'assets/img/others/case1-image4.webp',
-        },
-        {
-            title: 'Indemnización por Despido',
-            category: 'Derecho Laboral',
-            image: 'assets/img/others/case1-image5.webp',
-        },
-        {
-            title: 'Nulidad de Traslado',
-            category: 'Derecho Pensional',
-            image: 'assets/img/others/case1-image6.webp',
-        },
-        {
-            title: 'Reparación Directa',
-            category: 'Derecho Administrativo',
-            image: 'assets/img/others/case1-image7.webp',
-        },
-        {
-            title: 'Sucesión Tramitada',
-            category: 'Derecho Familiar',
-            image: 'assets/img/others/case1-image8.webp',
-        },
-        {
-            title: 'Litigio Estratégico',
-            category: 'Litigio',
-            image: 'assets/img/others/case1-image9.webp',
-        }
-    ];
+    caseStudies: CaseStudyType[] = caseDetails.filter(c => !c.homeOnly);
 }

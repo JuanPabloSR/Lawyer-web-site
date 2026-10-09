@@ -14,8 +14,9 @@
     color: white !important;
 }
 
-.service-page-item:hover .service-arrow-fix i.fa-arrow-right {
-    color: #005a8c !important;
+.service-page-item:hover .service-arrow-fix i.fa-arrow-right,
+.service1-single-slider:hover .arrow i.fa-arrow-right {
+    color: #005a8c !important; /* la flecha va sobre un círculo blanco: no puede ser blanca */
 }
 
 /* FIX: Lighthouse Cumulative Layout Shift (CLS) */
@@ -26,5 +27,20 @@
 @media (max-width: 768px) {
     .hero1 {
         min-height: 600px;
+    }
+}
+
+/* Menú de escritorio en una sola línea: en laptops (992-1499 px) "Contacto" saltaba a una segunda línea. */
+@media (min-width: 992px) and (max-width: 1499px) {
+    .vl-header-area3 .vl-main-menu ul > li > a {
+        padding: 0 9px;
+        font-size: 16px;
+        white-space: nowrap;
+    }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+    .vl-header-area3 .vl-main-menu ul > li > a {
+        padding: 0 5px;
+        font-size: 14px;
     }
 }

@@ -4,8 +4,9 @@ import { ScrollToTopComponent } from "./components/scroll-to-top/scroll-to-top.c
 import { ThemeToggleComponent } from "./components/theme-toggle/theme-toggle.component";
 import { PreloaderComponent } from "./components/preloader/preloader.component";
 import aos from 'aos';
+import { siteConfig } from '@/assets/data';
 import { Title } from '@angular/platform-browser';
-import { filter, map, mergeMap } from 'rxjs';
+import { filter, map } from 'rxjs';
 @Component({
     selector: 'app-root',
     imports: [RouterOutlet, ScrollToTopComponent, ThemeToggleComponent, PreloaderComponent],
@@ -28,12 +29,12 @@ export class AppComponent implements OnInit {
                 }
                 return route;
             }),
-            mergeMap(route => route.data)
+            // Si la ruta define su propio `title` dinámico (p. ej. el nombre del caso), Angular ya lo aplica con su sufijo.
+            map(route => ({ data: route.snapshot.data, hasDynamicTitle: route.snapshot.title !== undefined }))
         )
-        .subscribe(data => {
-            if (data['title']) {
-                this.titleService.setTitle(data['title'] +
-                    ' | Vera Villamizar Abogados');
+        .subscribe(({ data, hasDynamicTitle }) => {
+            if (!hasDynamicTitle && data['title']) {
+                this.titleService.setTitle(data['title'] + siteConfig.titleSuffix);
             }
         });
     }

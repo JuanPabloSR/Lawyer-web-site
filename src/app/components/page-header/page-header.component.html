@@ -12,6 +12,10 @@
                         <div class="page-prog">
                             <a routerLink="/home-1">Inicio</a>
                             <p class="icon"><i class="fas fa-angle-right"></i></p>
+                            @if (parentTitle && parentLink) {
+                            <a [routerLink]="parentLink">{{parentTitle}}</a>
+                            <p class="icon"><i class="fas fa-angle-right"></i></p>
+                            }
                             <p>{{title}}</p>
                         </div>
                     </div>

@@ -1,3 +1,4 @@
+import { alliedCompanies } from '@/assets/data';
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { SlickCarouselModule } from 'ngx-slick-carousel';
@@ -9,12 +10,7 @@ import { SlickCarouselModule } from 'ngx-slick-carousel';
     styles: ``
 })
 export class CompaniesComponent {
-    companyImages = [
-        "assets/img/aliados/pinilla_consultores_logo.jpeg",
-        "assets/img/aliados/pinilla_consultores_logo.jpeg",
-        "assets/img/aliados/pinilla_consultores_logo.jpeg",
-        "assets/img/aliados/pinilla_consultores_logo.jpeg",
-    ]
+    companies = alliedCompanies
 
     sliderConfig = {
         dots: false,

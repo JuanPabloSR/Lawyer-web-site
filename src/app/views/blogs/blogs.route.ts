@@ -11,7 +11,7 @@ export const BLOGS_ROUTES: Routes = [
     {
         path: 'blog/grid-2',
         component: BlogGrid2Component,
-        data: { title: "Blog 2 Columnas" }
+        data: { title: "Blog Jurídico" }
     },
     /*
     {

@@ -1,4 +1,4 @@
-import { teamMembers } from '@/assets/data';
+import { siteConfig, teamMembers } from '@/assets/data';
 import { NgFor } from '@angular/common';
 import { Component } from '@angular/core';
 import { MemberCardComponent } from "@app/components/cards/member-card/member-card.component";
@@ -17,6 +17,7 @@ import { CircleProgressOptions, NgCircleProgressModule } from 'ng-circle-progres
 })
 export class Team1Component {
     teamMembers = teamMembers
+    showPercentages = siteConfig.showPercentages
 
     progressItems = [
         { percent: 85 },

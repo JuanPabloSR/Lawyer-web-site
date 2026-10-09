@@ -1,5 +1,7 @@
+import { defaultServiceDetail } from '@/assets/data';
+import type { ServiceDetailType } from '@/types';
 import { CommonModule } from '@angular/common';
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { NgbAccordionModule } from '@ng-bootstrap/ng-bootstrap';
 
 @Component({
@@ -10,14 +12,8 @@ import { NgbAccordionModule } from '@ng-bootstrap/ng-bootstrap';
 })
 export class ServiceContentComponent {
     activeItemIndex = 0;
-    services: string[] = [
-        'Análisis de Historia Laboral',
-        'Cálculo Actuarial Especializado',
-        'Representación ante Colpensiones',
-        'Trámites en Fondos Privados (AFP)',
-        'Demandas Ordinarias Laborales',
-        'Asesoría Preventiva'
-    ];
+    /** Sin entrada (/service-details y las variantes left/right) se muestra el texto original. */
+    @Input() detail: ServiceDetailType = defaultServiceDetail;
 
     faqData1 = [
         {

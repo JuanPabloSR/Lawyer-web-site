@@ -9,6 +9,7 @@
 .theme-btn1 {
   display: inline-flex;
   align-items: center;
+  gap: 8px; // separa el texto del círculo de la flecha (antes quedaban pegados)
   background: none;
   border: none;
 
@@ -821,3 +822,15 @@
      BUTOTNS AREA CSS
  ::::::::::::::::::::::::::
  */
+
+// Botón deshabilitado (p. ej. "Enviar" sin autorizar el uso de datos): se ve apagado y no reacciona al hover.
+.theme-btn1:disabled {
+  opacity: .5;
+  pointer-events: none; // anula el hover y los clics
+  filter: grayscale(.3);
+}
+
+// El cursor "no permitido" se muestra desde el contenedor, porque el botón ya no recibe el puntero.
+.button:has(> .theme-btn1:disabled) {
+  cursor: not-allowed;
+}

@@ -36,53 +36,11 @@ export class NavItemComponent {
                 { title: 'Nuestro Equipo', link: '/our-team' },
                 { title: 'Testimonios', link: '/testimonials' },
                 { title: 'Preguntas Frecuentes', link: '/faq' },
-                { title: 'Error 404', link: '/error-404' },
             ],
         },
-        {
-            title: 'Servicios',
-            icon: 'fa-solid fa-angle-down',
-            submenu: [
-                { title: 'Nuestros Servicios', link: '/our-services' },
-                {
-                    title: 'Detalles de Servicio',
-                    submenu: [
-                        { title: "Servicio Detalles", link: '/service-details' }
-                    ]
-                },
-            ],
-        },
-        {
-            title: 'Casos de Estudio',
-            icon: 'fa-solid fa-angle-down',
-            submenu: [
-                { title: 'Casos de Estudio', link: '/case-study' },
-                {
-                    title: 'Detalles del Caso',
-                    submenu: [
-                        { title: "Caso Único", link: '/case-single' }
-                    ]
-                },
-            ],
-        },
-        {
-            title: 'Blog',
-            icon: 'fa-solid fa-angle-down',
-            submenu: [
-                {
-                    title: 'Nuestro Blog',
-                    submenu: [
-                        { title: 'Blog 2 Columnas', link: '/blog/grid-2' }
-                    ],
-                },
-                {
-                    title: 'Detalles del Blog',
-                    submenu: [
-                        { title: 'Detalles', link: '/blog-details' },
-                    ],
-                },
-            ],
-        },
+        { title: 'Servicios', link: '/our-services' },
+        { title: 'Casos de Estudio', link: '/case-study' },
+        { title: 'Blog', link: '/blog/grid-2' },
         { title: 'Contacto', link: '/contact' },
     ];
 }

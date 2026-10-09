@@ -1,15 +1,15 @@
-<app-page-header title="Detalles de Caso de Estudio"/>
+<app-page-header [title]="case().title" parentTitle="Casos de Estudio" parentLink="/case-study" />
 
 <div class="case-detials sp _relative">
     <div class="container">
         <div class="row">
             <div class="col-lg-8 m-auto">
                 <div class="details-content-all">
-                    <app-case-content />
+                    <app-case-content [case]="case()" />
                 </div>
             </div>
         </div>
     </div>
 </div>
 
-<app-more-cases />
+<app-more-cases [cases]="moreCases()" />

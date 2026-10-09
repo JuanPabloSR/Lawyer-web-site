@@ -1087,3 +1087,85 @@
 }
 
 // ==== testimonial style 6 =====
+
+// ===== testimonios de empresas aliadas (logo en lugar de foto) =====
+
+// Tarjeta del carrusel: logo en recuadro rectangular, porque los logos son anchos.
+.tes1 .swiper-testimonial-2 .testimonial-boxarea .names-area .man-textarea .man.man-company {
+    img {
+        width: 120px;
+        height: 66px;
+        padding: 8px;
+        border-radius: 8px;
+        object-fit: contain;
+        background-color: #fff;
+        border: 1px solid var(--vtc-border-1);
+    }
+
+    &.man-company-dark img {
+        background-color: #1D393E;
+        border-color: #1D393E;
+    }
+}
+
+// Miniaturas flotantes del carrusel: logo dentro del círculo.
+.tes1 .map-testimonial .swiper-slide div.thumb-company img {
+    object-fit: contain;
+    padding: 12px;
+    background-color: #fff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, .12);
+}
+
+.tes1 .map-testimonial .swiper-slide div.thumb-company-dark img {
+    background-color: #1D393E;
+}
+
+// Con 4 empresas: 2 miniaturas a cada lado, simétricas.
+.tes1 .map-testimonial.thumbs-4 .swiper-slide {
+    &:nth-child(1) {
+        top: 120px;
+        bottom: auto;
+        left: 50px;
+        position: absolute;
+    }
+
+    &:nth-child(2) {
+        top: 240px;
+        left: 100px;
+        position: absolute;
+    }
+
+    &:nth-child(3) {
+        top: 120px;
+        bottom: auto;
+        left: 1160px;
+        position: absolute;
+    }
+
+    &:nth-child(4) {
+        top: 240px;
+        bottom: auto;
+        left: 1120px;
+        position: absolute;
+    }
+}
+
+// Cuadrícula de /testimonials.
+.tes-page-box .bottom-area .image.image-company {
+    flex: 0 0 auto;
+}
+
+.tes-page-box .bottom-area .image.image-company img {
+    width: 120px;
+    height: 66px;
+    padding: 8px;
+    border-radius: 8px;
+    object-fit: contain;
+    background-color: #fff;
+    border: 1px solid var(--vtc-border-1);
+}
+
+.tes-page-box .bottom-area .image.image-company-dark img {
+    background-color: #1D393E;
+    border-color: #1D393E;
+}

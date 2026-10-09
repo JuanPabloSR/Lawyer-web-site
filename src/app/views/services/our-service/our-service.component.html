@@ -56,15 +56,15 @@
 
         </div>
 
-        <div class="row pt-40">
+        <div class="row pt-40 services-grid">
             <div *ngFor="let service of services" class="col-lg-4 col-md-6 mt-30">
                 <div class="service-page-item">
                     <div class="icon">
                         <img [src]="service.icon" alt="">
                     </div>
-                    <a routerLink="/service-details" class="arrow service-arrow-fix"><i class="fas fa-arrow-right"></i></a>
+                    <a [routerLink]="['/service-details', service.slug]" class="arrow service-arrow-fix"><i class="fas fa-arrow-right"></i></a>
                     <div class="heading1">
-                        <h4><a routerLink="/service-details"
+                        <h4><a [routerLink]="['/service-details', service.slug]"
                                 class="black1 font-24 text _hover1 leading-24 font-semibold">{{service.title}}</a></h4>
                         <p class="text-18 leading-26 font-medium gray1 mt-16 mb-16">{{service.description}}</p>
                         <p class="number sub-text1 text-18 leading-26 font-medium">

@@ -1,10 +1,10 @@
-<app-page-header title="Detalles de servicio"/>
+<app-page-header [title]="title()" parentTitle="Nuestros Servicios" parentLink="/our-services" />
 <div class="service-details-area sp">
     <div class="container">
         <div class="row">
             <div class="col-lg-8 m-auto">
                 <div class="details-content-all">
-                    <app-service-content />
+                    <app-service-content [detail]="detail()" />
                 </div>
             </div>
 

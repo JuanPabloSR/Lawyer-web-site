@@ -69,7 +69,7 @@
                 <ul class="sub-menu menu1">
                     @for (innerSubItem of subItem.submenu; track $index) {
                     <li>
-                        <a [href]="innerSubItem.link">{{ innerSubItem.title }}</a>
+                        <a [routerLink]="innerSubItem.link">{{ innerSubItem.title }}</a>
                     </li>
                     }
                 </ul>}@else{

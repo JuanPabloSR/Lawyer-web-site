@@ -67,53 +67,11 @@ export class MobileMenuComponent {
                 { title: 'Nuestro Equipo', link: '/our-team' },
                 { title: 'Testimonios', link: '/testimonials' },
                 { title: 'Preguntas Frecuentes', link: '/faq' },
-                { title: 'Error 404', link: '/error-404' },
             ]
         },
-        {
-            "title": "Servicios",
-            "link": "#",
-            "isOpen": false,
-            "icon": 'fa-angle-down',
-            "subMenu": [
-                { title: 'Nuestros Servicios', link: '/our-services' },
-                { title: "Servicio Detalles", link: '/service-details' }
-            ]
-        },
-        {
-            "title": "Casos de Estudio",
-            "link": "#",
-            "isOpen": false,
-            "icon": 'fa-angle-down',
-            "subMenu": [
-                { title: 'Casos de Estudio', link: '/case-study' },
-                { title: "Caso Único", link: '/case-single' }
-            ]
-        },
-        {
-            "title": "Blog",
-            "link": "#",
-            "isOpen": false,
-            "icon": 'fa-angle-down',
-            "subMenu": [
-                {
-                    title: 'Nuestro Blog',
-                    subMenu: [
-                        { title: 'Blog 2 Columnas', link: '/blog/grid-2' }
-                    ],
-                },
-                {
-                    title: 'Detalles del Blog',
-                    subMenu: [
-                        { title: 'Detalles', link: '/blog-details' },
-                    ],
-                },
-            ],
-
-        },
-        {
-            "title": "Contacto",
-            "link": "/contact",
-        }
+        { "title": "Servicios", "link": "/our-services" },
+        { "title": "Casos de Estudio", "link": "/case-study" },
+        { "title": "Blog", "link": "/blog/grid-2" },
+        { "title": "Contacto", "link": "/contact" },
     ]
 }

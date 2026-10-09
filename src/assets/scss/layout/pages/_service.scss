@@ -29,6 +29,51 @@
 
 .service1-slider {
   position: relative;
+
+  // Todas las tarjetas del carrusel con el mismo alto (el de la más larga);
+  // el número de cada servicio queda siempre abajo.
+  .slick-track {
+    display: flex;
+  }
+
+  &.slick-initialized .service1-single-slider {
+    display: flex;
+    flex-direction: column;
+    float: none;
+    height: auto;
+  }
+}
+
+// Cuadrícula de /our-services: todas las tarjetas con el mismo alto (el de la más larga),
+// no solo las de la misma fila. Columnas: 1 en celular, 2 en tablet, 3 en escritorio.
+.services-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-auto-rows: 1fr;
+
+  @media (min-width: 768px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (min-width: 992px) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  > [class*="col-"] {
+    width: 100%;
+    max-width: 100%;
+  }
+}
+
+.service1-single-slider .heading1,
+.service-page-item .heading1 {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+
+  .number {
+    margin-top: auto;
+  }
 }
 
 .service1-single-slider {
@@ -755,6 +800,9 @@
 }
 
 .service-page-item {
+  display: flex; // junto con height:100% iguala el alto de las tarjetas de cada fila
+  flex-direction: column;
+  height: 100%;
   background-color: var(--vtc-bg-white2);
   padding: 32px;
   border-radius: 16px;
@@ -877,3 +925,15 @@
   SERVICE AREA CSS
  ::::::::::::::::::::::::::
  */
+
+
+// Detalle de servicio: imágenes compactas (4:3, rostros completos), igual que en el detalle de casos.
+.service-details-area .details-content .image img {
+  display: block;
+  width: 100%;
+  max-width: 380px;
+  margin: 0 auto;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  object-position: center 22%;
+}

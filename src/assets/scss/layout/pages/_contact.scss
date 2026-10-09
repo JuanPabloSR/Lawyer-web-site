@@ -571,3 +571,62 @@
   CONTACT AREA CSS
  ::::::::::::::::::::::::::
  */
+
+// ===== Formulario de contacto: validación, mensajes y campo trampa =====
+.form-area {
+  .field-error {
+    display: block;
+    margin-top: 6px;
+    color: #c0392b;
+    font-size: 14px;
+  }
+
+  // Campo anti-bots: fuera de pantalla, no usar display:none (algunos bots lo detectan).
+  .form-trap {
+    position: absolute;
+    left: -9999px;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+  }
+
+  .form-consent {
+    label {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      cursor: pointer;
+      font-size: 15px;
+      line-height: 22px;
+    }
+
+    input[type="checkbox"] {
+      flex: 0 0 auto;
+      width: 18px;
+      height: 18px;
+      margin-top: 3px;
+      padding: 0;
+    }
+  }
+
+  .form-feedback {
+    margin-top: 20px;
+
+    p {
+      padding: 14px 16px;
+      border-radius: 8px;
+      font-size: 16px;
+      line-height: 24px;
+    }
+
+    .form-feedback-ok {
+      background: #e6f4ea;
+      color: #1e6b34;
+    }
+
+    .form-feedback-error {
+      background: #fdecea;
+      color: #a02a1f;
+    }
+  }
+}

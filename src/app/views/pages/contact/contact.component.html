@@ -81,42 +81,69 @@
                 <div class="details-contact ml-30 sm:ml-0 md:ml-0">
                     <div class="form-area">
                         <h4>Envíenos su Consulta</h4>
-                        <form action="#">
+                        <form [formGroup]="form" (ngSubmit)="enviar()" novalidate>
                             <div class="row">
                                 <div class="col-md-6">
                                     <div class="single-input">
-                                        <input type="text" placeholder="Primer Nombre">
+                                        <input type="text" formControlName="nombre" placeholder="Primer Nombre*" autocomplete="given-name" aria-label="Primer nombre">
+                                        @if (invalido('nombre')) { <small class="field-error">Escribe tu nombre.</small> }
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="single-input">
-                                        <input type="text" placeholder="Apellido">
+                                        <input type="text" formControlName="apellido" placeholder="Apellido" autocomplete="family-name" aria-label="Apellido">
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="single-input">
-                                        <input type="number" placeholder="Número de Teléfono*">
+                                        <input type="tel" formControlName="telefono" placeholder="Número de Teléfono*" autocomplete="tel" aria-label="Número de teléfono">
+                                        @if (invalido('telefono')) { <small class="field-error">Escribe un teléfono válido.</small> }
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="single-input">
-                                        <input type="email" placeholder="Email*">
+                                        <input type="email" formControlName="correo" placeholder="Correo electrónico*" autocomplete="email" aria-label="Correo electrónico">
+                                        @if (invalido('correo')) { <small class="field-error">Escribe un correo válido.</small> }
                                     </div>
                                 </div>
                                 <div class="col-md-12">
                                     <div class="single-input">
-                                        <input type="text" placeholder="Tipo de Servicio*">
+                                        <input type="text" formControlName="servicio" placeholder="Tipo de Servicio*" aria-label="Tipo de servicio">
+                                        @if (invalido('servicio')) { <small class="field-error">Cuéntanos qué servicio necesitas.</small> }
                                     </div>
                                 </div>
                                 <div class="col-md-12">
                                     <div class="single-input">
-                                        <textarea rows="4" placeholder="Tu mensaje"></textarea>
+                                        <textarea rows="4" formControlName="mensaje" placeholder="Tu mensaje" aria-label="Tu mensaje"></textarea>
                                     </div>
+
+                                    <!-- Campo trampa para bots: oculto para personas -->
+                                    <div class="form-trap" aria-hidden="true">
+                                        <input type="text" formControlName="sitioWeb" tabindex="-1" autocomplete="off" placeholder="No llenar">
+                                    </div>
+
+                                    <div class="single-input form-consent">
+                                        <label>
+                                            <input type="checkbox" formControlName="autorizacion">
+                                            <span>Autorizo a Vera Villamizar Abogados a usar mis datos personales para contactarme sobre mi consulta.</span>
+                                        </label>
+                                        @if (invalido('autorizacion')) { <small class="field-error">Debes autorizar el uso de tus datos para poder enviar.</small> }
+                                    </div>
+
                                     <div class="button mt-30">
-                                        <button class="theme-btn1" type="button"><span class="text">Enviar
+                                        <button class="theme-btn1" type="submit" [disabled]="estado() === 'enviando' || !form.controls.autorizacion.value"><span class="text">{{ estado() === 'enviando' ? 'Enviando...' : 'Enviar' }}
                                             </span><span class="arrow-all"><span class="arrow1"><i
                                                         class="fas fa-arrow-right"></i></span><span class="arrow2"><i
                                                         class="fas fa-arrow-right"></i></span></span></button>
+                                    </div>
+
+                                    <div class="form-feedback" aria-live="polite">
+                                        @if (estado() === 'enviado') {
+                                        <p class="form-feedback-ok">¡Gracias! Recibimos tu consulta y te contactaremos pronto.</p>
+                                        }
+                                        @if (estado() === 'error') {
+                                        <p class="form-feedback-error">No pudimos enviar tu mensaje. Inténtalo de nuevo o escríbenos por WhatsApp al 315 718 9078.</p>
+                                        }
                                     </div>
                                 </div>
                             </div>

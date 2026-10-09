@@ -3,8 +3,8 @@
        <img style="object-fit: cover; object-position: center 30%; height: 100%; width: 100%;" [src]="case.image" alt="">
     </div>
     <div class="content-area">
-       <a href="javascript:void(0)" class="arrow"><i class="fas fa-arrow-right"></i></a>
+       <a [routerLink]="case.slug ? ['/case-single', case.slug] : null" class="arrow"><i class="fas fa-arrow-right"></i></a>
        <p class="black2 font-18 leading-18 font-medium mt-16 mb-16">{{case.title}}</p>
-       <h4><a href="javascript:void(0)" class="black2 font-24 text _hover1 leading-24 font-semibold">{{case.category}}</a></h4>
+       <h4><a [routerLink]="case.slug ? ['/case-single', case.slug] : null" class="black2 font-24 text _hover1 leading-24 font-semibold">{{case.category}}</a></h4>
     </div>
  </div>

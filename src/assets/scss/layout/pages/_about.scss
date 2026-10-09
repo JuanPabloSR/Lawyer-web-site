@@ -41,10 +41,12 @@
       line-height: var(--f-fs-font-18); /* 100% */
       padding-top: 16px;
       display: flex;
-      align-items: center;
+      align-items: flex-start; // el ícono queda junto a la primera línea si el texto se parte
 
       span {
         display: inline-block;
+        flex-shrink: 0; // sin esto el flex lo aplasta y se deforma cuando el texto es largo
+        margin-top: -1px;
         background-color: var(--vtc-bg-main1);
         height: 20px;
         width: 20px;
@@ -515,19 +517,39 @@
       padding: 20px;
       display: flex;
       justify-content: center;
+      align-items: center;
+      min-height: 140px;
       margin: 0px 10px;
 
       img {
         transition: all .4s;
 
       }
+
+      .about-brand-logo {
+        max-height: 100px;
+        width: auto;
+        margin: 0 auto;
+        mix-blend-mode: multiply;
+      }
+
+      // Logos blancos sobre transparente (p. ej. Hotel D'León): recuadro oscuro, sin mezcla.
+      &.single-brand-dark {
+        background-color: #1D393E;
+
+        .about-brand-logo {
+          mix-blend-mode: normal;
+        }
+      }
     }
   }
 }
 
 .dark-mode {
-  .about-page-brand .about-brand-slider .single-brand img {
-    filter: brightness(0) invert(1);
+  // Los logos de aliados son a todo color: se muestran en su color sobre recuadro blanco.
+  // (Convertirlos a silueta blanca y mezclarlos con un fondo oscuro los hacía desaparecer.)
+  .about-page-brand .about-brand-slider .single-brand:not(.single-brand-dark) {
+    background-color: #fff;
   }
 }
 

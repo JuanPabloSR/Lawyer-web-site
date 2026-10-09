@@ -35,6 +35,7 @@
 ## 3. Vista Acerca de (About)
 * **Métricas:** +800 clientes asesorados y representados Acompañando trabajadores, pensionados y empresas en la defensa de sus derechos.[cite: 1]
 * **Aliados:** Melissa sst (wasap juanito), Gerardo ambiental[cite: 1]
+* **Aliados con logo en la web (recomendaciones del abogado, 2026-10-09):** Pinilla Ramírez Consultores, SES, Hotel D'León y Ferretería C.S.R. Cementos Santa Rosa. Logos en `src/assets/img/aliados/`. Pendiente confirmar si Melissa SST y Gerardo Ambiental también se publican.
 
 ## 4. Vista Nuestro Equipo (Team)
 * **Perfil 1:**
@@ -65,3 +66,11 @@
 10. **Muerte:** Reclamamos seguros por fallecimiento y por invalidez con acompañamiento total.[cite: 1]
 11. **Accidentes de tránsito:** Reclamamos indemnizaciones por accidentes viales eficazmente.[cite: 1]
 12. **Indemnización por falla médica:** Demandamos fallas en salud buscando indemnización justa.[cite: 1]
+13. **Demandas laborales** *(pedido por el abogado el 2026-10-09; descripción provisional, falta el texto del cliente)*
+14. **Asesorías empresariales** *(ídem)*
+15. **Capacitaciones** *(ídem; falta definir temas y público)*
+
+## 6. Pendientes indicados por el abogado (2026-10-09)
+* **Testimonios:** ahora son de las 4 empresas aliadas (logo, nombre y mensaje), en el carrusel del inicio y de "Acerca de" y en `/testimonials`. **Los mensajes son provisionales**, redactados por la IA en voz de cada empresa: no son palabras suyas. Falta el texto real o aprobado por cada empresa. Se cambia en `alliedCompanies[].testimonial` de `src/assets/data.ts`. No publicar hasta tenerlo.
+* Hoja de vida de cada uno de los socios: las enviará más adelante.
+* Fotos: omitir las de Jorge con los ojos cerrados. La selección final de fotos se hace al final del desarrollo (hoy están puestas de forma provisional).

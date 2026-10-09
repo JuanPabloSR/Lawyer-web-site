@@ -1,17 +1,13 @@
 <article>
     <div class="details-content">
         <div class="image">
-            <img src="assets/img/others/case-details-image.png" alt="">
+            <img [src]="case.heroImage ?? case.image" [class.case-hero]="!case.heroImage"
+                [alt]="case.title + ' - Caso de ' + case.category + ' en Vera Villamizar Abogados'">
         </div>
         <div class="heading mt-30">
             <h2 class="black1 text-38 sm:text-30 md:text-30 leading-38 font-semibold text-anime-style-3">
-                Reliquidación Pensional: Un Caso de Éxito</h2>
-            <p class="black2 font-18 leading-26 gray1 font-medium mt-16">En el actual sistema de seguridad social, 
-                conocer los factores salariales exactos es clave para un retiro digno. Nuestro equipo analizó 
-                extensivamente el historial laboral del cliente para identificar omisiones de su fondo de pensiones.</p>
-            <p class="black2 font-18 leading-26 gray1 font-medium mt-16">Un análisis riguroso y una 
-                estrategia legal enfocada permitieron recuperar el retroactivo y ajustar el valor definitivo 
-                de su pensión, asegurando su estabilidad y la de su familia.</p>
+                {{ case.heading }}</h2>
+            <p *ngFor="let paragraph of case.intro" class="black2 font-18 leading-26 gray1 font-medium mt-16">{{ paragraph }}</p>
         </div>
     </div>
 </article>
@@ -19,17 +15,12 @@
 <article>
     <div class="details-content mt-50">
         <div class="heading mt-30">
-            <h2 class="black1 text-32 sm:text-30 md:text-30 leading-32 font-semibold">Análisis 
+            <h2 class="black1 text-32 sm:text-30 md:text-30 leading-32 font-semibold">Análisis
                 Probatorio y Estrategia Legal</h2>
-            <p class="black2 font-18 leading-26 gray1 font-medium mt-16">Cada historia laboral es única. 
-                Nuestros abogados especialistas desarrollan argumentos jurídicos sólidos basados en la jurisprudencia 
-                actual de las Altas Cortes. No aplicamos formatos estándar; diseñamos defensas completas.</p>
-            <p class="black2 font-18 leading-26 gray1 font-medium mt-16">Investigamos a fondo, calculamos 
-                los aportes reales y demostramos ante los jueces la verdadera realidad contributiva del trabajador, 
-                haciendo valer sus derechos adquiridos frente a Colpensiones o AFP.</p>
+            <p *ngFor="let paragraph of case.strategy" class="black2 font-18 leading-26 gray1 font-medium mt-16">{{ paragraph }}</p>
         </div>
         <div class="row mt-10">
-            <div class="col-lg-4 col-md-6" *ngFor="let benefit of benefits">
+            <div class="col-lg-4 col-md-6" *ngFor="let benefit of case.benefits">
               <ul>
                 <li class="detials-check-list2">
                   <span class="check"><i class="fa-solid fa-check"></i></span>
@@ -38,20 +29,19 @@
               </ul>
             </div>
           </div>
-          
+
     </div>
 </article>
 
 <article>
     <div class="details-content mt-50">
         <div class="heading mt-30">
-            <h2 class="black1 text-32 sm:text-30 md:text-30 leading-32 font-semibold">Impacto y 
+            <h2 class="black1 text-32 sm:text-30 md:text-30 leading-32 font-semibold">Impacto y
                 Resultados Obtenidos</h2>
-            <p class="black2 font-18 leading-26 gray1 font-medium mt-16">El resultado no solo significó un 
-                aumento sustancial en la mesada pensional del cliente, sino una victoria jurídica que sienta un 
-                precedente importante para futuros casos de características similares.</p>
+            <p class="black2 font-18 leading-26 gray1 font-medium mt-16">{{ case.result }}</p>
         </div>
 
+        @if (showPercentages) {
         <div class="about-page-progress-area">
             <div *ngFor="let item of progressData; let last = last">
               <div class="about-page-progress">
@@ -70,11 +60,12 @@
                   ></div>
                 </div>
               </div>
-          
+
               <div class="space30" *ngIf="!last"></div>
             </div>
           </div>
-          
+        }
+
 
     </div>
 </article>

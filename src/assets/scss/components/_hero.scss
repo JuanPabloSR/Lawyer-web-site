@@ -935,26 +935,41 @@
         }
       }
       
+      // Logo del banner: debe verse completo dentro del banner (antes se salía por arriba y por la derecha).
       .main-image {
         position: absolute;
-        right: 0;
-        top: -120px;
-        z-index: 2;
-        transition: all 2s ease-in-out;
-        opacity: 0.9;
+        right: 4%;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 4;
+        opacity: 0.95;
+
+        img {
+          display: block;
+          width: auto;
+          max-width: 100%;
+          max-height: 310px;
+        }
 
         @media #{$md} {
-          top: 250px;
+          top: auto;
+          bottom: 12px;
+          right: 12px;
+          transform: none;
+
+          img {
+            max-height: 150px;
+          }
         }
         @media #{$xs} {
-          top: 270px;
-        }
-        @media #{$xxl} {
-          transform: scale(0.8) translateX(450px);
-        }
+          top: auto;
+          bottom: 12px;
+          right: 12px;
+          transform: none;
 
-        @media #{$xxxl} {
-          transform: scale(0.8) translateX(450px);
+          img {
+            max-height: 120px;
+          }
         }
       }
 
@@ -1006,16 +1021,6 @@
           }
         }
       }
-  }
-}
-
-@media screen and (min-width: 1800px) {
-  .inner-hero {
-    .hero1-single-slider {
-      .main-image {
-        transform: scale(0.8) translateX(200px);
-      }
-    }
   }
 }
 

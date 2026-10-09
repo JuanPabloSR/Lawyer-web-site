@@ -1,5 +1,7 @@
+import { caseDetails, siteConfig } from '@/assets/data';
+import type { CaseDetailType } from '@/types';
 import { CommonModule } from '@angular/common';
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
     selector: 'app-case-content',
@@ -8,14 +10,10 @@ import { Component } from '@angular/core';
     styles: ``
 })
 export class CaseContentComponent {
-    benefits: string[] = [
-        'Análisis Exhaustivo',
-        'Representación Legal Sólida',
-        'Protección del Patrimonio',
-        'Asesoría Especializada',
-        'Acompañamiento Constante',
-        'Resultados Comprobados'
-    ];
+    /** Sin entrada (variantes left/right) se muestra el caso por defecto. */
+    @Input() case: CaseDetailType = caseDetails[0];
+
+    showPercentages = siteConfig.showPercentages;
 
     progressData = [
         { title: 'Éxito en Reclamaciones', value: 98 },

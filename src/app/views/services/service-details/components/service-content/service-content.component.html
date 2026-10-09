@@ -1,27 +1,24 @@
 <article>
     <div class="details-content">
         <div class="image">
-            <img style="object-fit: cover; height: 100%; width: 100%;" src="assets/img/service/service-details-image1.webp" alt="Asesoría Pensional">
+            <img src="assets/img/service/service-details-image1.webp" alt="Asesoría Pensional">
         </div>
         <div class="heading mt-30">
             <h2 class="black1 text-38 sm:text-30 md:text-30 leading-38 font-semibold text-anime-style-3">
-                Planeación Pensional y Defensa Laboral
+                {{ detail.heading }}
             </h2>
-            <p class="black2 font-18 leading-26 gray1 font-medium mt-16">
-                En el complejo panorama normativo de Colombia, asegurar su futuro requiere decisiones informadas y una estrategia legal sólida. 
-                Nuestros servicios de Asesoría Pensional y Laboral están diseñados para proteger su patrimonio, garantizar el reconocimiento de sus derechos adquiridos y brindarle la tranquilidad que merece ante Colpensiones y los Fondos Privados.
-            </p>
+            <p *ngFor="let paragraph of detail.intro" class="black2 font-18 leading-26 gray1 font-medium mt-16">{{ paragraph }}</p>
         </div>
         <div class="row mt-10">
-            <div class="col-lg-4 col-md-6" *ngFor="let service of services">
+            <div class="col-lg-4 col-md-6" *ngFor="let point of detail.points">
               <ul>
                 <li class="detials-check-list">
-                  <span class="check"><i class="fa-solid fa-check"></i></span> {{ service }}
+                  <span class="check"><i class="fa-solid fa-check"></i></span> {{ point }}
                 </li>
               </ul>
             </div>
           </div>
-          
+
     </div>
 </article>
 
@@ -30,32 +27,25 @@
         <div class="row">
             <div class="col-md-6">
                 <div class="image">
-                    <img style="object-fit: cover; height: 100%; width: 100%;" src="assets/img/service/service-details-image2.webp" alt="Abogados Laborales">
+                    <img src="assets/img/service/service-details-image2.webp" alt="Abogados Laborales">
                 </div>
             </div>
             <div class="col-md-6">
                 <div class="image">
-                    <img style="object-fit: cover; height: 100%; width: 100%;" src="assets/img/service/service-details-image3.webp" alt="Litigio Estratégico">
+                    <img src="assets/img/service/service-details-image3.webp" alt="Litigio Estratégico">
                 </div>
             </div>
         </div>
         <div class="heading mt-30">
             <h2 class="black1 text-32 sm:text-30 md:text-30 leading-32 font-semibold">
-                Litigio Estratégico y Soluciones a la Medida
+                {{ detail.approachHeading }}
             </h2>
-            <p class="black2 font-18 leading-26 gray1 font-medium mt-16">
-                Cada historia laboral es única y presenta desafíos específicos. No creemos en demandas genéricas; en su lugar, aplicamos un enfoque de 
-                <strong>Litigio Estratégico Personalizado</strong> para maximizar sus probabilidades de éxito. Analizamos a fondo su historia laboral, 
-                cotizaciones y contratos para identificar las mejores oportunidades legales.
-            </p>
-            <p class="black2 font-18 leading-26 gray1 font-medium mt-16">
-                Combinamos un profundo conocimiento de la jurisprudencia actual con un análisis probatorio riguroso. Ya sea que busque la nulidad de su traslado de fondo, 
-                el reintegro laboral o el pago de prestaciones sociales, nuestra firma traza la ruta jurídica más efectiva para restablecer sus derechos vulnerados.
-            </p>
+            <p *ngFor="let paragraph of detail.approach" class="black2 font-18 leading-26 gray1 font-medium mt-16">{{ paragraph }}</p>
         </div>
     </div>
 </article>
 
+@if (detail.showFaq) {
 <article>
     <div class="details-content mt-50">
         <div class="heading mt-30">
@@ -66,7 +56,7 @@
 
         <div ngbAccordion [closeOthers]="true" class="accordion accordion1" id="accordionExample">
             <div *ngFor="let faq of faqData1;let i =index" [collapsed]="i !== activeItemIndex"
-            [class.active]="i === activeItemIndex" (shown)="activeItemIndex = i" ngbAccordionItem="{{i}}" class="accordion-item"> 
+            [class.active]="i === activeItemIndex" (shown)="activeItemIndex = i" ngbAccordionItem="{{i}}" class="accordion-item">
               <h2 ngbAccordionHeader class="accordion-header" id="headingOne">
                 <button ngbAccordionButton class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                  {{faq.question}}
@@ -82,3 +72,4 @@
 
     </div>
 </article>
+}

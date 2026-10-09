@@ -20,7 +20,7 @@ export class Services1Component {
         infinite: true,
         speed: 300,
         slidesToShow: 3,
-        adaptiveHeight: true,
+        adaptiveHeight: false, // las tarjetas ya tienen el mismo alto (ver _service.scss)
         autoplay: true,
         autoplaySpeed: 2000,
         arrows: true,
