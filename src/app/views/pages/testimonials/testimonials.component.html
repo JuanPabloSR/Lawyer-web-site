@@ -13,7 +13,7 @@
             <div *ngFor="let testimonial of testimonials" class="col-lg-4 col-md-6 mb-30">
                 <div class="tes-page-box">
                     <div class="qoute">
-                        <img src="assets/img/icons/page-qoute.svg" alt="">
+                        <img src="assets/img/icons/page-qoute.svg" alt="" loading="lazy" decoding="async">
                     </div>
                     <div class="stars">
                         <ul>
@@ -28,7 +28,7 @@
 
                     <div class="bottom-area">
                         <div class="image" [class.image-company]="testimonial.isCompany" [class.image-company-dark]="testimonial.onDark">
-                            <img [src]="testimonial.image" [alt]="'Logo de ' + testimonial.name">
+                            <img [src]="testimonial.image" [alt]="'Logo de ' + testimonial.name" loading="lazy" decoding="async">
                         </div>
                         <div class="text">
                             <a href="javascript:void(0)">{{testimonial.name}}</a>

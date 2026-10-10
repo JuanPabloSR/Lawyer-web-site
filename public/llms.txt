@@ -1,9 +1,29 @@
 # Vera Villamizar Abogados
 
-Este es el sitio web oficial de Vera Villamizar Abogados.
-Somos una firma de abogados especializados que ofrece soluciones jurídicas.
+> Firma de abogados en Bucaramanga (Santander, Colombia) especializada en derecho laboral, derecho laboral docente (FOMAG), pensiones y seguridad social. Más de 15 años de experiencia en litigio y asesoría personalizada.
 
-## Enlaces
+- Dirección: Calle 36 #13-48, García Rovira, Bucaramanga
+- WhatsApp y teléfono: 315 718 9078
+- Correo: veravillamizarabogados@gmail.com
+- Horario: lunes a viernes, 8:00 a. m. a 4:00 p. m.
 
-- [Inicio](https://www.veravillamizarabogados.com/)
+## Equipo
+
+- Jorge Alberto Vera Villamizar: socio director, especialista en seguridad social.
+- Jairo Enrique Silva Santamaría: socio senior, especialista en derecho público.
+- Allison Daniela Rivera Ardila: abogada coordinadora, especialista en derecho administrativo.
+
+## Páginas principales
+
+- [Inicio](https://www.veravillamizarabogados.com/): presentación de la firma y de sus servicios.
+- [Servicios](https://www.veravillamizarabogados.com/our-services): reconocimiento y reliquidación de pensiones, docentes FOMAG (2277 y 1278), pensiones por muerte e invalidez, devolución de saldos, Bonificación 383, cesantías, seguros por muerte, accidentes de tránsito, falla médica, demandas laborales, asesorías empresariales y capacitaciones.
+- [Sobre nosotros](https://www.veravillamizarabogados.com/about)
+- [Nuestro equipo](https://www.veravillamizarabogados.com/our-team)
+- [Casos de estudio](https://www.veravillamizarabogados.com/case-study)
+- [Blog jurídico](https://www.veravillamizarabogados.com/blog/grid-2)
+- [Preguntas frecuentes](https://www.veravillamizarabogados.com/faq)
 - [Contacto](https://www.veravillamizarabogados.com/contact)
+
+## Sitemap
+
+- https://www.veravillamizarabogados.com/sitemap.xml

@@ -60,7 +60,21 @@ export type AlliedCompanyType = {
     testimonial: string;
 }
 
+/** Contenido de la vista de detalle de un artículo (/blog-details/:slug). */
+export type BlogDetailType = {
+    slug: string;
+    heading: string;
+    intro: string[];
+    sectionHeading: string;
+    section: string[];
+    points: string[];
+    closingHeading: string;
+    closing: string;
+}
+
 export type BlogType = {
+    /** Si existe, la tarjeta enlaza a /blog-details/:slug */
+    slug?: string;
     id: number;
     title?: string;
     image: string;

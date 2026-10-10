@@ -1,17 +1,6 @@
-import type { AlliedCompanyType, ServiceDetailType, BlogType, CaseDetailType, CaseStudyType, FooterContactType, FooterLinkType, MemberType, ServiceType, TestimonialType } from "@/types";
+import type { AlliedCompanyType, BlogDetailType, ServiceDetailType, BlogType, CaseDetailType, CaseStudyType, FooterContactType, FooterLinkType, MemberType, ServiceType, TestimonialType } from "@/types";
 
-/*
- * Interruptores de contenido.
- * showPercentages: tasa de satisfacción, casos exitosos, casos ganados y barras de resultados.
- * Ocultos por pedido de la usuaria (2026-10-09); poner en true para volver a mostrarlos.
- */
-export const siteConfig = {
-    showPercentages: false,
-    /** Correo oficial: recibe los mensajes del formulario de contacto. */
-    contactEmail: 'veravillamizarabogados@gmail.com',
-    /** Sufijo del título de la pestaña en todas las páginas. */
-    titleSuffix: ' | Vera Villamizar Abogados',
-};
+export { siteConfig } from './site-config';
 
 export const teamMembers: MemberType[] = [
     {
@@ -39,6 +28,7 @@ export const teamMembers: MemberType[] = [
 export const blogs: BlogType[] = [
     {
         id: 1,
+        slug: 'reforma-pensional',
         title: 'La Reforma Pensional: ¿Cómo afecta su futuro?',
         image: 'assets/img/blog/blog-abogados-1.webp',
         name: 'Vera Villamizar',
@@ -47,6 +37,7 @@ export const blogs: BlogType[] = [
     },
     {
         id: 2,
+        slug: 'nulidad-de-traslados',
         title: 'Nulidad de Traslados de Fondo de Pensiones',
         image: 'assets/img/blog/blog-abogados-2.webp',
         name: 'Vera Villamizar',
@@ -55,6 +46,7 @@ export const blogs: BlogType[] = [
     },
     {
         id: 3,
+        slug: 'estabilidad-laboral-reforzada',
         title: 'Estabilidad Laboral Reforzada: Sus Derechos',
         image: 'assets/img/blog/blog-abogados-3.webp',
         name: 'Vera Villamizar',
@@ -63,6 +55,7 @@ export const blogs: BlogType[] = [
     },
     {
         id: 4,
+        slug: 'requisitos-pension-de-vejez',
         title: 'Requisitos para la Pensión de Vejez en Colombia',
         image: 'assets/img/blog/blog-abogados-4.webp',
         name: 'Vera Villamizar',
@@ -70,6 +63,7 @@ export const blogs: BlogType[] = [
     },
     {
         id: 5,
+        slug: 'despidos-injustificados',
         title: 'Despidos Injustificados: ¿Qué hacer?',
         image: 'assets/img/blog/blog-abogados-5.webp',
         name: 'Vera Villamizar',
@@ -77,6 +71,7 @@ export const blogs: BlogType[] = [
     },
     {
         id: 6,
+        slug: 'contrato-de-trabajo',
         title: 'El Contrato de Trabajo y sus Modalidades',
         image: 'assets/img/blog/blog-abogados-6.webp',
         name: 'Vera Villamizar',
@@ -84,6 +79,7 @@ export const blogs: BlogType[] = [
     },
     {
         id: 7,
+        slug: 'pensiones-de-invalidez',
         title: 'Pensiones de Invalidez: Trámites y Requisitos',
         image: 'assets/img/blog/blog-abogados-7.webp',
         name: 'Vera Villamizar',
@@ -91,6 +87,7 @@ export const blogs: BlogType[] = [
     },
     {
         id: 8,
+        slug: 'acoso-laboral',
         title: 'Acoso Laboral: Identificación y Defensa',
         image: 'assets/img/blog/blog-abogados-8.webp',
         name: 'Vera Villamizar',
@@ -98,6 +95,7 @@ export const blogs: BlogType[] = [
     },
     {
         id: 9,
+        slug: 'liquidacion-laboral',
         title: 'Derechos en la Liquidación Laboral',
         image: 'assets/img/blog/blog-abogados-9.webp',
         name: 'Vera Villamizar',
@@ -477,6 +475,183 @@ export const serviceDetails: ServiceDetailType[] = [
     },
 ];
 
+/*
+ * Detalle de cada artículo del blog (/blog-details/:slug). Mismo `slug` que en `blogs`.
+ * TEXTO TEMPORAL: orientación general y sin cifras (edades, semanas, plazos), porque las normas
+ * pensionales cambian. Reemplazar por los artículos reales del bufete.
+ * `defaultBlogDetail` es el texto original de la página (/blog-details sin artículo).
+ */
+export const defaultBlogDetail: BlogDetailType = {
+    slug: '',
+    heading: 'Su Guía Legal para Entender el Sistema Pensional Colombiano',
+    intro: [
+        'En el cambiante panorama legislativo, estar informado sobre sus derechos es fundamental. En Vera Villamizar Abogados, nos dedicamos a analizar los fallos recientes de las Altas Cortes y la normatividad vigente para proteger su futuro y el de su familia.',
+        'Trabajamos estrechamente con usted para evaluar su historia laboral e identificar oportunidades de reliquidación o traslado. No deje su pensión al azar; permita que nuestros especialistas en seguridad social revisen su caso.',
+    ],
+    sectionHeading: 'Tácticas Legales para Desafíos Actuales',
+    section: [
+        'En el entorno laboral actual, conocer la ley no es una opción, es una necesidad para proteger su patrimonio. En Vera Villamizar, creemos que cada trabajador tiene derechos irrenunciables que deben ser defendidos con firmeza.',
+        'Realizamos evaluaciones exhaustivas para entender sus desafíos particulares y ofrecemos asesoría preventiva o litigio estratégico según lo requiera su situación laboral.',
+    ],
+    points: [
+        'Análisis de Historia Laboral',
+        'Cálculo Actuarial Especializado',
+        'Representación ante Colpensiones',
+        'Trámites en Fondos Privados (AFP)',
+        'Demandas Ordinarias Laborales',
+        'Asesoría Preventiva',
+    ],
+    closingHeading: 'Cómo una Consulta Jurídica puede Cambiar su Horizonte',
+    closing: 'En un mundo cada vez más dinámico, la asesoría legal temprana y personalizada es una herramienta vital para evitar pleitos costosos y asegurar su bienestar. Mediante videollamada o de forma presencial, estamos listos para atenderle.',
+};
+
+export const blogDetails: BlogDetailType[] = [
+    {
+        slug: 'reforma-pensional',
+        heading: 'Reforma Pensional: Lo que Debes Revisar de tu Situación',
+        intro: [
+            'Los cambios en las normas pensionales generan dudas legítimas: ¿cambian mis requisitos?, ¿qué pasa con las semanas que ya cotizo?, ¿me conviene mantenerme en mi régimen?',
+            'La respuesta depende de tu caso: tu edad, tu historial de cotizaciones y el régimen al que perteneces. Por eso conviene revisarlo con calma y con respaldo profesional.',
+        ],
+        sectionHeading: 'Qué Conviene Hacer Ahora',
+        section: [
+            'Reúne tu historia laboral y tus certificados de cotización, y verifica que no tengan inconsistencias que luego sean difíciles de corregir.',
+            'Evita tomar decisiones de traslado de régimen sin asesoría: pueden afectar de forma importante el valor y la fecha de tu pensión.',
+        ],
+        points: ['Revisión de la Historia Laboral', 'Verificación de Semanas Cotizadas', 'Análisis del Régimen Aplicable', 'Evaluación de Opciones', 'Orientación sobre Traslados', 'Acompañamiento Personalizado'],
+        closingHeading: 'Una Asesoría a Tiempo Marca la Diferencia',
+        closing: 'Antes de decidir, consulta tu caso con nuestros especialistas en seguridad social. Te explicamos con claridad cómo te afectan las normas vigentes.',
+    },
+    {
+        slug: 'nulidad-de-traslados',
+        heading: 'Nulidad de Traslado: Cuándo es Posible Volver a Colpensiones',
+        intro: [
+            'Muchas personas se trasladaron del Régimen de Prima Media (Colpensiones) al de Ahorro Individual sin recibir información clara, suficiente y comprensible sobre las consecuencias de ese cambio.',
+            'Cuando el traslado se hizo sin esa información, es posible pedir que se declare su nulidad o ineficacia y regresar al régimen anterior.',
+        ],
+        sectionHeading: 'Cómo se Analiza tu Caso',
+        section: [
+            'Revisamos tu historia de afiliación, los documentos que firmaste y la asesoría que realmente recibiste del fondo.',
+            'Con base en la jurisprudencia de la Corte Suprema de Justicia, presentamos la reclamación y, si es necesario, el proceso judicial.',
+        ],
+        points: ['Estudio de la Afiliación', 'Revisión de Documentos Firmados', 'Información Brindada por el Fondo', 'Jurisprudencia Aplicable', 'Reclamación y Proceso Judicial', 'Regreso al Régimen de Prima Media'],
+        closingHeading: 'Revisa si tu Traslado Puede Cuestionarse',
+        closing: 'Cada caso es distinto. Cuéntanos tu situación y te decimos si hay fundamento para reclamar.',
+    },
+    {
+        slug: 'estabilidad-laboral-reforzada',
+        heading: 'Estabilidad Laboral Reforzada: Quiénes la Tienen y Qué Hacer',
+        intro: [
+            'La estabilidad laboral reforzada protege a ciertos trabajadores frente a despidos que no cumplen las garantías que exige la ley, por ejemplo por su estado de salud o por maternidad.',
+            'Si terminan tu contrato sin respetar esa protección, puedes tener derecho a que se revise la decisión e incluso a reclamar el reintegro.',
+        ],
+        sectionHeading: 'Situaciones que Suelen Estar Protegidas',
+        section: [
+            'Entre otras, la protección puede aplicar a trabajadores con limitaciones de salud, a mujeres en embarazo o lactancia, a quienes están próximos a pensionarse y a ciertos representantes sindicales.',
+            'Cada situación tiene requisitos propios; por eso es importante analizar los hechos y las pruebas de tu caso.',
+        ],
+        points: ['Trabajadores con Condiciones de Salud', 'Maternidad y Lactancia', 'Cercanía a la Pensión', 'Fuero Sindical', 'Reclamación de Reintegro', 'Indemnizaciones Aplicables'],
+        closingHeading: 'Cuándo Buscar Asesoría',
+        closing: 'Si te despidieron y crees que estabas protegido, actúa pronto: conserva tus documentos y consulta tu caso.',
+    },
+    {
+        slug: 'requisitos-pension-de-vejez',
+        heading: 'Pensión de Vejez en Colombia: Lo que Debes Verificar',
+        intro: [
+            'Para acceder a la pensión de vejez se exigen requisitos de edad y de semanas cotizadas, que cambian según el régimen al que perteneces.',
+            'Conocer tu situación con anticipación te permite completar lo que falte y evitar sorpresas en el momento de reclamar.',
+        ],
+        sectionHeading: 'Cómo Prepararte',
+        section: [
+            'Solicita tu historia laboral y revisa que todos tus periodos de trabajo estén registrados y bien reportados.',
+            'Si hay semanas sin reportar o errores, conviene corregirlos cuanto antes con los soportes que lo demuestren.',
+        ],
+        points: ['Edad Requerida según el Régimen', 'Semanas Cotizadas', 'Historia Laboral sin Errores', 'Tiempos Públicos y Privados', 'Solicitud ante la Entidad', 'Recursos si es Negada'],
+        closingHeading: 'Planea tu Pensión con Tiempo',
+        closing: 'Revisamos tu historia laboral y te orientamos sobre los pasos a seguir hasta el reconocimiento.',
+    },
+    {
+        slug: 'despidos-injustificados',
+        heading: 'Despido Injustificado: Primeros Pasos para Defender tus Derechos',
+        intro: [
+            'Un despido sin justa causa o sin respetar el debido proceso puede dar lugar a una indemnización y, en algunos casos, al reintegro.',
+            'Saber cómo reaccionar en los primeros días ayuda a proteger tus derechos y las pruebas de tu caso.',
+        ],
+        sectionHeading: 'Qué Hacer si te Despidieron',
+        section: [
+            'Guarda la carta de terminación, tu contrato, los desprendibles de pago y cualquier comunicación con la empresa. No firmes documentos que no entiendas.',
+            'Pide asesoría antes de aceptar una liquidación o un acuerdo: puede incluir menos de lo que te corresponde.',
+        ],
+        points: ['Conservar Documentos y Pruebas', 'Revisar la Liquidación', 'Verificar la Causa del Despido', 'Cálculo de la Indemnización', 'Posible Reintegro', 'Reclamación Laboral'],
+        closingHeading: 'Antes de Firmar, Consulta',
+        closing: 'Revisamos tu caso y te explicamos con claridad cuál es el mejor camino.',
+    },
+    {
+        slug: 'contrato-de-trabajo',
+        heading: 'Contrato de Trabajo: Modalidades y Qué Implican',
+        intro: [
+            'El contrato de trabajo puede pactarse a término indefinido, a término fijo o por obra o labor, y cada modalidad tiene reglas distintas sobre su duración y su terminación.',
+            'Conocerlas te ayuda, como trabajador o como empresa, a evitar conflictos y a saber qué derechos y obligaciones tienes.',
+        ],
+        sectionHeading: 'Puntos que Debes Revisar',
+        section: [
+            'Verifica que el tipo de contrato corresponda a la realidad del trabajo: si hay subordinación, horario y pago periódico, puede existir una relación laboral aunque el papel diga otra cosa.',
+            'Revisa también las cláusulas sobre duración, prórrogas y terminación antes de firmar.',
+        ],
+        points: ['Término Indefinido', 'Término Fijo', 'Obra o Labor', 'Contrato Realidad', 'Prórrogas y Terminación', 'Prestaciones Sociales'],
+        closingHeading: 'Un Contrato Claro Previene Conflictos',
+        closing: 'Revisamos y asesoramos tus contratos para que sean claros y ajustados a la ley.',
+    },
+    {
+        slug: 'pensiones-de-invalidez',
+        heading: 'Pensión de Invalidez: Pasos y Requisitos',
+        intro: [
+            'Cuando una enfermedad o un accidente reduce de forma importante la capacidad para trabajar, puede existir derecho a una pensión de invalidez.',
+            'El proceso empieza con la calificación de la pérdida de capacidad laboral, que determina si cumples las condiciones.',
+        ],
+        sectionHeading: 'Cómo es el Trámite',
+        section: [
+            'Se califica la pérdida de capacidad laboral y su origen, y con ese dictamen se verifican los demás requisitos ante la entidad de pensiones.',
+            'Si no estás de acuerdo con el dictamen o con la respuesta de la entidad, existen recursos y la vía judicial.',
+        ],
+        points: ['Calificación de la Invalidez', 'Revisión del Dictamen', 'Verificación de Requisitos', 'Solicitud de la Pensión', 'Recursos ante la Entidad', 'Proceso Judicial'],
+        closingHeading: 'Acompañamiento en Cada Etapa',
+        closing: 'Te orientamos desde la calificación hasta el reconocimiento de la pensión.',
+    },
+    {
+        slug: 'acoso-laboral',
+        heading: 'Acoso Laboral: Cómo Identificarlo y Defenderte',
+        intro: [
+            'El acoso laboral es una conducta persistente y demostrable que busca intimidar, humillar o perjudicar a un trabajador, y está regulada por la ley colombiana.',
+            'No todo desacuerdo en el trabajo es acoso; por eso es importante saber reconocer las situaciones y reunir pruebas.',
+        ],
+        sectionHeading: 'Qué Puedes Hacer',
+        section: [
+            'Documenta los hechos con fechas, mensajes, correos y testigos, y acude al comité de convivencia laboral de tu empresa cuando exista.',
+            'Cuando el problema no se resuelve internamente, puede acudirse a las autoridades competentes con la asesoría de un abogado.',
+        ],
+        points: ['Identificación de la Conducta', 'Recolección de Pruebas', 'Queja ante el Comité de Convivencia', 'Medidas de Protección', 'Reclamación ante las Autoridades', 'Acompañamiento Jurídico'],
+        closingHeading: 'No Tienes que Enfrentarlo Solo',
+        closing: 'Analizamos tu situación con reserva y te explicamos las opciones que tienes.',
+    },
+    {
+        slug: 'liquidacion-laboral',
+        heading: 'Liquidación Laboral: Qué Debe Pagarte tu Empleador',
+        intro: [
+            'Al terminar un contrato, el empleador debe liquidar y pagar lo que te corresponde: salarios pendientes y prestaciones sociales, entre otros conceptos.',
+            'Revisar la liquidación con atención evita que firmes un documento con valores incompletos.',
+        ],
+        sectionHeading: 'Conceptos que Debes Verificar',
+        section: [
+            'Revisa que se incluyan los salarios pendientes, las cesantías y sus intereses, la prima de servicios y las vacaciones.',
+            'Si el contrato terminó sin justa causa, puede corresponder además una indemnización.',
+        ],
+        points: ['Salarios Pendientes', 'Cesantías e Intereses', 'Prima de Servicios', 'Vacaciones', 'Indemnización si Aplica', 'Revisión Antes de Firmar'],
+        closingHeading: 'Verifica Antes de Aceptar',
+        closing: 'Revisamos tu liquidación y, si hay diferencias, te ayudamos a reclamarlas.',
+    },
+];
+
 export const caseStudies: CaseStudyType[] = [
     {
         image: 'assets/img/others/case2-image1.png',
@@ -847,3 +1022,65 @@ export const contactItems: FooterContactType[] = [
         href: '',
     },
 ];
+
+/** Preguntas frecuentes (/faq). También alimentan los datos estructurados FAQPage para Google. */
+export const faqGeneral: { id: number; question: string; answer: string }[] = [
+    {
+      id: 1,
+      question: '¿Cuáles son los requisitos para pensionarme en Colombia?',
+      answer: 'En el régimen público (Colpensiones), las mujeres deben tener 57 años y los hombres 62, con un mínimo de 1.300 semanas cotizadas. En los fondos privados, depende del capital ahorrado, aunque existe la garantía de pensión mínima con 1.150 semanas.',
+    },
+    {
+      id: 2,
+      question: '¿Fui despedido sin justa causa, tengo derecho a indemnización?',
+      answer: 'Sí. Si tu empleador termina el contrato unilateralmente sin una causa justa contemplada en la ley, tienes derecho a una indemnización monetaria que varía según tu tipo de contrato (fijo o indefinido) y el tiempo laborado.',
+    },
+    {
+      id: 3,
+      question: '¿Puedo trasladarme de un fondo privado a Colpensiones?',
+      answer: 'Generalmente sí, si te faltan más de 10 años para la edad de pensión (Ley de doble asesoría). Si ya pasaste ese límite, es posible hacerlo mediante una demanda de Nulidad de Afiliación, demostrando que no recibiste la asesoría adecuada al momento de afiliarte.',
+    },
+    {
+      id: 4,
+      question: '¿Qué hago si mi empleador no paga mis prestaciones sociales?',
+      answer: 'El no pago de cesantías, primas o intereses genera una sanción moratoria (un día de salario por cada día de retraso). Podemos iniciar una reclamación administrativa o una demanda laboral para recuperar tu dinero y las sanciones correspondientes.',
+    },
+    {
+      id: 5,
+      question: '¿Manejan casos de calificación de pérdida de capacidad laboral?',
+      answer: 'Sí. Te asesoramos en el proceso ante las Juntas de Calificación (Regional y Nacional) para obtener el porcentaje justo, buscando el reconocimiento de una pensión de invalidez o la indemnización sustitutiva según corresponda.',
+    },
+  ];
+
+export const faqConsultas: { id: number; question: string; answer: string }[] = [
+    {
+      id: 1,
+      question: '¿Tienen servicio de consulta virtual?',
+      answer:
+        '¡Por supuesto! Entendemos que tu tiempo es valioso o que puedes estar en otra ciudad. Ofrecemos asesoría jurídica virtual a través de videollamada (WhatsApp, Meet o Zoom) con la misma calidad y rigurosidad que una cita presencial.',
+    },
+    {
+      id: 2,
+      question: '¿Cuál es el costo de una consulta o representación?',
+      answer:
+        'Cada caso es único. La consulta inicial tiene un valor fijo accesible para evaluar la viabilidad de tu caso. Para los procesos de demanda, solemos trabajar con una cuota inicial y una cuota de éxito ("Cuota Litis") que solo pagas si ganamos el proceso.',
+    },
+    {
+      id: 3,
+      question: '¿Qué documentos necesito para la primera cita?',
+      answer:
+        'Para agilizar el estudio de tu caso, es ideal que traigas: Historia Laboral actualizada (descargable de Colpensiones o tu Fondo), copia de tu contrato de trabajo, carta de despido o liquidación, y resoluciones previas si las tienes.',
+    },
+    {
+      id: 4,
+      question: '¿Cuánto tiempo puede tardar una demanda laboral o pensional?',
+      answer:
+        'Los tiempos varían según la congestión de los juzgados. Un proceso ordinario laboral puede tomar en promedio entre 1 y 3 años en primera instancia. Sin embargo, nuestro compromiso es actuar con celeridad en cada etapa que dependa de nosotros.',
+    },
+    {
+      id: 5,
+      question: '¿Por qué elegir a Vera Villamizar Abogados?',
+      answer:
+        'Porque no somos generalistas; somos especialistas. Nos dedicamos exclusivamente al Derecho Laboral y Seguridad Social, lo que nos permite conocer a profundidad las estrategias legales más efectivas para proteger tu futuro y tu patrimonio.',
+    }
+  ];

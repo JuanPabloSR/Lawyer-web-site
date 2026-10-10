@@ -904,6 +904,7 @@
       .page-prog {
         display: flex;
         align-items: center;
+        flex-wrap: wrap; // migas largas (títulos de caso, servicio o artículo) pasan a otra línea
         padding-top: 12px;
         .icon {
           padding: 0px 8px;
@@ -928,10 +929,10 @@
       }
       .inner-heading {
         @media #{$md} {
-          padding-top: 170px;
+          padding-top: 230px; // deja respirar el título aunque ocupe 3 líneas
         }
         @media #{$xs} {
-          padding-top: 170px;
+          padding-top: 230px; // deja respirar el título aunque ocupe 3 líneas
         }
       }
       

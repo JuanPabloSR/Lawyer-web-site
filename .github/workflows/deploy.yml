@@ -25,6 +25,11 @@ jobs:
     - name: Build Angular Project
       run: npm run build
 
+    # Guarda un HTML ya armado de cada página (para buscadores y vistas previas). Si falla, se publica la web igual.
+    - name: Pre-render pages for SEO
+      continue-on-error: true
+      run: node scripts/prerender.mjs
+
     - name: Deploy to Hostinger via FTP
       uses: SamKirkland/FTP-Deploy-Action@v4.3.5
       with:

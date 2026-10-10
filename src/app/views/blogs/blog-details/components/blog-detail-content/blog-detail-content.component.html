@@ -1,17 +1,12 @@
 <article>
     <div class="details-content">
         <div class="image">
-            <img style="object-fit: cover; height: 100%; width: 100%;" src="assets/img/blog/blog-details-image1.webp" alt="">
+            <img class="compact-img" [src]="image" [alt]="imageAlt" loading="lazy" decoding="async">
         </div>
         <div class="heading mt-30">
             <h2 class="black1 text-38 sm:text-30 md:text-30 leading-38 font-semibold text-anime-style-3">
-                Su Guía Legal para Entender el Sistema Pensional Colombiano</h2>
-            <p class="black2 font-18 leading-26 gray1 font-medium mt-16">En el cambiante panorama legislativo, 
-                estar informado sobre sus derechos es fundamental. En Vera Villamizar Abogados, nos dedicamos 
-                a analizar los fallos recientes de las Altas Cortes y la normatividad vigente para proteger su futuro y el de su familia.</p>
-            <p class="black2 font-18 leading-26 gray1 font-medium mt-16">Trabajamos estrechamente con usted para 
-                evaluar su historia laboral e identificar oportunidades de reliquidación o traslado. No deje su 
-                pensión al azar; permita que nuestros especialistas en seguridad social revisen su caso.</p>
+                {{ detail.heading }}</h2>
+            <p *ngFor="let paragraph of detail.intro" class="black2 font-18 leading-26 gray1 font-medium mt-16">{{ paragraph }}</p>
         </div>
 
     </div>
@@ -22,30 +17,27 @@
         <div class="row">
             <div class="col-md-6">
                 <div class="image">
-                    <img style="object-fit: cover; height: 100%; width: 100%;" src="assets/img/blog/blog-details-image2.webp" alt="">
+                    <img class="compact-img" src="assets/img/blog/blog-details-image2.webp" alt="Jorge Alberto Vera Villamizar, socio director de Vera Villamizar Abogados" loading="lazy" decoding="async">
                 </div>
             </div>
             <div class="col-md-6">
                 <div class="image">
-                    <img style="object-fit: cover; height: 100%; width: 100%;" src="assets/img/blog/blog-details-image3.webp" alt="">
+                    <img class="compact-img" src="assets/img/blog/blog-details-image3.webp" alt="Jorge Alberto Vera Villamizar en las instalaciones de Vera Villamizar Abogados" loading="lazy" decoding="async">
                 </div>
             </div>
         </div>
         <div class="heading mt-30">
-            <h2 class="black1 text-32 sm:text-30 md:text-30 leading-32 font-semibold">Tácticas Legales
-                para Desafíos Actuales</h2>
-            <p class="black2 font-18 leading-26 gray1 font-medium mt-16">En el entorno laboral actual,
-                conocer la ley no es una opción, es una necesidad para proteger su patrimonio. En Vera Villamizar, creemos que cada trabajador tiene derechos irrenunciables que deben ser defendidos con firmeza.</p>
-            <p class="black2 font-18 leading-26 gray1 font-medium mt-16">Realizamos evaluaciones exhaustivas para entender sus desafíos particulares y ofrecemos asesoría preventiva o litigio estratégico según lo requiera su situación laboral.</p>
+            <h2 class="black1 text-32 sm:text-30 md:text-30 leading-32 font-semibold">{{ detail.sectionHeading }}</h2>
+            <p *ngFor="let paragraph of detail.section" class="black2 font-18 leading-26 gray1 font-medium mt-16">{{ paragraph }}</p>
         </div>
         <div class="row mt-10">
-            <div class="col-lg-4 col-md-6" *ngFor="let service of services">
+            <div class="col-lg-4 col-md-6" *ngFor="let point of detail.points">
                 <ul>
                     <li class="detials-check-list">
                         <span class="check">
                             <i class="fa-solid fa-check"></i>
                         </span>
-                        {{ service }}
+                        {{ point }}
                     </li>
                 </ul>
             </div>
@@ -57,7 +49,7 @@
     <div class="details-content mt-50">
         <div class="video-area _relative">
             <div class="image">
-                <img class="w-full" src="assets/img/blog/video-abogada.webp" alt="Abogada de Vera Villamizar Abogados en su oficina">
+                <img class="w-full" src="assets/img/blog/video-abogada.webp" alt="Abogada de Vera Villamizar Abogados en su oficina" loading="lazy" decoding="async">
             </div>
             <div class="details-video">
                 <a id="play-video play-btn" class="video-play-button">
@@ -66,11 +58,8 @@
             </div>
         </div>
         <div class="heading mt-30">
-            <h2 class="black1 text-32 sm:text-30 md:text-30 leading-32 font-semibold">Cómo una Consulta 
-                Jurídica puede Cambiar su Horizonte</h2>
-            <p class="black2 font-18 leading-26 gray1 font-medium mt-16">En un mundo cada vez más dinámico, 
-                la asesoría legal temprana y personalizada es una herramienta vital para evitar pleitos costosos y asegurar su bienestar. Mediante videollamada o de forma presencial, estamos listos para atenderle.</p>
+            <h2 class="black1 text-32 sm:text-30 md:text-30 leading-32 font-semibold">{{ detail.closingHeading }}</h2>
+            <p class="black2 font-18 leading-26 gray1 font-medium mt-16">{{ detail.closing }}</p>
         </div>
     </div>
 </article>
-

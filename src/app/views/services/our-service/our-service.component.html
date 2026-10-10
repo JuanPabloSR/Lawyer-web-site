@@ -7,13 +7,13 @@
             <div class="col-lg-6">
                 <div class="images _relative z-3">
                     <div class="image reveal _relative image-anime text-center" appGsapReveal>
-                        <img src="assets/img/new_photos_web_allyson/IMG_4430.webp" alt="Abogada Allyson" style="object-fit: cover; max-height: 380px; border-radius: 12px; width: 70%; margin: 0 auto;">
+                        <img src="assets/img/new_photos_web_allyson/IMG_4430.webp" alt="Abogada Allyson" style="object-fit: cover; max-height: 380px; border-radius: 12px; width: 70%; margin: 0 auto;" loading="lazy" decoding="async">
                     </div>
                     <div class="shape round-circle">
-                        <img src="assets/img/shapes/about1-shape3.png" alt="">
+                        <img src="assets/img/shapes/about1-shape3.png" alt="" loading="lazy" decoding="async">
                     </div>
                     <!-- <div class="shape2 animate1">
-                        <img src="assets/img/shapes/service1-shape1.png" alt="">
+                        <img src="assets/img/shapes/service1-shape1.png" alt="" loading="lazy" decoding="async">
                     </div> -->
                 </div>
             </div>
@@ -57,10 +57,10 @@
         </div>
 
         <div class="row pt-40 services-grid">
-            <div *ngFor="let service of services" class="col-lg-4 col-md-6 mt-30">
+            <div *ngFor="let service of visibleServices()" class="col-lg-4 col-md-6 mt-30">
                 <div class="service-page-item">
                     <div class="icon">
-                        <img [src]="service.icon" alt="">
+                        <img [src]="service.icon" alt="" loading="lazy" decoding="async">
                     </div>
                     <a [routerLink]="['/service-details', service.slug]" class="arrow service-arrow-fix"><i class="fas fa-arrow-right"></i></a>
                     <div class="heading1">
@@ -71,6 +71,13 @@
                             {{service.id.toString().padStart(2,"0")}}</p>
                     </div>
                 </div>
+            </div>
+        </div>
+
+        <div class="space50"></div>
+        <div class="row">
+            <div class="col-12 m-auto">
+                <app-pagination [totalPages]="totalPages()" [page]="page()" (pageChange)="goTo($event)" />
             </div>
         </div>
 

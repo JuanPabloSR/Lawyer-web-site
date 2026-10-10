@@ -47,6 +47,7 @@
 // Cuadrícula de /our-services: todas las tarjetas con el mismo alto (el de la más larga),
 // no solo las de la misma fila. Columnas: 1 en celular, 2 en tablet, 3 en escritorio.
 .services-grid {
+  scroll-margin-top: 110px;
   display: grid;
   grid-template-columns: 1fr;
   grid-auto-rows: 1fr;

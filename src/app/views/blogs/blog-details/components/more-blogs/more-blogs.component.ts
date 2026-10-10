@@ -1,6 +1,7 @@
-import { blogs } from '@/assets/data';
+import { blogs as allBlogs } from '@/assets/data';
+import type { BlogType } from '@/types';
 import { CommonModule } from '@angular/common';
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { BlogCardComponent } from "@app/components/cards/blog-card/blog-card.component";
 
 @Component({
@@ -10,5 +11,6 @@ import { BlogCardComponent } from "@app/components/cards/blog-card/blog-card.com
   styles: ``
 })
 export class MoreBlogsComponent {
-blogs=blogs
+    /** Sin entrada se muestran los tres últimos, como hasta ahora. */
+    @Input() blogs: BlogType[] = allBlogs.slice(6, 9);
 }

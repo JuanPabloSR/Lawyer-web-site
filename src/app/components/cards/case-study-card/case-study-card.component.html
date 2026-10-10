@@ -1,7 +1,8 @@
 <div class="case1-box mt-30" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
     <div class="image">
-       <img style="object-fit: cover; object-position: center 30%; height: 100%; width: 100%;" [src]="case.image" alt="">
+       <img style="object-fit: cover; object-position: center 30%; height: 100%; width: 100%;" [src]="case.image" [alt]="case.title+' - caso de '+case.category+' en Bucaramanga'" loading="lazy" decoding="async">
     </div>
+    <p class="case-title-strip" aria-hidden="true">{{case.title}}</p>
     <div class="content-area">
        <a [routerLink]="case.slug ? ['/case-single', case.slug] : null" class="arrow"><i class="fas fa-arrow-right"></i></a>
        <p class="black2 font-18 leading-18 font-medium mt-16 mb-16">{{case.title}}</p>

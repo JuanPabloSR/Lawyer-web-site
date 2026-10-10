@@ -537,3 +537,53 @@
   object-fit: cover;
   object-position: center 22%;
 }
+
+
+// ===== Título siempre visible en las tarjetas de casos =====
+// Antes la tarjeta solo mostraba la foto hasta pasar el cursor; ahora se ve el título abajo y,
+// al pasar el cursor, aparece el panel completo y la franja se desvanece.
+.case1-box {
+  .case-title-strip {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    margin: 0;
+    padding: 36px 20px 16px;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 26px;
+    text-align: center;
+    text-shadow: 0 1px 4px rgba(0, 0, 0, .5);
+    background: linear-gradient(to top, rgba(0, 0, 0, .78), rgba(0, 0, 0, 0));
+    pointer-events: none; // el hover y los clics siguen llegando a la tarjeta
+    transition: opacity .3s, transform .3s;
+
+    // En tablet y celular el panel completo ya está siempre visible.
+    @media #{$md} {
+      display: none;
+    }
+    @media #{$xs} {
+      display: none;
+    }
+  }
+
+  &:hover .case-title-strip {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+}
+
+
+// Detalle del blog: imágenes compactas (4:3, rostros completos), igual que en casos y servicios.
+.blog-sidebar-page .details-content .image img.compact-img {
+  display: block;
+  width: 100%;
+  max-width: 380px;
+  margin: 0 auto;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  object-position: center 22%;
+}

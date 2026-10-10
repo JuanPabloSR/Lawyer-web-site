@@ -1,97 +1,184 @@
 <!doctype html>
-<html lang="es">
+<html lang="es-CO">
 <head>
   <meta charset="utf-8">
-  <title>Vera Villamizar Abogados | Laboral y Pensiones Bucaramanga</title>
+  <title>Abogados Laboralistas en Bucaramanga | Vera Villamizar Abogados</title>
   <base href="/">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0d3640">
 
-  <!-- SEO Meta Tags -->
-  <meta name="description" content="Firma jurídica en Bucaramanga experta en derecho laboral, pensiones y seguridad social. Defendemos sus derechos con +15 años de experiencia.">
-  <meta name="keywords" content="abogados Bucaramanga, derecho laboral Bucaramanga, pensiones Colombia, abogado laboral Santander, pensión docente FOMAG, seguridad social, pensión de invalidez, pensión de sobrevivientes, reliquidación de pensiones, cesantías, accidentes de tránsito, Vera Villamizar Abogados, abogado pensional, derecho administrativo">
+  <!-- SEO: estas etiquetas son las de la portada; el resto de páginas las actualiza SeoService al navegar -->
+  <meta name="description" content="Abogados en Bucaramanga: derecho laboral, pensiones y pensión docente FOMAG. Más de 15 años de experiencia y +800 clientes. Agenda tu asesoría.">
+  <meta name="keywords" content="abogados Bucaramanga, abogados laboralistas Bucaramanga, abogado de pensiones Bucaramanga, derecho laboral Bucaramanga, pensión docente FOMAG, abogado para docentes, reliquidación de pensiones, nulidad de traslado, pensión de invalidez, pensión de sobrevivientes, cesantías, seguridad social, abogados Santander, Vera Villamizar Abogados">
   <meta name="author" content="Vera Villamizar Abogados SAS">
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+  <link rel="canonical" href="https://www.veravillamizarabogados.com/">
+  <link rel="alternate" hreflang="es-CO" href="https://www.veravillamizarabogados.com/">
+  <link rel="alternate" hreflang="x-default" href="https://www.veravillamizarabogados.com/">
+
+  <!-- Iconos -->
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="icon" type="image/png" href="assets/img/logo/logo_vera_small.png">
   <link rel="apple-touch-icon" href="assets/img/logo/logo_vera_small.png">
-  <meta name="robots" content="index, follow">
+
+  <!-- Tipografía: carga directa (antes iba dentro del CSS y bloqueaba el primer pintado) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap">
+
   <!-- LCP Preloads -->
   <link rel="preload" as="image" href="assets/img/bg/hero1-bg.jpg" fetchpriority="high">
   <link rel="preload" as="image" href="assets/img/hero/hero1-slider-jorge.webp" fetchpriority="high">
-  
-  <link rel="canonical" href="https://www.veravillamizarabogados.com/">
 
-  <!-- Open Graph / Facebook -->
+  <!-- Open Graph / Facebook / WhatsApp / LinkedIn -->
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://www.veravillamizarabogados.com/">
-  <meta property="og:title" content="Vera Villamizar Abogados | Laboral y Pensiones Bucaramanga">
-  <meta property="og:description" content="Firma jurídica en Bucaramanga experta en derecho laboral, pensiones y seguridad social. Defendemos sus derechos con +15 años de experiencia.">
-  <meta property="og:image" content="assets/img/logo/logo_vera-opt.png">
+  <meta property="og:title" content="Abogados Laboralistas en Bucaramanga | Vera Villamizar Abogados">
+  <meta property="og:description" content="Abogados en Bucaramanga: derecho laboral, pensiones y pensión docente FOMAG. Más de 15 años de experiencia y +800 clientes. Agenda tu asesoría.">
+  <meta property="og:image" content="https://www.veravillamizarabogados.com/assets/img/og/og-vera-villamizar.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Vera Villamizar Abogados: abogados en Bucaramanga, derecho laboral y pensiones">
   <meta property="og:locale" content="es_CO">
   <meta property="og:site_name" content="Vera Villamizar Abogados">
 
-  <!-- Twitter Card -->
+  <!-- Twitter / X -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Vera Villamizar Abogados | Laboral y Pensiones">
-  <meta name="twitter:description" content="Firma jurídica experta en derecho laboral, pensiones y seguridad social en Bucaramanga.">
-  <meta name="twitter:image" content="assets/img/logo/logo_vera.png">
+  <meta name="twitter:title" content="Abogados Laboralistas en Bucaramanga | Vera Villamizar Abogados">
+  <meta name="twitter:description" content="Derecho laboral, pensiones, seguridad social y pensión docente FOMAG en Bucaramanga.">
+  <meta name="twitter:image" content="https://www.veravillamizarabogados.com/assets/img/og/og-vera-villamizar.jpg">
 
-  <!-- Geo Tags -->
+  <!-- SEO local -->
   <meta name="geo.region" content="CO-SAN">
   <meta name="geo.placename" content="Bucaramanga, Santander, Colombia">
   <meta name="geo.position" content="7.117419;-73.130152">
   <meta name="ICBM" content="7.117419, -73.130152">
 
-  <!-- Favicon -->
-  <link rel="icon" type="image/x-icon" href="assets/img/logo/logo_vera_small.png">
-
-  <!-- Structured Data: LocalBusiness + LegalService -->
+  <!-- Datos estructurados: la firma (LegalService), el sitio y los abogados. Se repiten en todas las páginas. -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": ["LegalService", "LocalBusiness"],
-    "name": "Vera Villamizar Abogados SAS",
-    "image": "https://www.veravillamizarabogados.com/assets/img/logo/logo_vera.png",
-    "url": "https://www.veravillamizarabogados.com",
-    "telephone": "+573157189078",
-    "email": "veravillamizarabogados@gmail.com",
-    "description": "Firma jurídica especializada en derecho laboral docente, pensiones y seguridad social con más de 15 años de experiencia en Bucaramanga, Colombia.",
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "Calle 36 #13-48, García Rovira",
-      "addressLocality": "Bucaramanga",
-      "addressRegion": "Santander",
-      "addressCountry": "CO"
-    },
-    "geo": {
-      "@type": "GeoCoordinates",
-      "latitude": 7.117419,
-      "longitude": -73.130152
-    },
-    "openingHoursSpecification": {
-      "@type": "OpeningHoursSpecification",
-      "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
-      "opens": "08:00",
-      "closes": "16:00"
-    },
-    "sameAs": [
-      "https://www.instagram.com/veravillamizar_abogados",
-      "https://www.facebook.com/share/16wvkGYPjN/",
-      "https://www.tiktok.com/@veravillamizarabogados",
-      "https://youtube.com/@veravillamizar3668",
-      "https://www.linkedin.com/company/vera-villamizar-abogados/"
-    ],
-    "priceRange": "$$",
-    "areaServed": {
-      "@type": "State",
-      "name": "Santander, Colombia"
-    }
+    "@graph": [
+      {
+        "@type": ["LegalService", "LocalBusiness"],
+        "@id": "https://www.veravillamizarabogados.com/#organization",
+        "name": "Vera Villamizar Abogados SAS",
+        "alternateName": ["Vera Villamizar Abogados", "Abogados Vera Villamizar Bucaramanga"],
+        "url": "https://www.veravillamizarabogados.com/",
+        "logo": "https://www.veravillamizarabogados.com/assets/img/logo/logo_vera.png",
+        "image": "https://www.veravillamizarabogados.com/assets/img/og/og-vera-villamizar.jpg",
+        "description": "Firma jurídica en Bucaramanga especializada en derecho laboral, derecho laboral docente (FOMAG), pensiones y seguridad social, con más de 15 años de experiencia en litigio y asesoría personalizada.",
+        "telephone": "+573157189078",
+        "email": "veravillamizarabogados@gmail.com",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Calle 36 #13-48, García Rovira",
+          "addressLocality": "Bucaramanga",
+          "addressRegion": "Santander",
+          "addressCountry": "CO"
+        },
+        "geo": { "@type": "GeoCoordinates", "latitude": 7.117419, "longitude": -73.130152 },
+        "hasMap": "https://maps.google.com/?q=Vera+Villamizar+Abogados+SAS+Bucaramanga",
+        "openingHoursSpecification": {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+          "opens": "08:00",
+          "closes": "16:00"
+        },
+        "contactPoint": [{
+          "@type": "ContactPoint",
+          "contactType": "atención al cliente",
+          "telephone": "+573157189078",
+          "email": "veravillamizarabogados@gmail.com",
+          "availableLanguage": "es",
+          "areaServed": "CO"
+        }],
+        "areaServed": [
+          { "@type": "City", "name": "Bucaramanga" },
+          { "@type": "AdministrativeArea", "name": "Santander" },
+          { "@type": "Country", "name": "Colombia" }
+        ],
+        "knowsAbout": [
+          "Derecho laboral", "Derecho laboral docente", "Pensión docente FOMAG", "Pensiones", "Seguridad social",
+          "Reliquidación de pensiones", "Nulidad de traslado de fondo de pensiones", "Pensión de invalidez",
+          "Pensión de sobrevivientes", "Cesantías", "Demandas laborales", "Asesoría empresarial"
+        ],
+        "hasOfferCatalog": {
+          "@type": "OfferCatalog",
+          "name": "Servicios jurídicos",
+          "itemListElement": [
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Reconocimiento de pensiones" } },
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Docentes afiliados al FOMAG" } },
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Reliquidación de pensiones" } },
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Pensiones de invalidez" } },
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Demandas laborales" } },
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Asesorías empresariales" } }
+          ]
+        },
+        "employee": [
+          { "@id": "https://www.veravillamizarabogados.com/#jorge-vera" },
+          { "@id": "https://www.veravillamizarabogados.com/#jairo-silva" },
+          { "@id": "https://www.veravillamizarabogados.com/#allison-rivera" }
+        ],
+        "sameAs": [
+          "https://www.instagram.com/veravillamizar_abogados",
+          "https://www.facebook.com/share/16wvkGYPjN/",
+          "https://www.tiktok.com/@veravillamizarabogados",
+          "https://youtube.com/@veravillamizar3668",
+          "https://www.linkedin.com/company/vera-villamizar-abogados/"
+        ]
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://www.veravillamizarabogados.com/#website",
+        "url": "https://www.veravillamizarabogados.com/",
+        "name": "Vera Villamizar Abogados",
+        "inLanguage": "es-CO",
+        "publisher": { "@id": "https://www.veravillamizarabogados.com/#organization" }
+      },
+      {
+        "@type": "Person",
+        "@id": "https://www.veravillamizarabogados.com/#jorge-vera",
+        "name": "Jorge Alberto Vera Villamizar",
+        "jobTitle": "Socio Director, especialista en seguridad social",
+        "worksFor": { "@id": "https://www.veravillamizarabogados.com/#organization" },
+        "sameAs": ["https://www.linkedin.com/in/jorge-alberto-vera-villamizar-0113b9137/"]
+      },
+      {
+        "@type": "Person",
+        "@id": "https://www.veravillamizarabogados.com/#jairo-silva",
+        "name": "Jairo Enrique Silva Santamaría",
+        "jobTitle": "Socio Senior, especialista en derecho público",
+        "worksFor": { "@id": "https://www.veravillamizarabogados.com/#organization" }
+      },
+      {
+        "@type": "Person",
+        "@id": "https://www.veravillamizarabogados.com/#allison-rivera",
+        "name": "Allison Daniela Rivera Ardila",
+        "jobTitle": "Abogada coordinadora, especialista en derecho administrativo",
+        "worksFor": { "@id": "https://www.veravillamizarabogados.com/#organization" }
+      }
+    ]
   }
   </script>
 </head>
 <body>
   <app-root>
+    <!-- Contenido de respaldo para buscadores y lectores que no ejecutan JavaScript. Angular lo reemplaza al cargar. -->
     <div style="display: none;">
-      <h1>Abogados en Bucaramanga Especialistas en Derecho Laboral y Pensiones</h1>
-      <p>Vera Villamizar Abogados es una firma jurídica en Bucaramanga, Santander. Somos expertos en derecho laboral, pensión docente FOMAG, reliquidación de pensiones, y seguridad social. Defendemos sus derechos con más de 15 años de experiencia.</p>
-      <a href="/">Inicio</a>
+      <h1>Abogados en Bucaramanga: Derecho Laboral, Pensiones y Docentes FOMAG</h1>
+      <p>Vera Villamizar Abogados es una firma jurídica en Bucaramanga, Santander, especializada en derecho laboral, derecho laboral docente, pensiones y seguridad social. Con más de 15 años de experiencia, acompañamos a trabajadores, pensionados, docentes y empresas en la defensa de sus derechos.</p>
+      <p>Calle 36 #13-48, García Rovira, Bucaramanga. WhatsApp: 315 718 9078. Lunes a viernes, de 8:00 a. m. a 4:00 p. m.</p>
+      <nav>
+        <a href="/">Inicio</a>
+        <a href="/about">Sobre nosotros</a>
+        <a href="/our-team">Nuestro equipo</a>
+        <a href="/our-services">Servicios</a>
+        <a href="/case-study">Casos de estudio</a>
+        <a href="/blog/grid-2">Blog jurídico</a>
+        <a href="/faq">Preguntas frecuentes</a>
+        <a href="/contact">Contacto</a>
+      </nav>
     </div>
   </app-root>
 </body>

@@ -1,11 +1,11 @@
-<app-page-header title="Detalles del Blog" parentTitle="Blog Jurídico" parentLink="/blog/grid-2" />
+<app-page-header [title]="title()" parentTitle="Blog Jurídico" parentLink="/blog/grid-2" />
 
 <div class="blog-sidebar-page sp">
     <div class="container">
         <div class="row">
             <div class="col-lg-8 m-auto">
                 <div class="details-content-all">
-                    <app-blog-detail-content />
+                    <app-blog-detail-content [detail]="detail()" [image]="image()" [imageAlt]="title()" />
                 </div>
             </div>
 
@@ -13,4 +13,4 @@
     </div>
 </div>
 
-<app-more-blogs />
+<app-more-blogs [blogs]="moreBlogs()" />

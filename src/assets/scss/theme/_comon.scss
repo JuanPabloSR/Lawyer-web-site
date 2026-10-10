@@ -562,6 +562,12 @@
     padding-right: 20px;
   }
   
+  // Flecha sin página a donde ir (primera o última página).
+  .theme-pagination li a.disabled {
+    opacity: .4;
+    pointer-events: none;
+  }
+
   .theme-pagination li a:hover, .theme-pagination li a.active {
     background: var(--vtc-bg-main6);
     transition: all 0.3s;

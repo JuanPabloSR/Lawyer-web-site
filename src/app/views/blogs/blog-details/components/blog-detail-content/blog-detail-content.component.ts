@@ -1,5 +1,7 @@
+import { defaultBlogDetail } from '@/assets/data';
+import type { BlogDetailType } from '@/types';
 import { CommonModule } from '@angular/common';
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
     selector: 'app-blog-detail-content',
@@ -8,14 +10,10 @@ import { Component } from '@angular/core';
     styles: ``
 })
 export class BlogDetailContentComponent {
-    services: string[] = [
-        'Análisis de Historia Laboral',
-        'Cálculo Actuarial Especializado',
-        'Representación ante Colpensiones',
-        'Trámites en Fondos Privados (AFP)',
-        'Demandas Ordinarias Laborales',
-        'Asesoría Preventiva'
-    ];
+    /** Sin entrada (/blog-details y las variantes left/right) se muestra el texto original. */
+    @Input() detail: BlogDetailType = defaultBlogDetail;
+    @Input() image = 'assets/img/blog/blog-details-image1.webp';
+    @Input() imageAlt = 'Jorge Alberto Vera Villamizar, socio director de Vera Villamizar Abogados';
 
     comments = [
         {

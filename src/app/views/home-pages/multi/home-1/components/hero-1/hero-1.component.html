@@ -1,4 +1,6 @@
 <div class="hero1 bg-cover _relative">
+    <!-- Único h1 de la página (para buscadores y lectores de pantalla); los títulos del carrusel son h2. -->
+    <h1 class="visually-hidden">Abogados en Bucaramanga: derecho laboral, pensiones y docentes FOMAG</h1>
     <ngx-slick-carousel [config]="sliderConfig" class="hero1-sliders">
         <div *ngFor="let slide of heroSlides" ngxSlickItem class="hero1-single-slider overflow-hidden _relative"
             style="background-image: url(assets/img/bg/hero1-bg.jpg);">
@@ -8,10 +10,10 @@
                     <div class="col-lg-5">
                         <div class="heading mt-50 md:mt-100 sm:mt-100 _relative z-9">
                             <span class="sub-title text-18 leading-18 flex white1 uppercase mb-20 font-medium"><img
-                                    src="assets/img/icons/span1.svg" alt="">CONSULTORIA ESPECIALIZADA</span>
-                            <h1
+                                    src="assets/img/icons/span1.svg" alt="">ABOGADOS EN BUCARAMANGA</span>
+                            <h2
                                 class="text-56 md:text-40 sm:text-40 leading64 inline-block white1 font-semibold text-anime-style-3">
-                                {{slide.title}}</h1>
+                                {{slide.title}}</h2>
                             <p class="mt-16 text-18 leading-26 inline-block white1">{{slide.description}}</p>
                             <div class="button mt-30">
                                 <a class="theme-btn1" routerLink="/contact"><span class="text">Agenda Tu

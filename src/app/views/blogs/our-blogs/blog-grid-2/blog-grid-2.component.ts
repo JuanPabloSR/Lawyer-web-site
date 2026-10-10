@@ -12,5 +12,8 @@ import { PaginationComponent } from "@app/components/pagination/pagination.compo
     styles: ``
 })
 export class BlogGrid2Component {
+    /** Paginación oculta por pedido de la usuaria (2026-10-10); poner en true para volver a mostrarla. */
+    showPagination = false;
+
     blogs = blogs
 }

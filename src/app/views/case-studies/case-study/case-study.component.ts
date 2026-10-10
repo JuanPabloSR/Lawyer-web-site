@@ -13,5 +13,8 @@ import { PaginationComponent } from "@app/components/pagination/pagination.compo
   styles: ``
 })
 export class CaseStudyComponent {
+    /** Paginación oculta por pedido de la usuaria (2026-10-10); poner en true para volver a mostrarla. */
+    showPagination = false;
+
     caseStudies: CaseStudyType[] = caseDetails.filter(c => !c.homeOnly);
 }

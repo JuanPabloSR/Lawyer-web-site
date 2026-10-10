@@ -2,7 +2,7 @@
     <div class="details-content">
         <div class="image">
             <img [src]="case.heroImage ?? case.image" [class.case-hero]="!case.heroImage"
-                [alt]="case.title + ' - Caso de ' + case.category + ' en Vera Villamizar Abogados'">
+                [alt]="case.title + ' - Caso de ' + case.category + ' en Vera Villamizar Abogados'" loading="lazy" decoding="async">
         </div>
         <div class="heading mt-30">
             <h2 class="black1 text-38 sm:text-30 md:text-30 leading-38 font-semibold text-anime-style-3">
