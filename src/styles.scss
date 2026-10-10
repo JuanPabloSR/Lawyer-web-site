@@ -94,3 +94,11 @@
         overflow-wrap: anywhere;
     }
 }
+
+/* Pantallas táctiles (sin hover): los íconos de LinkedIn y de hoja de vida del equipo quedan siempre visibles. */
+@media (hover: none) {
+    .team1-box .image-area .icons {
+        transform: none;
+        opacity: 1;
+    }
+}
