@@ -9,6 +9,7 @@ export const teamMembers: MemberType[] = [
         role: 'ABOGADA COORDINADORA',
         specialty: 'ESPECIALISTA EN DERECHO ADMINISTRATIVO.',
         linkedin: 'https://www.linkedin.com/in/allison-daniela-rivera-ardila-3a9364298?utm_source=share_via&utm_content=profile&utm_medium=member_ios',
+        cv: 'assets/documents/hv-allison-rivera.pdf',
     },
     {
         name: 'JORGE ALBERTO VERA VILLAMIZAR',
@@ -16,6 +17,7 @@ export const teamMembers: MemberType[] = [
         role: 'SOCIO DIRECTOR',
         specialty: 'ESPECIALISTA EN SEGURIDAD SOCIAL',
         linkedin: 'https://www.linkedin.com/in/jorge-alberto-vera-villamizar-0113b9137/',
+        cv: 'assets/documents/hv-jorge-vera.pdf',
     },
     {
         name: 'JAIRO ENRIQUE SILVA SANTAMARIA',

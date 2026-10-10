@@ -32,8 +32,9 @@
         .icons {
             position: absolute;
             bottom: 30px;
-            left: 50%;
-            margin-left: -95px;
+            left: 0;
+            right: 0;
+            text-align: center; // centra 1, 2 o más íconos
             transform: translateY(100px);
             opacity: 0;
             transition: all .4s;

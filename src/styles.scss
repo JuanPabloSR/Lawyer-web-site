@@ -44,3 +44,52 @@
         font-size: 14px;
     }
 }
+
+/*
+ * Celular (hasta 575 px): escala de texto más contenida. En escritorio no cambia nada.
+ * Cuerpo de 18 px a 16 px y títulos del hero de 40 px a 32 px, para que no ocupen media pantalla.
+ */
+@media (max-width: 575px) {
+    .font-18 {
+        font-size: 16px;
+    }
+    .leading-26 {
+        line-height: 24px;
+    }
+    .hero1 h2.text-56 {
+        font-size: 32px;
+        line-height: 40px;
+    }
+    .case-title-strip {
+        font-size: 18px;
+        line-height: 24px;
+    }
+    .testimonial-boxarea p {
+        font-size: 18px;
+        line-height: 28px;
+    }
+    .contact-page-sec .contact-page-boxs .contact-page-box {
+        padding: 16px;
+
+        .icon {
+            height: 48px;
+            width: 48px;
+            line-height: 48px;
+        }
+        .text a {
+            font-size: 14px;
+            line-height: 20px;
+        }
+    }
+    /* Menú lateral: logo legible y datos de contacto sin salirse del panel (el correo se cortaba a 360 px). */
+    .vl-offcanvas-logo img {
+        height: 72px !important;
+        width: auto !important;
+        max-width: none !important;
+    }
+    .vl-offcanvas-info .single-contact .text a {
+        font-size: 15px;
+        line-height: 22px;
+        overflow-wrap: anywhere;
+    }
+}

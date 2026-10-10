@@ -40,6 +40,8 @@ export type MemberType = {
     role: string;
     specialty?: string;
     linkedin?: string;
+    /** Hoja de vida en PDF (ruta bajo assets/documents). Si falta, no se muestra el botón de descarga. */
+    cv?: string;
 }
 
 export type TestimonialType = {
