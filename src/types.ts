@@ -12,9 +12,15 @@ export type ServiceDetailType = {
     points: string[];
     approachHeading: string;
     approach: string[];
-    /** Muestra las preguntas frecuentes (hoy son de temas pensionales). */
+    /** Muestra las preguntas frecuentes (por defecto, las de temas pensionales). */
     showFaq?: boolean;
+    /** Preguntas propias del servicio; reemplazan a las pensionales y van a Google como FAQPage. */
+    faq?: FaqItem[];
+    /** Título para Google si debe ser distinto de "<nombre> en Bucaramanga". */
+    seoTitle?: string;
 }
+
+export type FaqItem = { question: string; answer: string };
 
 export type ServiceType = {
     /** Si existe, las tarjetas enlazan a /service-details/:slug */

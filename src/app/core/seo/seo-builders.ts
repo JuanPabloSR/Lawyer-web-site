@@ -1,4 +1,5 @@
-import { blogDetails, blogs, caseDetails, faqConsultas, faqGeneral, serviceDetails, servicesData } from '@/assets/data';
+import { blogDetails, blogs, caseDetails, faqConsultas, faqDocentes, faqGeneral, serviceDetails, servicesData } from '@/assets/data';
+import type { FaqItem } from '@/types';
 import { ORG_ID, SeoData, SITE_ORIGIN } from './seo.service';
 
 /*
@@ -33,21 +34,32 @@ const STATIC_PAGES: Record<string, SeoData> = {
         title: 'Preguntas Frecuentes: Pensiones y Laboral',
         description: 'Resolvemos tus dudas sobre requisitos de pensión, despido sin justa causa, traslado a Colpensiones, prestaciones sociales e invalidez.',
         breadcrumbs: [INICIO, { name: 'Preguntas Frecuentes', path: '/faq' }],
-        jsonLd: [{
-            '@context': 'https://schema.org',
-            '@type': 'FAQPage',
-            mainEntity: [...faqGeneral, ...faqConsultas].map(f => ({
-                '@type': 'Question',
-                name: f.question,
-                acceptedAnswer: { '@type': 'Answer', text: f.answer },
-            })),
-        }],
+        jsonLd: [faqPage([...faqGeneral, ...faqConsultas])],
     },
     '/contact': {
         title: 'Contacto | Abogados en Bucaramanga',
         description: 'Agenda tu asesoría con abogados en Bucaramanga. Calle 36 #13-48, García Rovira. WhatsApp 315 718 9078. Lunes a viernes, de 8:00 a. m. a 4:00 p. m.',
         breadcrumbs: [INICIO, { name: 'Contacto', path: '/contact' }],
         jsonLd: [{ '@context': 'https://schema.org', '@type': 'ContactPage', url: SITE_ORIGIN + '/contact', about: { '@id': ORG_ID } }],
+    },
+    '/abogados-para-docentes': {
+        title: 'Abogados para Docentes y el Magisterio (FOMAG)',
+        description: 'Abogados para docentes afiliados al FOMAG: pensión docente, régimen 2277 y 1278, pensión y salario, cesantías y sanción moratoria. Bucaramanga y asesoría virtual.',
+        breadcrumbs: [INICIO, { name: 'Abogados para Docentes', path: '/abogados-para-docentes' }],
+        jsonLd: [
+            {
+                '@context': 'https://schema.org',
+                '@type': 'Service',
+                name: 'Abogados para docentes',
+                serviceType: 'Derecho laboral docente',
+                description: 'Asesoría y representación para docentes afiliados al FOMAG: pensión docente, régimen 2277 y 1278, compatibilidad entre pensión y salario, cesantías y reliquidación.',
+                url: SITE_ORIGIN + '/abogados-para-docentes',
+                provider: { '@id': ORG_ID },
+                audience: { '@type': 'Audience', audienceType: 'Docentes del magisterio colombiano' },
+                areaServed: [{ '@type': 'City', name: 'Bucaramanga' }, { '@type': 'Country', name: 'Colombia' }],
+            },
+            faqPage(faqDocentes),
+        ],
     },
     '/our-services': {
         title: 'Servicios Jurídicos Laborales y Pensionales',
@@ -111,10 +123,10 @@ function serviceSeo(slug: string): SeoData | undefined {
     const name = baseName(detail.heading);
     const path = `/service-details/${slug}`;
     return {
-        title: `${name} en Bucaramanga`,
+        title: detail.seoTitle ?? `${name} en Bucaramanga`,
         description: truncate(`${service.description} Asesoría legal en Bucaramanga con Vera Villamizar Abogados.`),
         breadcrumbs: [INICIO, { name: 'Nuestros Servicios', path: '/our-services' }, { name, path }],
-        jsonLd: [{
+        jsonLd: [...(detail.faq ? [faqPage(detail.faq)] : []), {
             '@context': 'https://schema.org',
             '@type': 'Service',
             name,
@@ -161,6 +173,18 @@ function blogSeo(slug: string): SeoData | undefined {
             author: { '@id': ORG_ID },
             publisher: { '@id': ORG_ID },
         }],
+    };
+}
+
+function faqPage(faqs: FaqItem[]): object {
+    return {
+        '@context': 'https://schema.org',
+        '@type': 'FAQPage',
+        mainEntity: faqs.map(f => ({
+            '@type': 'Question',
+            name: f.question,
+            acceptedAnswer: { '@type': 'Answer', text: f.answer },
+        })),
     };
 }
 

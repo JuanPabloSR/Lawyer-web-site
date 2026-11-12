@@ -55,7 +55,7 @@
         </div>
 
         <div ngbAccordion [closeOthers]="true" class="accordion accordion1" id="accordionExample">
-            <div *ngFor="let faq of faqData1;let i =index" [collapsed]="i !== activeItemIndex"
+            <div *ngFor="let faq of detail.faq ?? faqData1;let i =index" [collapsed]="i !== activeItemIndex"
             [class.active]="i === activeItemIndex" (shown)="activeItemIndex = i" ngbAccordionItem="{{i}}" class="accordion-item">
               <h2 ngbAccordionHeader class="accordion-header" id="headingOne">
                 <button ngbAccordionButton class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">

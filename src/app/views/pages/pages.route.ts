@@ -4,6 +4,7 @@ import { OurTeamComponent } from './our-team/our-team.component';
 import { TestimonialsComponent } from './testimonials/testimonials.component';
 import { FaqComponent } from './faq/faq.component';
 import { ContactComponent } from './contact/contact.component';
+import { AbogadosDocentesComponent } from './abogados-docentes/abogados-docentes.component';
 
 
 export const PAGES_ROUTES: Routes = [
@@ -26,6 +27,11 @@ export const PAGES_ROUTES: Routes = [
         path: 'faq',
         component: FaqComponent,
         data: { title: "Preguntas Frecuentes" }
+    },
+    {
+        path: 'abogados-para-docentes',
+        component: AbogadosDocentesComponent,
+        data: { title: "Abogados para Docentes" }
     },
     {
         path: 'contact',

@@ -20,7 +20,7 @@ function slugsOf(name) {
 // [ruta, prioridad]. /testimonials queda fuera a propósito (noindex hasta tener textos reales).
 const pages = [
   ['/', 1.0],
-  ['/our-services', 0.9], ['/about', 0.8], ['/our-team', 0.8], ['/case-study', 0.8], ['/blog/grid-2', 0.7], ['/faq', 0.7], ['/contact', 0.9],
+  ['/abogados-para-docentes', 0.9], ['/our-services', 0.9], ['/about', 0.8], ['/our-team', 0.8], ['/case-study', 0.8], ['/blog/grid-2', 0.7], ['/faq', 0.7], ['/contact', 0.9],
   ...slugsOf('serviceDetails').map(s => [`/service-details/${s}`, 0.8]),
   ...slugsOf('caseDetails').map(s => [`/case-single/${s}`, 0.6]),
   ...slugsOf('blogDetails').map(s => [`/blog-details/${s}`, 0.6]),

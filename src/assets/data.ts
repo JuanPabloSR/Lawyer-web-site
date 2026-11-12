@@ -1,4 +1,4 @@
-import type { AlliedCompanyType, BlogDetailType, ServiceDetailType, BlogType, CaseDetailType, CaseStudyType, FooterContactType, FooterLinkType, MemberType, ServiceType, TestimonialType } from "@/types";
+import type { AlliedCompanyType, BlogDetailType, FaqItem, ServiceDetailType, BlogType, CaseDetailType, CaseStudyType, FooterContactType, FooterLinkType, MemberType, ServiceType, TestimonialType } from "@/types";
 
 export { siteConfig } from './site-config';
 
@@ -230,6 +230,50 @@ export const servicesData: ServiceType[] = [
 ]
 
 /*
+ * Preguntas frecuentes de docentes: página /abogados-para-docentes y servicios del magisterio.
+ * Texto general, sin cifras ni plazos: el abogado debe revisarlo.
+ */
+const faqDocentesPorTema: Record<string, FaqItem> = {
+    fomag: {
+        question: '¿Qué es el FOMAG?',
+        answer: 'Es el Fondo Nacional de Prestaciones Sociales del Magisterio, la entidad que reconoce y paga las prestaciones de los docentes oficiales, como pensiones y cesantías. Sus trámites tienen reglas propias, distintas a las de Colpensiones o los fondos privados.',
+    },
+    '2277-1278': {
+        question: '¿Qué diferencia hay entre los docentes del Decreto 2277 y del Decreto 1278?',
+        answer: 'El Decreto 2277 de 1979 es el estatuto docente anterior y el Decreto 1278 de 2002 rige, en general, a quienes ingresaron después. Cada uno tiene reglas distintas de escalafón, salario y pensión, y en algunos casos un docente del 1278 conserva derechos del régimen anterior. Por eso revisamos la fecha y la forma de tu vinculación.',
+    },
+    compatibilidad: {
+        question: '¿Puedo recibir la pensión y seguir trabajando como docente?',
+        answer: 'Depende de tu régimen y de tu fecha de vinculación. En algunos casos la ley permite recibir la pensión docente y seguir devengando el salario. Estudiamos tu historia como docente para saber si aplica en tu caso.',
+    },
+    cesantias: {
+        question: '¿Qué pasa si me pagaron tarde las cesantías?',
+        answer: 'Cuando las cesantías se pagan fuera de los plazos legales, puede proceder una sanción moratoria a tu favor. Revisamos las fechas de solicitud y de pago para calcular lo que te deben y reclamarlo.',
+    },
+    niega: {
+        question: '¿Qué hago si el FOMAG me niega la pensión o la liquida mal?',
+        answer: 'Revisamos la resolución, presentamos la reclamación o los recursos y, si la respuesta sigue siendo negativa o incompleta, llevamos el caso ante la jurisdicción de lo contencioso administrativo.',
+    },
+    ciudad: {
+        question: '¿Atienden docentes de otras ciudades?',
+        answer: 'Sí. Nuestra oficina está en Bucaramanga y también ofrecemos asesoría virtual por videollamada para docentes de otras ciudades del país.',
+    },
+    resultados: {
+        question: '¿Garantizan resultados en mi demanda?',
+        answer: 'Como profesionales, garantizamos el mayor celo y aplicación jurídica en su defensa (obligación de medio), pero el último fallo depende del juez.',
+    },
+};
+
+export const faqDocentes: FaqItem[] = Object.values(faqDocentesPorTema);
+
+function faqDocentesFrom(temas: string[]): FaqItem[] {
+    return temas.map(t => faqDocentesPorTema[t]);
+}
+
+/** Servicios que se muestran en /abogados-para-docentes, en este orden. */
+export const docentesServiceSlugs = ['docentes-afiliados-al-fomag', 'docentes-1278-como-2277', 'cesantias', 'reliquidacion-de-pensiones', 'pensiones-de-invalidez', 'pensiones-por-muerte'];
+
+/*
  * Detalle de cada servicio (/service-details/:slug). Mismo `slug` que en servicesData.
  * TEXTO TEMPORAL redactado a partir de las descripciones reales de info.md: reemplazar por el
  * texto del cliente cuando lo entregue. Sin cifras, plazos ni resultados garantizados.
@@ -287,6 +331,8 @@ export const serviceDetails: ServiceDetailType[] = [
             'Si la respuesta es negativa o incompleta, llevamos el caso ante la jurisdicción de lo contencioso administrativo con una defensa técnica y documentada.',
         ],
         showFaq: true,
+        faq: faqDocentesFrom(['fomag', '2277-1278', 'niega', 'ciudad', 'resultados']),
+        seoTitle: 'Abogados para Docentes Afiliados al FOMAG en Bucaramanga',
     },
     {
         slug: 'docentes-1278-como-2277',
@@ -302,6 +348,7 @@ export const serviceDetails: ServiceDetailType[] = [
             'Cuando procede, presentamos la reclamación y sostenemos el caso hasta las instancias necesarias.',
         ],
         showFaq: true,
+        faq: faqDocentesFrom(['2277-1278', 'compatibilidad', 'fomag', 'ciudad', 'resultados']),
     },
     {
         slug: 'pensiones-por-muerte',

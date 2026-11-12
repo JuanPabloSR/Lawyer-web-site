@@ -39,6 +39,7 @@ export class NavItemComponent {
             ],
         },
         { title: 'Servicios', link: '/our-services' },
+        { title: 'Docentes', link: '/abogados-para-docentes' },
         { title: 'Casos de Estudio', link: '/case-study' },
         { title: 'Blog', link: '/blog/grid-2' },
         { title: 'Contacto', link: '/contact' },
